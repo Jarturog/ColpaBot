@@ -1,0 +1,327 @@
+{}
+.
+// Before each section the days before the examination are indicated. The first section does not have a prefered time. Comments start with //
+// Answers that are a point (.) are an abbreviation of the previous answer, when executing the file the previous answer is copied into the point
+// The point after a number copies the whole number that came before into the new one
+// The point where a question should be copies the questions that have the same CopyQuestion... key where the point is applying the answer there
+// It is only possible to combine keys with CopyQuestion... and DontShowAsExample. 
+// These keys should not be the first one in the column (except with the sections with numbers, there it does not matter the position of CopyQuestion...) 
+// The file is in format: Actions	Question	Answer
+
+// user-specific answers
+AppointmentDate	Quand a lieu mon rendez-vous ?	Votre rendez-vous est fixé au jour {} à {}.
+AppointmentDate	Quand mon rendez-vous est-il fixé ?	.
+AppointmentDate	Pouvez-vous m'indiquer la date et l'heure de mon rendez-vous ?	.
+AppointmentDate	Quand dois-je me présenter pour mon rendez-vous ?	.
+// ChangeAppointment' default answer is an error code because it is supposed to be answered with a Dialog in code instead of a simple answer
+ChangeAppointment	Je souhaite modifier la date de mon rendez-vous.	Je suis désolé mais il semble y avoir un problème qui m'empêche de reprogrammer, veuillez contacter le centre d'endoscopie pour les informer de ce qui s'est passé.
+ChangeAppointment	Je dois reporter mon rendez-vous.	.
+ChangeAppointment	Comment puis-je modifier la date de mon rendez-vous ?	.
+ChangeAppointment	Pouvez-vous m'aider à modifier mon rendez-vous ?	.
+ChangeAppointment DontShowAsExample	J'ai modifié mon rendez-vous.	.
+ChangeAppointment DontShowAsExample	Modifier le rendez-vous.	.
+
+
+DontAnswer DontShowAsExample	Ok	:)
+DontAnswer DontShowAsExample	D'accord	.
+	
+// general answers
+DontShowAsExample	Bonjour.	Bonjour. Vous avez besoin de quelque chose ?
+DontShowAsExample	Hé.	.
+DontShowAsExample	Bonjour.	Bonjour ! Que puis-je faire pour vous ?
+DontShowAsExample	Bonjour, comment allez-vous ?	Bonjour ! Puis-je faire quelque chose pour vous ?
+DontShowAsExample	Bonjour à tous ! Puis-je vous demander quelque chose ?	Bonjour ! Posez-moi toutes les questions que vous vous posez.
+DontShowAsExample	Nous vous remercions.	Je suis là pour vous aider ! N'hésitez pas à me poser toutes les questions que vous vous posez.
+DontShowAsExample	Merci.	.
+DontShowAsExample	Merci de m'avoir aidé.	.
+DontShowAsExample	Merci, j'apprécie !	.
+	
+// contact situations
+	Qui puis-je contacter ?	Vous pouvez contacter notre équipe par téléphone à tout moment : Endoscopie à l'hôpital universitaire d'Ulm 0731-500-44632
+	Où puis-je prendre contact si j'ai des questions ?	.
+	Je veux parler à un médecin.	.
+	Je veux voir un médecin.	.
+	Puis-je parler à quelqu'un par téléphone ?	.
+	Où puis-je trouver le numéro de contact de votre équipe ?	.
+
+	
+	J'ai besoin d'un autre rendez-vous.	Si vous ne pouvez pas respecter votre rendez-vous, veuillez contacter notre bureau d'enregistrement des endoscopies au 0731-500-44632 pour prendre un nouveau rendez-vous. Ensuite, n'oubliez pas de me demander de modifier votre rendez-vous afin que je puisse mettre à jour la date que j'ai enregistrée.
+	Je ne peux pas venir.	.
+	Je dois prendre un nouveau rendez-vous, qui dois-je appeler ?	.
+	Comment puis-je annuler mon rendez-vous ?	.
+	Existe-t-il un moyen de reporter un rendez-vous sans téléphoner ?	.
+	
+	Quels médicaments dois-je prendre ?	Si vous avez des questions sur la prise de médicaments, veuillez contacter notre service d'endoscopie ou votre médecin traitant.
+	Quand puis-je résilier au plus tard ?	Si vous ne pouvez pas vous présenter au rendez-vous convenu, veuillez nous en informer au moins 24 heures à l'avance.
+	
+DontShowAsExample	Cela n'a pas bien fonctionné. Que dois-je faire ?	Si vous rencontrez des problèmes, veuillez contacter le service d'endoscopie. Nous vous aiderons.
+DontShowAsExample	C'est en train de mal tourner.	.
+DontShowAsExample	Aide.	.
+	
+noneOfTheQuestionsOption DontShowAsExample	Ma question n'est pas là.	Désolé de ne pas avoir compris votre question. Je vous recommande de contacter notre équipe par téléphone à tout moment afin d'obtenir une réponse aux questions que je ne comprends pas : Endoscopie à l'hôpital universitaire d'Ulm 0731-500-44632.
+	
+// after colonoscopy
+	Quels sont les symptômes qui peuvent apparaître après l'examen ?	Certains symptômes peuvent apparaître après l'examen : flatulences, crampes et ballonnements dans l'abdomen en raison de l'air introduit pendant l'examen. L'exercice et la chaleur peuvent aider à soulager l'inconfort, mais avec le temps, il devrait se résorber naturellement. Si la gêne persiste, veuillez contacter votre médecin immédiatement. Il est également important de noter qu'après l'ablation de polypes ou l'exécution d'autres procédures thérapeutiques, des saignements peuvent survenir dans de rares cas au cours des 10 premiers jours. Si vous remarquez du sang dans vos selles ou si vous avez de la fièvre, contactez immédiatement votre médecin.
+	Que peut-il se passer après l'examen ?	.
+	Quels sont les symptômes qui peuvent survenir après l'examen ?	.
+	Quels sont les symptômes qui peuvent survenir après l'intervention ?	.
+	Que peut-il se passer après l'intervention ?	.
+	Quels sont les symptômes qui peuvent survenir après la coloscopie ?	.
+	Que peut-il se passer après la coloscopie ?	.
+	Que peut-il se passer après l'examen ?	.
+	Quels sont les désagréments normaux après l'intervention ?	.
+	Dois-je m'attendre à des crampes ou à des gaz après l'examen ?	.
+	Quels sont les problèmes à surveiller après l'examen ?	.
+	
+	Que se passe-t-il après l'examen ?	Après l'examen, vous serez surveillé dans notre centre d'endoscopie jusqu'à ce que vous puissiez sortir. Prévoyez un séjour d'au moins 2 heures. Ne prévoyez pas non plus de conduire ou de faire de l'exercice ce jour-là, il est préférable de le prendre calmement.
+	Que dois-je faire après l'examen ?	.
+	Que dois-je savoir après l'examen ?	.
+	Devrai-je rester après l'examen ?	.
+	Puis-je faire ce que je veux après l'examen ?	.
+	Que dois-je faire juste après l'intervention ?	.
+	Dois-je rester à la clinique après mon examen ?	.
+	Puis-je reprendre mes activités normales après l'intervention ?	.
+	
+	Puis-je rentrer chez moi en voiture le jour de l'examen ?	Si vous avez reçu une sédation ("injection de sommeil" ou "somnifère"), vous ne pouvez pas conduire vous-même un véhicule pendant 12 heures. Les transports en commun, un taxi ou un accompagnateur sont autorisés. Reposez-vous et réduisez vos activités au minimum ce jour-là.
+	Puis-je conduire le jour de l'examen ?	.
+	Puis-je conduire après une coloscopie ?	.
+	Puis-je conduire après l'examen ?	.
+	Que faut-il envisager après l'examen ?	.
+	Puis-je rentrer chez moi en voiture après l'intervention ?	.
+	Peut-on conduire en toute sécurité après une coloscopie ?	.
+	Ai-je besoin de quelqu'un pour me raccompagner ?	.
+	
+	Puis-je faire du sport après l'examen ?	Avant l'examen, vous pouvez faire du sport comme d'habitude, mais le jour de l'examen, il est préférable de ne pas prévoir d'activités importantes. À partir du lendemain, vous pouvez reprendre le sport comme d'habitude, en y allant doucement si nécessaire.
+	Puis-je faire du sport ?	.
+	Puis-je faire de l'exercice ?	.
+	Puis-je m'entraîner ?	.
+	Puis-je faire du sport après la coloscopie ?	.
+	Quand pourrai-je recommencer à faire de l'exercice ?	.
+	Peut-on faire du sport après l'examen ?	.
+	
+	Combien de temps faut-il pour que la mobilité intestinale et les selles se normalisent ?	Il peut s'écouler quelques jours avant que la motilité intestinale et les selles ne reviennent à la normale.
+	Combien de temps faut-il pour que l'inconfort disparaisse ?	.
+	Quand mon malaise disparaîtra-t-il ?	.
+	Combien de temps faut-il pour que j'aie à nouveau des selles normales ?	Vous avez complètement vidé l'intestin. Les selles doivent d'abord se reformer. Il peut s'écouler jusqu'à 10 jours avant que vos selles ne redeviennent ce qu'elles étaient.
+	
+	Que dois-je faire si j'observe du sang dans mes selles, si je vomis du sang ou si j'ai de la fièvre ?	Si vous remarquez du sang dans vos selles, si vous vomissez du sang ou si vous avez de la fièvre, vous devez contacter immédiatement un professionnel de la santé.
+	Que puis-je manger après l'examen ?	En principe, vous pouvez à nouveau manger et boire de tout. Il est toutefois recommandé de réintroduire l'intestin dans la nourriture avec précaution. Vous avez complètement vidé le côlon. Commencez par des aliments faciles à digérer comme les pâtes, les soupes, le pain, etc.
+	Que puis-je manger et boire après l'examen ?	En règle générale, vous pouvez à nouveau manger tous les aliments. Demandez toutefois à l'examinateur. Nous vous recommandons de commencer par des aliments et des boissons faciles à digérer (par exemple, des sandwichs, du thé). L'alcool est généralement à éviter le jour de l'examen.
+	Puis-je encore assister à des rendez-vous après l'examen ?	Il est préférable de ne pas prévoir d'activités importantes le jour de l'examen. Toutefois, vous pourrez vous rendre à vos rendez-vous comme d'habitude dès le lendemain
+	Puis-je prendre tous mes médicaments le jour de l'examen ?	Si vous avez des questions sur la prise de médicaments, veuillez contacter notre service d'endoscopie ou votre médecin traitant.
+	
+	En combien de temps me sentirai-je normal après l'intervention ?	Vous devriez commencer à vous sentir normal quelques heures après l'intervention, bien qu'il faille un jour ou deux pour que les effets résiduels du sédatif disparaissent complètement.
+	Combien de temps faut-il pour que le sédatif s'estompe ?	.
+	
+	Que se passe-t-il après la coloscopie ?	Une fois que vous vous serez reposé, le médecin vous parlera des résultats du test. Si des échantillons ont été prélevés, l'analyse prend généralement 2 à 3 jours ouvrables. Vous et votre médecin de famille en serez informés par écrit.
+	Quand pourrai-je rentrer chez moi ?	Vous pouvez vous attendre à passer au total 2 heures dans le centre d'endoscopie. La durée peut bien sûr être plus courte ou plus longue.
+	Quand pourrai-je à nouveau conduire ?	Si vous avez reçu une "injection de sommeil", vous ne pouvez à nouveau participer activement à la circulation routière qu'après 12 heures.
+
+// just before the colonoscopy
+	La procédure me rend nerveux, que dois-je faire ?	Si l'intervention vous rend nerveux, il est important de vous concentrer sur ce que vous pouvez contrôler pour gérer votre anxiété. Tout d'abord, essayez de rassembler autant d'informations que possible sur l'intervention. Comprendre ce qui se passera étape par étape peut aider à démystifier le processus et à réduire vos craintes. Parler avec votre prestataire de soins de santé peut également vous rassurer et vous éclairer ; il peut répondre à vos questions spécifiques et vous aider à dissiper vos inquiétudes.
+	Comment puis-je me préparer mentalement à l'examen ?	.
+DontShowAsExample	Je suis nerveux.	.
+DontShowAsExample	Je suis anxieux.	.
+	
+	Cela me fera-t-il mal ?	Le jour de l'examen, vous recevrez un sédatif afin que le processus soit indolore. Cependant, il est possible que vous ne vous sentiez pas bien après l'examen. Si les symptômes ne s'améliorent pas au cours de la journée, veuillez contacter le service d'endoscopie de l'hôpital universitaire d'Ulm au 0731-500-44632.
+	Que dois-je faire le jour de l'examen ?	Le jour de l'examen, préparez le 2e sachet de la solution laxative. Commencez à boire pour être prêt au moins 3 heures avant le rendez-vous. Buvez la solution laxative par grandes gorgées dans l'heure qui suit. Pour ce faire, buvez au moins 1 à 2 litres de liquides clairs. Même s'il est très tôt pour boire, il est très important de parvenir à une propreté intestinale optimale.
+	
+	Où dois-je aller ?	Le jour de l'examen, vous devez vous rendre à l'hôpital universitaire d'Ulm, Oberer Eselsberg, Albert-Einstein-Allee 23, niveau 1, centre d'enregistrement pour l'endoscopie.
+	Comment se rendre à la clinique ?	.
+	Dois-je d'abord me rendre au centre d'admission des patients ?	S'il s'agit de votre première visite du trimestre, vous devez d'abord vous rendre au Service central d'admission, niveau 2, muni de votre fiche d'orientation.
+	Où se trouve exactement la clinique ?	.
+	Dois-je d'abord m'enregistrer quelque part ?	.
+	Comment se rendre au service d'endoscopie ?	.
+
+// laxatives
+	Quel est l'effet des laxatifs ?	Les laxatifs entraîneront une augmentation des selles/diarrhées. Cet effet est souhaitable pour l'examen et ne doit pas vous inquiéter.
+	Qu'en est-il des certificats de travail et de maladie ?	En règle générale, vous recevrez un arrêt de travail pour le jour de l'examen. Vous pouvez reprendre le travail normalement à partir du lendemain du jour de l'examen. Toutefois, si vos symptômes persistent le lendemain de l'examen, vous devez consulter à nouveau votre médecin.
+	Pourrai-je reprendre le travail ?	Vous pouvez reprendre le travail normalement dès le lendemain du jour de l'examen. Toutefois, si vos symptômes persistent le lendemain de l'examen, vous devez consulter à nouveau votre médecin.
+	
+	Dois-je vraiment tout boire ?	Les intestins ne peuvent être suffisamment nettoyés que si vous prenez la solution dans son intégralité.
+	Faut-il boire la totalité de la solution ?	.
+	
+	Puis-je le boire en une seule fois ?	Veuillez respecter les instructions figurant sur l'emballage des laxatifs.
+	Comment dois-je préparer le produit ?	.
+	
+	J'ai maintenant la diarrhée. Est-ce normal ?	Il est tout à fait normal d'avoir la diarrhée. Le laxatif nettoie l'intestin et évacue complètement les matières fécales. Nous percevons cela comme de la diarrhée.
+DontShowAsExample	J'ai la diarrhée.	.
+	J'ai la diarrhée, est-ce normal ?	.
+	Depuis que j'ai commencé à prendre le complément alimentaire, j'ai davantage de selles/diarrhées. Est-ce normal ?	.
+	
+	Combien de fois dois-je aller aux toilettes ?	Le nombre de fois qu'une personne va aux toilettes varie considérablement, car chaque intestin réagit différemment. Mais vous remarquerez que l'intestin s'est vidé.
+	Combien de temps devrai-je rester à proximité d'une salle de bains ?	.
+	
+	Pourquoi dois-je le boire comme ça ?	L'intestin est maintenant complètement vidé. Ce n'est qu'à ce moment-là que l'examinateur peut juger correctement de toutes les zones de l'intestin.
+	Je suis allé aux toilettes plusieurs fois maintenant. Rien ne sort	Si vos selles ressemblent à du thé à la camomille après avoir pris des laxatifs et qu'aucune matière solide n'est plus visible, vous êtes bien préparé pour la coloscopie.
+	
+	Quand dois-je commencer à prendre le laxatif ?	Vous devez boire le premier laxatif la veille de l'examen à 17h00. Buvez la solution laxative par grandes gorgées dans l'heure qui suit et buvez au moins 1 à 2 litres de liquides clairs. Le jour de l'examen, vous devez boire le laxatif 3 heures avant le rendez-vous. Buvez-le de la même manière que le premier et n'oubliez pas de boire des liquides clairs. Même s'il est très tôt pour le boire, il est très important d'obtenir une propreté intestinale optimale.
+	Dois-je prendre un laxatif ?	.
+	Quand dois-je commencer les mesures d'initiation ?	.
+	Quand dois-je commencer à boire la solution laxative ?	.
+	A quel moment dois-je prendre le premier sachet ?	.
+	
+	Quand dois-je boire la première solution ?	Vous devez boire le premier laxatif la veille du rendez-vous. Remuez le premier sachet de la solution laxative. Commencez à boire à 17h00. Buvez la solution laxative par grandes gorgées dans l'heure qui suit. Buvez au moins 1 à 2 litres de liquides clairs.
+	Quand dois-je boire la première solution ?	.
+	Quand dois-je boire le premier laxatif ?	.
+	Quand dois-je boire le premier laxatif ?	.
+	Quand dois-je commencer à prendre le laxatif ?	.
+	
+	Pourquoi dois-je boire deux fois ?	En répartissant vos selles entre la veille et le jour de l'examen, vous améliorez la propreté de vos intestins. Vous ne devez pas non plus boire autant en une seule fois.
+	Pourquoi dois-je boire deux doses ?	.
+	
+	Quand dois-je prendre le deuxième sachet de laxatif ?	Le jour du test, buvez la deuxième moitié du laxatif 3 heures avant le rendez-vous prévu.
+	Quand dois-je prendre le deuxième sachet de laxatif ?	.
+	Quand dois-je prendre l'autre sachet de laxatif ?	.
+	
+	A quoi doivent ressembler mes selles après les mesures laxatives ?	Vos selles doivent ressembler à du thé à la camomille et ne plus contenir de solides.
+	Que dois-je faire si mes selles n'ont pas l'aspect qu'elles devraient avoir après le laxatif ?	Veuillez nous en informer à votre arrivée au centre d'endoscopie.
+	
+// bring to examination
+	Que dois-je apporter à l'examen ?	Sauf accord contraire, la fiche d'information signée, les valeurs sanguines actuelles (coagulation et numération globulaire ne datant pas de plus de 10 jours) et un passeport d'allergie si disponible (veuillez informer l'examinateur de toute intolérance médicamenteuse avant le début de l'examen). N'oubliez pas non plus qu'il est recommandé d'apporter des chaussettes chaudes.
+	Que dois-je apporter à l'examen ?	.
+	Que dois-je apporter lors de l'intervention ?	.
+	Que dois-je apporter lors de l'intervention ?	.
+	Que dois-je apporter lors de la coloscopie ?	.
+	Que dois-je apporter lors de la coloscopie ?	.
+	Que dois-je apporter avec moi ?	.
+	Que dois-je apporter à l'examen ?	.
+	Dois-je apporter quelque chose à l'examen ?	.
+	
+	Quelles sont les valeurs sanguines nécessaires pour la coloscopie ?	Une petite numération sanguine (thrombocytes) et des valeurs de coagulation (Quick, PTT) sont nécessaires pour la coloscopie.
+
+	Pourquoi dois-je apporter des chaussettes chaudes ?	Les chaussettes sont utiles si vous avez tendance à avoir les pieds froids.
+	Pourquoi des chaussettes chaudes ?	.
+
+// diet information
+ImageHighFibreFood	Qu'est-ce qu'un aliment riche en fibres ?	Les aliments riches en fibres sont par exemple les melons, les kiwis, les tomates, les raisins, les fraises, le muesli, les produits à base de farine complète, les courgettes, la laitue, les poireaux, les haricots, etc.
+ImageHighFibreFood	Pouvez-vous me donner des exemples d'aliments riches en fibres ?	.
+ImageHighFibreFood	Donnez-moi des exemples d'aliments riches en fibres.	.
+ImageHighFibreFood	Quels sont les aliments riches en fibres ?	.
+	
+ImageSeedFood	Quels sont les aliments contenant des graines et les légumes riches en fibres ?	Le melon, le kiwi, les tomates, le raisin, les fraises, le muesli, les produits VK, les graines de pavot, les courgettes, la laitue, les poireaux et les haricots sont autant d'exemples d'aliments contenant des graines et de légumes riches en fibres.
+ImageSeedFood	Quels sont les aliments contenant des graines que je dois éviter ?	.
+ImageSeedFood	Quel aliment contient des graines ?	.
+ImageSeedFood	Pouvez-vous me donner des exemples d'aliments contenant des graines ?	.
+ImageSeedFood	Donnez-moi des exemples d'aliments contenant des graines.	.
+ImageSeedFood	Quels sont les aliments qui contiennent des graines ?	.
+	
+ImageLowFibreFood	Qu'est-ce qu'un repas pauvre en fibres ?	Un exemple de repas pauvre en fibres est une soupe claire avec des nouilles ou des pommes de terre.
+ImageLowFibreFood	Qu'est-ce qu'un aliment pauvre en fibres ?	Les soupes claires, les soupes avec nouilles, la purée de pommes de terre et le pain blanc sont des exemples d'aliments pauvres en fibres.
+ImageHighFibreFood	Où se trouvent les fibres ?	Les fibres se trouvent dans les tomates, les courgettes, la laitue, les poireaux, les haricots, etc.
+ImageSeedFood	Pourquoi dois-je éviter les graines ?	Les graines peuvent obstruer l'endoscope et gêner considérablement l'examen.
+ImageHighFibreFood	Pourquoi dois-je éviter les fibres ?	Les aliments contenant des fibres restent plus longtemps dans l'intestin. Ils gênent considérablement la vision pendant l'examen.
+
+ImageColouredDrink	Qu'est-ce qu'un liquide teinté ?	Les liquides teintés sont tous des liquides invisibles. Il s'agit notamment du café, du thé noir, du lait, du cola, du thé aux fruits noirs et du vin rouge.
+ImageColouredDrink	Qu'est-ce qui entre dans la catégorie des boissons colorées ?	.
+ImageColouredDrink	Qu'est-ce qu'une boisson teintée ?	.
+ImageColouredDrink	Qu'est-ce qu'un liquide teinté ?	.
+ImageColouredDrink DontShowAsExample	Qu'est-ce qu'une boisson sombre ?	.
+ImageColouredDrink DontShowAsExample	Qu'est-ce qu'un liquide foncé ?	.
+ImageColouredDrink DontShowAsExample	Qu'est-ce qu'une boisson colorée ?	.
+ImageColouredDrink DontShowAsExample	Qu'est-ce qu'un liquide coloré ?	.
+
+ImageClearDrink	Qu'est-ce qu'un liquide transparent ?	Les liquides clairs sont par exemple l'eau, le jus de pomme, les thés clairs.
+ImageClearDrink	Que signifie "liquides clairs" ?	.
+ImageClearDrink	Qu'est-ce qu'une boisson claire ?	.
+ImageClearDrink	Qu'est-ce qu'un liquide clair ?	.
+ImageClearDrink	Qu'est-ce qu'une boisson transparente ?	.
+ImageClearDrink	Qu'est-ce qu'un liquide transparent ?	.
+
+ImageMealExamples	Donnez-moi des exemples de repas.	Des exemples de repas pauvres en fibres et dépourvus de graines apparaissent sur cette image.
+ImageMealExamples DontShowAsExample	Exemple de repas.	.
+
+// preparation
+ImageTable	Quand dois-je commencer à faire attention à ce que je mange et à ce que je bois ?	À partir de trois jours avant le test, les aliments contenant des graines et les légumes riches en fibres doivent être évités. Il y a d'autres choses à éviter un jour avant le test
+ImageTable	Que dois-je faire ou ne pas faire 3 jours avant l'examen ?	.
+ImageTable	Dois-je faire attention à certains aspects nutritionnels ?	.
+ImageTable	Quels sont les aliments à éviter dans les jours précédant l'examen ?	.
+ImageTable	Quel régime alimentaire dois-je suivre trois jours avant l'examen ?	.
+
+	Pourquoi ne puis-je pas manger des aliments riches en fibres et en graisses ?	Il est important que vous ne mangiez pas d'aliments riches en fibres et en graisses 3 jours avant le rendez-vous afin de ne pas gêner la vision pendant la coloscopie.
+	Pourquoi ne puis-je pas boire de liquides teintés ?	Les liquides colorés peuvent gêner la vision pendant l'examen.
+	
+ImageTable	Qu'est-ce que je n'ai pas le droit de faire d'autre ?	La veille de l'examen, vous ne devez pas manger de repas riches en fibres ou en graisses, ni boire de liquides colorés.
+ImageTable	Que dois-je faire ou ne pas faire la veille de l'examen ?	Évitez les boissons colorées (les liquides clairs sont autorisés), les repas riches en fibres et en graisses et l'alcool. Veuillez prendre un repas pauvre en fibres pour le déjeuner.
+	
+ImageClearDrink	Quelles sont les boissons autorisées avant la coloscopie ?	Vous pouvez boire tout type de liquide clair avant la coloscopie.
+
+// copy questions (these are pasted into the next sections)
+ImageTable CopyQuestionWhatToDo	Et maintenant ?	Pour l'instant, vous n'avez rien à faire, la préparation commence 3 jours avant le rendez-vous. Vous devrez alors commencer un régime pauvre en fibres et sans graines.
+ImageTable CopyQuestionWhatToDo	Que dois-je faire ?	.
+ImageTable CopyQuestionWhatToDo	Que dois-je faire ?	.
+
+ImageTable CopyQuestionFood	Quels sont les aliments à éviter ?	Pour l'instant, vous pouvez manger comme d'habitude, la préparation commence 3 jours avant le rendez-vous. Vous devrez alors commencer un régime pauvre en fibres et sans graines.
+ImageTable CopyQuestionFood DontShowAsExample	Quel régime ?	.
+ImageTable CopyQuestionFood	Quel est le régime alimentaire ?	.
+ImageTable CopyQuestionFood	Que dois-je manger ?	.
+ImageTable CopyQuestionFood	Que puis-je manger ?	.
+ImageTable CopyQuestionFood	Qu'ai-je le droit de manger ?	.
+ImageTable CopyQuestionFood DontShowAsExample	Puis-je manger quelque chose ?	.
+ImageTable CopyQuestionFood DontShowAsExample	Je veux manger quelque chose.	.
+ImageTable CopyQuestionFood	Puis-je consommer des aliments riches en fibres avant l'intervention ?	.
+ImageTable CopyQuestionFood	Que dois-je éviter de manger trois jours avant l'examen ?	.
+ImageTable CopyQuestionFood	Y a-t-il des légumes que je devrais omettre ?	.
+
+ImageTable CopyQuestionDrink DontShowAsExample	Puis-je boire ?	Vous pouvez boire tout ce que vous voulez, mais un jour avant l'examen, abstenez-vous de boire des liquides colorés (café, thé noir, lait, cola, thé aux fruits noirs, vin rouge, etc.)
+ImageTable CopyQuestionDrink	Que puis-je boire ?	Vous pouvez boire n'importe quoi jusqu'à un jour avant l'examen. À partir de ce jour, vous devez vous abstenir de boire des liquides colorés (café, thé noir, lait, cola, thé aux fruits noirs, vin rouge, etc.)
+ImageColouredDrink CopyQuestionDrink	Y a-t-il des liquides que je dois éviter ?	.
+ImageColouredDrink CopyQuestionDrink	Puis-je prendre du café ou du thé la veille de l'examen ?	.
+
+ImageClearDrink CopyQuestionDrink	Que suis-je autorisé à boire ?	Tous les liquides clairs (par exemple l'eau, le jus de pomme, les thés clairs) sont autorisés, quelle que soit leur quantité. Voici un exemple de ce que vous pouvez boire.
+ImageClearDrink CopyQuestionDrink DontShowAsExample	Puis-je boire un verre ?	.
+
+CopyQuestionAlcohol	Puis-je boire de l'alcool ?	Il est interdit de boire de l'alcool le jour même du rendez-vous et la veille. Il est également recommandé de ne pas en boire le lendemain de l'intervention.
+	Puis-je boire de l'eau ?	Vous pouvez boire de l'eau à tout moment, car c'est un liquide clair qui ne gêne pas la visibilité pendant la coloscopie.
+	
+CopyQuestionLaxatives	Le goût est dégoûtant.	Si vous faites référence aux laxatifs, vous ne devez pas les boire pour le moment. Vous devez cependant commencer à boire la première solution dans l'après-midi du jour précédant la coloscopie.
+CopyQuestionLaxatives	Le goût est mauvais.	.
+CopyQuestionLaxatives	Le goût est affreux.	.
+CopyQuestionLaxatives	Le goût est horrible.	.
+CopyQuestionLaxatives	Le goût est horrible, que dois-je faire ?	.
+CopyQuestionLaxatives	Existe-t-il un moyen d'améliorer le goût de cette solution ?	.
+CopyQuestionLaxatives	Avez-vous des conseils pour faciliter la prise du laxatif ?	.
+
+3
+
+CopyQuestionWhatToDo ImageTable	.	Pour l'instant, vous devez vous concentrer sur votre régime alimentaire. Ne consommez pas d'aliments contenant des graines ou des aliments riches en fibres.
+CopyQuestionFood ImageBadFood	.	Vous ne devez plus consommer d'aliments contenant des graines ou des aliments riches en fibres. Voici un exemple d'aliments à éviter.
+CopyQuestionDrink	.	Vous pouvez boire tout ce que vous voulez, mais la veille de la coloscopie, évitez de boire des liquides colorés (café, thé noir, lait, cola, thé aux fruits noirs, vin rouge).
+
+//// Second day has the same considerations as third day
+2	.
+	
+1
+
+CopyQuestionWhatToDo ImageTable	.	Désormais, en plus de ne pas consommer d'aliments contenant des graines ou des aliments riches en fibres, vous devez également éviter les aliments riches en graisses et les boissons colorées. Il est également recommandé d'éviter l'alcool.
+CopyQuestionFood ImageBadFood	.	Désormais, en plus de ne pas manger d'aliments contenant des graines ou des aliments riches en fibres, vous devez également éviter les aliments riches en graisses. Voici un exemple d'aliments à éviter.
+CopyQuestionDrink ImageColouredDrink	.	Veuillez vous abstenir de boire des liquides colorés (café, thé noir, lait, cola, thé aux fruits noirs, vin rouge), car ils pourraient gêner la vision pendant l'examen. Voici un exemple de boisson à éviter.
+CopyQuestionAlcohol	.	Il est déconseillé de boire de l'alcool ces jours-ci en raison de la procédure.
+CopyQuestionLaxatives	.	Malheureusement, la saveur n'est pas exceptionnelle. Vous avez raison. Voici quelques conseils : Mettez la solution en bouteille au réfrigérateur avant de la boire. Vous pouvez également utiliser une paille. Vous pouvez également diluer la liqueur avec du sirop clair ou du jus de pomme.
+
+	Dois-je boire les deux moitiés demain ?	Vous devez avoir bu la deuxième moitié au moins 3 heures avant votre rendez-vous pour la coloscopie.
+
+0
+
+CopyQuestionWhatToDo ImageTable	.	Ce matin, vous devez être à jeun, c'est-à-dire que vous devez essayer de ne pas manger jusqu'à la fin de la procédure. Vous pouvez toutefois boire du jus de pomme clair, du thé à la camomille et de l'eau jusqu'à 2 heures avant le début de la coloscopie.
+CopyQuestionFood	.	.
+CopyQuestionDrink ImageClearDrink	.	Veuillez vous abstenir de boire des liquides colorés (café, thé noir, lait, cola, thé aux fruits noirs, vin rouge), car ils pourraient gêner la vision pendant l'examen. Les deux dernières heures avant l'examen, essayez de ne rien boire. Voici un exemple de ce que vous pouvez boire.
+CopyQuestionAlcohol	.	Vous ne devez pas boire d'alcool aujourd'hui.
+CopyQuestionLaxatives	.	Malheureusement, la saveur n'est pas exceptionnelle. Vous avez raison. Voici quelques conseils : Mettez la solution en bouteille au réfrigérateur avant de la boire. Vous pouvez également utiliser une paille. Vous pouvez également diluer la liqueur avec du sirop clair ou du jus de pomme.
+	
+-1
+
+CopyQuestionWhatToDo	.	Une fois que vous vous serez reposé, le médecin vous parlera des résultats du test. Si des échantillons ont été prélevés, l'analyse prend généralement 2 à 3 jours ouvrables. Vous et votre médecin de famille en serez informés par écrit. Vous pouvez vous attendre à passer au total 2 heures dans le centre d'endoscopie. Cette durée peut bien sûr être plus courte ou plus longue.
+CopyQuestionFood	.	En principe, vous pouvez à nouveau manger et boire de tout. Il est toutefois recommandé de réintroduire l'intestin dans la nourriture avec précaution. Vous avez complètement vidé le côlon. Commencez par des aliments faciles à digérer comme les pâtes, les soupes, le pain, etc.
+CopyQuestionDrink	.	Après la sortie de l'endoscopie, il n'y a pas de restrictions concernant ce que vous pouvez boire. Il est toutefois recommandé de ne pas boire aujourd'hui.
+CopyQuestionAlcohol	.	Il est recommandé de ne pas en boire le lendemain de l'intervention.
+	Puis-je boire à nouveau de tout ?	Après la sortie de l'endoscopie, il n'y a aucune restriction concernant ce que vous pouvez boire.
+	
+// bowels after the examination
+	Je me sens très gonflée. Est-ce normal ?	Pour l'examen, l'examinateur a utilisé du dioxyde de carbone pour dilater légèrement l'intestin. Ce gaz est responsable de la sensation de ballonnement. Un peu désagréable mais normal. Toutefois, si cette sensation ne disparaît pas ou s'aggrave, contactez le centre d'endoscopie. Nous vous aiderons davantage.
+	J'ai des douleurs abdominales.	Si les symptômes ne s'améliorent pas au cours de la journée, veuillez contacter un médecin.
+	J'ai du sang dans mes selles. Que dois-je faire ?	Si des polypes sont enlevés pendant l'examen, des saignements post-opératoires peuvent survenir dans de rares cas. Veuillez contacter le service d'endoscopie de l'hôpital universitaire d'Ulm au 0731-500-44632 !
+	Je saigne.	Des saignements peuvent survenir dans les 10 premiers jours. Dans ce cas, veuillez nous contacter. La période est très variable et diffère d'une personne à l'autre
+
+	J'ai de la fièvre.	Si vous vous sentez mal, veuillez contacter immédiatement le service d'endoscopie de l'hôpital universitaire d'Ulm 0731-500-44632.
+	Je vomis du sang.	.

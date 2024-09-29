@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ApplicationInsightsResourceId>/subscriptions/c06a1919-38eb-42b6-beb2-e28af9883551/resourceGroups/colonoscopy-preparation-bot-rg-gwc/providers/microsoft.insights/components/colpa-bot-app-insights</ApplicationInsightsResourceId>
+    <UserSecretsId>6600168c-3f34-4478-bfa2-417a800102ce</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bot.Builder.Community.Adapters.Infobip.WhatsApp" Version="4.13.5" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.22.0" />
+	<PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.7" />
+	<PackageReference Include="Microsoft.Bot.Builder" Version="4.22.2" /> <!-- Newest version before Infobip's Whatsapp adapter starts having problems -->
+	<PackageReference Include="Microsoft.Bot.Builder.Dialogs" Version="4.22.2" />
+    <PackageReference Include="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.22.2" />
+	<PackageReference Include="Fastenshtein" Version="1.0.10" />
+    <PackageReference Include="Quartz" Version="3.13.0" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.5" />
+    <PackageReference Include="sqlite-net-sqlcipher" Version="1.9.172" />
+  </ItemGroup>
+
+    <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+
+	<Content Include="Resources/**/*">
+		<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	</Content>
+	</ItemGroup>
+
+</Project>

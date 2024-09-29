@@ -1,0 +1,327 @@
+{}
+.
+// Before each section the days before the examination are indicated. The first section does not have a prefered time. Comments start with //
+// Answers that are a point (.) are an abbreviation of the previous answer, when executing the file the previous answer is copied into the point
+// The point after a number copies the whole number that came before into the new one
+// The point where a question should be copies the questions that have the same CopyQuestion... key where the point is applying the answer there
+// It is only possible to combine keys with CopyQuestion... and DontShowAsExample. 
+// These keys should not be the first one in the column (except with the sections with numbers, there it does not matter the position of CopyQuestion...) 
+// The file is in format: Actions	Question	Answer
+
+// user-specific answers
+AppointmentDate	Randevum ne zaman?	Randevunuz {} günü {} saatinde.
+AppointmentDate	Randevum ne zaman planlanıyor?	.
+AppointmentDate	Randevumun tarihini ve saatini söyleyebilir misiniz?	.
+AppointmentDate	Randevum için ne zaman gelmem gerekiyor?	.
+// ChangeAppointment' default answer is an error code because it is supposed to be answered with a Dialog in code instead of a simple answer
+ChangeAppointment	Randevu tarihimi değiştirmek istiyorum.	Üzgünüm ama yeniden planlama yapmamı engelleyen bir sorun var gibi görünüyor, lütfen ne olduğunu bildirmek için endoskopi merkeziyle iletişime geçin.
+ChangeAppointment	Randevumu yeniden planlamam gerekiyor.	.
+ChangeAppointment	Randevu tarihimi nasıl değiştirebilirim?	.
+ChangeAppointment	Randevumu yeniden düzenlememe yardımcı olabilir misiniz?	.
+ChangeAppointment DontShowAsExample	Randevumu değiştirdim.	.
+ChangeAppointment DontShowAsExample	Randevuyu değiştir.	.
+
+
+DontAnswer DontShowAsExample	Tamam.	:)
+DontAnswer DontShowAsExample	Tamam.	.
+	
+// general answers
+DontShowAsExample	Merhaba.	Merhaba. Bir şeye mi ihtiyacınız var?
+DontShowAsExample	Hey.	.
+DontShowAsExample	Merhaba.	Merhaba! Sizin için ne yapabilirim?
+DontShowAsExample	Merhaba, nasılsınız?	Merhaba! Sizin için bir şey yapabilir miyim?
+DontShowAsExample	Merhaba! Size bir şey sorabilir miyim?	Merhaba! Merak ettiğiniz her şeyi bana sorun.
+DontShowAsExample	Teşekkür ederim.	Size yardım etmek için buradayım! Merak ettiğiniz her şeyi sormaktan çekinmeyin.
+DontShowAsExample	Teşekkürler.	.
+DontShowAsExample	Bana yardım ettiğin için teşekkür ederim.	.
+DontShowAsExample	Teşekkürler, minnettarım!	.
+	
+// contact situations
+	Kiminle iletişime geçebilirim?	Ekibimizle istediğiniz zaman telefonla iletişime geçebilirsiniz: Ulm Üniversite Hastanesi Endoskopi 0731-500-44632
+	Herhangi bir sorum olursa nereye başvurabilirim?	.
+	Bir doktorla konuşmak istiyorum.	.
+	Bir doktora görünmek istiyorum.	.
+	Telefonda biriyle konuşabilir miyim?	.
+	Ekibinizin iletişim numarasını nerede bulabilirim?	.
+
+	
+	Başka bir randevuya ihtiyacım var.	Randevunuza gelemeyecek durumdaysanız, yeni bir randevu almak için lütfen 0731-500-44632 numaralı telefondan endoskopi kayıt masamıza başvurun. Bundan sonra, kaydettiğim tarihi güncelleyebilmem için benden randevunuzu değiştirmemi istemeyi unutmayın.
+	Ben gelemem.	.
+	Yeni bir randevu almam gerekiyor, kimi arayabilirim?	.
+	Randevumu nasıl iptal edebilirim?	.
+	Aramadan yeniden planlama yapmanın bir yolu var mı?	.
+	
+	Hangi ilaçları almam gerekiyor?	İlaç almakla ilgili herhangi bir sorunuz varsa, lütfen endoskopi departmanımızla veya uzman doktorunuzla iletişime geçin.
+	En geç ne zaman iptal edebilirim?	Kararlaştırılan randevuya gelemeyecekseniz lütfen bizi en az 24 saat önceden bilgilendirin.
+	
+DontShowAsExample	Pek iyi gitmedi. Ne yapmalıyım?	Sorun yaşıyorsanız lütfen endoskopi bölümüyle iletişime geçin. Size daha fazla yardımcı olacağız.
+DontShowAsExample	Bu iş kötüye gidiyor.	.
+DontShowAsExample	Yardım edin.	.
+	
+noneOfTheQuestionsOption DontShowAsExample	Benim sorum burada değil.	Sorunuzu anlayamadığım için özür dilerim. Anlamadığım sorulara cevap alabilmeniz için ekibimizle istediğiniz zaman telefonla iletişime geçmenizi tavsiye ederim: Ulm Üniversite Hastanesi Endoskopi 0731-500-44632.
+	
+// after colonoscopy
+	Muayene sonrasında hangi belirtiler ortaya çıkabilir?	Muayeneden sonra ortaya çıkabilecek bazı belirtiler, muayene sırasında alınan hava nedeniyle karında gaz, kramp ve şişkinliktir. Egzersiz ve sıcaklık rahatsızlığı hafifletmeye yardımcı olabilir, ancak zamanla doğal olarak çözülmelidir. Rahatsızlık devam ederse, lütfen derhal doktorunuza başvurun. Poliplerin çıkarılmasından veya diğer terapötik prosedürlerin uygulanmasından sonra, ilk 10 gün içinde nadir durumlarda kanama meydana gelebileceğini de unutmamak önemlidir. Dışkınızda kan fark ederseniz veya ateşiniz yükselirse lütfen derhal doktorunuza başvurun.
+	Muayeneden sonra neler olabilir?	.
+	Muayeneden sonra hangi belirtiler ortaya çıkabilir?	.
+	İşlemden sonra hangi belirtiler ortaya çıkabilir?	.
+	İşlemden sonra ne olabilir?	.
+	Kolonoskopi sonrası hangi belirtiler ortaya çıkabilir?	.
+	Kolonoskopiden sonra neler olabilir?	.
+	Muayeneden sonra neler olabilir?	.
+	İşlemden sonra hangi rahatsızlıklar normaldir?	.
+	Muayeneden sonra kramp veya gaz beklemeli miyim?	.
+	Sınav sonrası hangi sorunlara dikkat etmeliyim?	.
+	
+	Muayeneden sonra ne olur?	Muayeneden sonra taburcu olana kadar endoskopi merkezimizde gözetim altında tutulacaksınız. En az 2 saat kalmayı bekleyin. Ayrıca o gün araba kullanmayı veya herhangi bir egzersiz yapmayı planlamayın, en iyisi sakin bir şekilde kabul etmektir.
+	Muayeneden sonra ne yapmalıyım?	.
+	Muayene sonrasında bilmem gerekenler nelerdir?	.
+	Muayeneden sonra kalmam gerekecek mi?	.
+	Sınavdan sonra istediğimi yapabilir miyim?	.
+	İşlemden hemen sonra ne yapmalıyım?	.
+	Muayenemden sonra klinikte kalmam gerekiyor mu?	.
+	İşlemden sonra normal faaliyetlerime devam edebilir miyim?	.
+	
+	Sınav günü eve kendim gidebilir miyim?	Sedasyon ("uyku iğnesi" veya "uyku hapı") aldıysanız, 12 saat boyunca kendi başınıza araç kullanamazsınız. Toplu taşıma araçları, taksi veya size eşlik eden bir kişinin sizi götürmesine izin verilir. Bu gün dinlenin ve aktivitelerinizi en aza indirin.
+	Sınav günü araç kullanabilir miyim?	.
+	Kolonoskopiden sonra araba kullanabilir miyim?	.
+	Muayeneden sonra araba kullanabilir miyim?	.
+	Muayene sonrasında nelere dikkat edilmesi gerekiyor?	.
+	İşlemden sonra eve kendim dönebilir miyim?	.
+	Kolonoskopiden sonra araba kullanmak güvenli midir?	.
+	Beni eve bırakacak birine ihtiyacım var mı?	.
+	
+	Muayeneden sonra spor yapabilir miyim?	Muayeneden önce her zamanki gibi spor yapabilirsiniz, ancak muayene günü için önemli bir aktivite planlamamanız daha iyi olur. Ancak ertesi günden itibaren her zamanki gibi spor yapabilir, gerekirse yavaşlayabilirsiniz.
+	Spor yapabilir miyim?	.
+	Egzersiz yapabilir miyim?	.
+	Çalışabilir miyim?	.
+	Kolonoskopiden sonra egzersiz yapabilir miyim?	.
+	Egzersiz yapmaya ne zaman dönebilirim?	.
+	Sınavdan sonra spor yapmamda bir sakınca var mı?	.
+	
+	Bağırsak hareketliliğinin ve bağırsak hareketlerinin normale dönmesi ne kadar sürer?	Bağırsak hareketliliğinin ve bağırsak hareketlerinin normale dönmesi birkaç gün sürebilir.
+	Rahatsızlığın geçmesi ne kadar sürer?	.
+	Rahatsızlığım ne zaman geçecek?	.
+	Tekrar normal bir bağırsak hareketine sahip olmam ne kadar sürer?	Bağırsağı tamamen boşalttınız. Dışkı önce yeniden oluşmalıdır. Bağırsak hareketlerinizin bildiğiniz şekle dönmesi 10 gün kadar sürebilir.
+	
+	Dışkımda kan görürsem, kan kusarsam veya ateşim çıkarsa ne yapmalıyım?	Dışkınızda kan görürseniz, kan kusarsanız veya ateşiniz varsa derhal bir sağlık uzmanına başvurmalısınız.
+	Muayeneden sonra ne yiyebilirim?	Prensip olarak her şeyi tekrar yiyebilir ve içebilirsiniz. Ancak, bağırsağı yiyeceklerle dikkatli bir şekilde yeniden tanıştırmanızı öneririz. Kolonu tamamen boşalttınız. Makarna, çorba, ekmek vb. gibi kolay sindirilebilir yiyeceklerle başlayın.
+	Muayeneden sonra ne yiyip içebilirim?	Kural olarak, tüm yiyecekleri tekrar yiyebilirsiniz. Ancak, muayene görevlisine sorun. Kolay sindirilebilen yiyecek ve içeceklerle (örn. sandviç, çay) başlamanızı öneririz. Muayene günü genellikle alkolden kaçınılmalıdır.
+	Muayeneden sonra da randevulara katılabilir miyim?	Muayene günü için önemli bir aktivite planlamamanız daha iyi olacaktır. Ancak, ertesi günden itibaren randevularınıza her zamanki gibi katılabileceksiniz
+	Muayene günü tüm ilaçlarımı alabilir miyim?	İlaç almakla ilgili herhangi bir sorunuz varsa, lütfen endoskopi departmanımızla veya uzman doktorunuzla iletişime geçin.
+	
+	İşlemden sonra ne kadar sürede kendimi normal hissederim?	İşlemden sonraki birkaç saat içinde kendinizi normal hissetmeye başlamalısınız, ancak yatıştırıcıdan kalan etkilerin tamamen geçmesi bir veya iki gün sürebilir.
+	Sakinleştiricinin etkisinin geçmesi ne kadar sürer?	.
+	
+	Kolonoskopi bittikten sonra ne olur?	Dinlendikten sonra doktorunuz sizinle test sonuçları hakkında konuşacaktır. Örnekler alınmışsa, analiz genellikle 2-3 iş günü sürer. Size ve aile hekiminize yazılı olarak bilgi verilecektir.
+	Eve ne zaman gidebilirim?	Endoskopi merkezinde toplam 2 saat geçirmeyi bekleyebilirsiniz. Elbette daha kısa veya daha uzun da olabilir.
+	Tekrar araba kullanmama ne zaman izin verilecek?	"Uyku iğnesi" yaptırdıysanız, ancak 12 saat sonra tekrar aktif olarak trafiğe çıkabilirsiniz
+
+// just before the colonoscopy
+	Prosedür konusunda gerginim, ne yapmalıyım?	Prosedür hakkında gergin hissediyorsanız, kaygınızı yönetmek için kontrol edebileceğiniz şeylere odaklanmanız önemlidir. Öncelikle, prosedür hakkında olabildiğince fazla bilgi toplamaya çalışın. Adım adım neler olacağını anlamak, sürecin gizemini çözmeye ve korkularınızı azaltmaya yardımcı olabilir. Sağlık hizmeti sağlayıcınızla konuşmak da güvence ve netlik sağlayabilir; sahip olduğunuz belirli soruları yanıtlayabilir ve endişelerinizi gidermeye yardımcı olabilirler.
+	Sınava zihinsel olarak nasıl hazırlanabilirim?	.
+DontShowAsExample	Gerginim.	.
+DontShowAsExample	Endişeliyim.	.
+	
+	Bana zarar verir mi?	Muayene günü, işlemin ağrısız olması için sedasyon alacaksınız. Ancak işlemden sonra kendinizi iyi hissetmemeniz mümkündür. Belirtiler gün içinde düzelmezse, lütfen Ulm Üniversite Hastanesi Endoskopi 0731-500-44632 ile iletişime geçin.
+	Sınav günü ne yapmalıyım?	Muayene günü müshil solüsyonunun 2. poşetini hazırlayın. Randevunuzdan en az 3 saat önce hazır olacak şekilde içmeye başlayın. Müshil solüsyonunu bir saat içinde büyük yudumlar halinde için. Bunu yapmak için en az 1-2 litre berrak sıvı için. İçerken çok erken olsa da, optimal bağırsak temizliğine ulaşmak çok önemlidir.
+	
+	Nereye gitmem gerekiyor?	Muayene günü Ulm Üniversite Hastanesi, Oberer Eselsberg, Albert-Einstein-Allee 23, Seviye 1, Endoskopi Kayıt Merkezi'ne gitmeniz gerekmektedir
+	Kliniğe nasıl gidebilirim?	.
+	Önce hasta kabul merkezine mi gitmem gerekiyor?	Üç aylık dönemdeki ilk ziyaretinizse, öncelikle sevk kağıdınızla birlikte 2. Kattaki Merkezi Kabul Departmanına gitmelisiniz
+	Klinik tam olarak nerede bulunuyor?	.
+	Önce bir yere giriş yapmam gerekiyor mu?	.
+	Endoskopi bölümüne nasıl gidebilirim?	.
+
+// laxatives
+	Laksatifler ne işe yarayacak?	Laksatifler bağırsak hareketlerinde/ishalde artışa yol açacaktır. Bu muayene için arzu edilen bir etkidir ve sizi endişelendirmemelidir
+	Çalışma ve hastalık sertifikaları ne olacak?	Kural olarak, muayene günü için bir hastalık raporu alacaksınız. Muayene gününün ertesi gününden itibaren normal şekilde işinize dönebilirsiniz. Ancak, muayeneden sonraki gün belirtileriniz devam ederse, doktorunuzu tekrar görmelisiniz.
+	İşe geri dönebilecek miyim?	Muayene gününün ertesi gününden itibaren normal şekilde işinize dönebilirsiniz. Ancak muayeneden sonraki gün belirtileriniz devam ederse doktorunuzu tekrar görmelisiniz.
+	
+	Gerçekten her şeyi içmek zorunda mıyım?	Bağırsaklar ancak solüsyonu tamamen alırsanız yeterince temizlenebilir.
+	Çözeltinin tamamını içmek gerekli mi?	.
+	
+	Hepsini bir kerede içebilir miyim?	Lütfen laksatif paketindeki talimatlara uyun.
+	Ürünü nasıl hazırlamalıyım?	.
+	
+	Şimdi de ishal oldum. Bu normal mi?	İshal olmak tamamen normaldir. Müshil bağırsağı temizler ve dışkıyı bağırsaktan tamamen dışarı atar. Biz bunu ishal olarak algılarız.
+DontShowAsExample	İshal oldum.	.
+	İshalim var, bu beklenen bir şey mi?	.
+	Besin takviyesi almaya başladığımdan beri bağırsak hareketlerimde/ishalde artış oldu. Bu normal mi?	.
+	
+	Ne sıklıkta tuvalete gitmem gerekiyor?	Her bağırsak farklı tepki verdiği için bir kişinin tuvalete gitme sayısı büyük ölçüde değişir. Ancak bağırsağın ne zaman boşaldığını fark edeceksiniz.
+	Bir banyonun yanında ne kadar süre kalmam gerekecek?	.
+	
+	Neden böyle içmek zorundayım?	Bağırsak artık tamamen boşaltılmıştır. Muayene eden kişi ancak o zaman bağırsağınızdaki tüm bölgeleri iyi bir şekilde değerlendirebilir.
+	Birkaç kez tuvalete gittim. Hiçbir şey çıkmıyor.	Müshil önlemlerini tamamladıktan sonra dışkınız papatya çayına benziyorsa ve artık katı madde görünmüyorsa, kolonoskopi için iyi hazırlanmışsınız demektir.
+	
+	Müshil ilacına ne zaman başlamalıyım?	İlk müshil ilacını muayeneden bir gün önce saat 17:00'de içmelisiniz. Müshil solüsyonunu bir saat içinde büyük yudumlar halinde için ve en az 1-2 litre berrak sıvı tüketin. Muayene günü müshili randevunuzdan 3 saat önce içmelisiniz. İlki ile aynı şekilde için ve berrak sıvılar içmeyi unutmayın. İçtiğinizde çok erken olsa da, optimal bağırsak temizliğine ulaşmak çok önemlidir.
+	Müshil almak zorunda mıyım?	.
+	Başlatma önlemlerine ne zaman başlamalıyım?	.
+	Müshil solüsyonunu içmeye ne zaman başlamalıyım?	.
+	İlk poşeti ne zaman almalıyım?	.
+	
+	İlk solüsyonu ne zaman içmeliyim?	İlk müshili randevudan bir gün önce içmelisiniz. Müshil solüsyonunun 1. torbasını karıştırın. Saat 17:00'de içmeye başlayın. Müshil solüsyonunu bir saat içinde büyük yudumlar halinde için. En az 1-2 litre berrak sıvı içiniz.
+	İlk solüsyonu ne zaman içmeliyim?	.
+	İlk müshili ne zaman içmeliyim?	.
+	İlk müshili ne zaman içmeliyim?	.
+	Müshil ilacını ne zaman almaya başlamalıyım?	.
+	
+	Neden iki kere içmek zorundayım?	Bağırsak hareketlerinizi muayeneden önceki akşam ile muayene günü arasında bölmek bağırsaklarınızın temizliğini artırır. Ayrıca bir kerede çok fazla içmek zorunda kalmazsınız.
+	Neden iki doz içmem gerekiyor?	.
+	
+	Müshil ilacının ikinci torbasını ne zaman almalıyım?	Test günü, planlanan randevudan 3 saat önce müshilin 2. yarısını için.
+	Müshil ilacının 2. torbasını ne zaman almalıyım?	.
+	Müshil ilacının diğer torbasını ne zaman almalıyım?	.
+	
+	Laksatif önlemlerden sonra dışkım nasıl görünmelidir?	Dışkınız papatya çayına benzemeli ve artık katı madde içermemelidir.
+	Müshil ilacından sonra dışkım olması gerektiği gibi görünmezse ne yapmalıyım?	Lütfen bu durumu endoskopi merkezine vardığınızda bize bildirin.
+	
+// bring to examination
+	Muayeneye ne getirmeliyim?	Aksi kararlaştırılmadıkça, imzalı bilgi formu, güncel kan değerleri (10 günden eski olmayan pıhtılaşma ve kan sayımı) ve varsa bir alerji pasaportu (lütfen muayene başlamadan önce herhangi bir ilaç intoleransını muayene görevlisine bildirin). Ayrıca sıcak tutan çorapların getirilmesi tavsiye edilir.
+	Sınava gelirken yanımda ne getirmeliyim?	.
+	Prosedüre gelirken yanımda ne getirmeliyim?	.
+	Prosedür için yanımda ne getirmeliyim?	.
+	Kolonoskopiye gelirken yanımda ne getirmeliyim?	.
+	Kolonoskopiye gelirken yanımda ne getirmeliyim?	.
+	Yanımda ne getirmem gerekiyor?	.
+	Muayeneye gelirken ne getirmem gerekiyor?	.
+	Muayeneye herhangi bir şey getirmem gerekiyor mu?	.
+	
+	Kolonoskopi için hangi kan değerlerine ihtiyacım var?	Kolonoskopi için küçük kan sayımı (trombosit) ve pıhtılaşma (Quick, PTT) değerleri gereklidir.
+
+	Neden sıcak tutan çoraplar getirmem gerekiyor?	Ayaklarınız üşümeye eğilimliyse çoraplar yardımcı olur.
+	Neden sıcak çoraplar?	.
+
+// diet information
+ImageHighFibreFood	Yüksek lifli gıda nedir?	Yüksek lifli gıdalara örnek olarak kavun, kivi, domates, üzüm, çilek, müsli, kepekli ürünler, kabak, marul, pırasa, fasulye vb. verilebilir.
+ImageHighFibreFood	Bana yüksek lifli gıda örnekleri verebilir misiniz?	.
+ImageHighFibreFood	Bana yüksek lifli gıda örnekleri verin.	.
+ImageHighFibreFood	Lif oranı yüksek yiyecekler hangileridir?	.
+	
+ImageSeedFood	Tohum içeren gıdalar ve lif açısından zengin sebzeler nelerdir?	Tohum içeren gıdalara ve lif açısından zengin sebzelere örnek olarak kavun, kivi, domates, üzüm, çilek, müsli, VK ürünleri, haşhaş tohumu, kabak, marul, pırasa ve fasulye verilebilir.
+ImageSeedFood	Hangi gıdalarda kaçınmam gereken tohumlar var?	.
+ImageSeedFood	Hangi yiyecekler tohum içerir?	.
+ImageSeedFood	Bana tohum içeren gıdalardan örnekler verebilir misiniz?	.
+ImageSeedFood	Bana tohum içeren yiyeceklerden örnekler verin.	.
+ImageSeedFood	Hangi yiyecekler tohum içerir?	.
+	
+ImageLowFibreFood	Düşük lifli yemek nedir?	Düşük lifli öğünlere örnek olarak erişte veya patatesli berrak bir çorba verilebilir.
+ImageLowFibreFood	Düşük lifli gıdalar nelerdir?	Düşük lifli yiyeceklere örnek olarak açık çorba, erişteli çorbalar, patates püresi ve beyaz ekmek verilebilir.
+ImageHighFibreFood	Lif nerede bulunur?	Lif domates, kabak, marul, pırasa, fasulye vb. gıdalarda bulunur.
+ImageSeedFood	Neden tohumlardan kaçınmak zorundayım?	Tohumlar endoskopu tıkayabilir ve muayeneyi önemli ölçüde bozabilir.
+ImageHighFibreFood	Neden liften kaçınmak zorundayım?	Lif içeren gıdalar bağırsakta daha uzun süre kalır. Muayene sırasında görüşü büyük ölçüde kısıtlarlar.
+
+ImageColouredDrink	Boyalı sıvılar nedir?	Boyalı sıvılar, içini göremediğiniz tüm sıvılardır. Bunlara kahve, siyah çay, süt, kola, koyu meyve çayı ve kırmızı şarap dahildir.
+ImageColouredDrink	Renkli içeceklerin kapsamına ne girer?	.
+ImageColouredDrink	Boyalı içecek nedir?	.
+ImageColouredDrink	Boyalı sıvı nedir?	.
+ImageColouredDrink DontShowAsExample	Koyu renkli içecek nedir?	.
+ImageColouredDrink DontShowAsExample	Koyu renkli sıvı nedir?	.
+ImageColouredDrink DontShowAsExample	Renkli içecek nedir?	.
+ImageColouredDrink DontShowAsExample	Renkli sıvı nedir?	.
+
+ImageClearDrink	Berrak sıvılar nelerdir?	Berrak sıvılar örneğin su, elma suyu, açık renkli çaylar.
+ImageClearDrink	Berrak sıvılar ne anlama geliyor?	.
+ImageClearDrink	Berrak içecek nedir?	.
+ImageClearDrink	Berrak sıvı nedir?	.
+ImageClearDrink	Şeffaf içecek nedir?	.
+ImageClearDrink	Şeffaf sıvı nedir?	.
+
+ImageMealExamples	Bana yemeklerden örnekler verin.	Tohumsuz düşük lifli yemek örnekleri bu görselde yer almaktadır.
+ImageMealExamples DontShowAsExample	Yemek örnekleri.	.
+
+// preparation
+ImageTable	Ne zaman yediklerime/içtiklerime dikkat etmeye başlamalıyım?	Testten üç gün öncesinden itibaren, lif bakımından zengin tohum ve sebze içeren gıdalardan kaçınılmalıdır. Testten 1 gün önce kaçınılması gereken ek şeyler vardır
+ImageTable	Muayeneden 3 gün önce ne yapmalı ya da yapmamalıyım?	.
+ImageTable	Beslenme konusunda dikkat etmem gereken bir şey var mı?	.
+ImageTable	Sınavdan önceki günlerde hangi yiyeceklerden kaçınmalıyım?	.
+ImageTable	Sınavdan üç gün önce nasıl bir diyet uygulamalıyım?	.
+
+	Neden lif ve yağ oranı yüksek yiyecekler yiyemiyorum?	Kolonoskopi sırasında görüşü bozmamak için randevudan 3 gün önce lif ve yağ oranı yüksek yiyecekler yememeniz önemlidir.
+	Neden boyalı sıvıları içemiyorum?	Renkli sıvılar muayene sırasında görüşü bozabilir.
+	
+ImageTable	Başka ne yapmama izin yok?	Muayeneden bir gün önce lif açısından zengin veya yüksek yağlı yemekler yememeli ve renkli sıvılar içmemelisiniz.
+ImageTable	Sınavdan bir gün önce ne yapmalı ya da yapmamalıyım?	Renkli içeceklerden (berrak sıvılara izin verilir), yüksek lifli ve yüksek yağlı yemeklerden ve alkolden kaçının. Lütfen öğle yemeğinde düşük lifli bir yemek yiyin.
+	
+ImageClearDrink	Kolonoskopiden önce ne tür içecekler içilebilir?	Kolonoskopiden önce her türlü berrak sıvıyı içebilirsiniz.
+
+// copy questions (these are pasted into the next sections)
+ImageTable CopyQuestionWhatToDo	Şimdi ne olacak?	Şu anda hiçbir şey yapmanıza gerek yok, hazırlık randevudan 3 gün önce başlıyor. Daha sonra düşük lifli ve tohumsuz bir diyete başlamanız gerekecektir.
+ImageTable CopyQuestionWhatToDo	Ne yapmam gerekiyor?	.
+ImageTable CopyQuestionWhatToDo	Ne yapmalıyım?	.
+
+ImageTable CopyQuestionFood	Hangi gıdalardan kaçınmalıyım?	Şu anda her zamanki gibi yiyebilirsiniz, hazırlık randevudan 3 gün önce başlar. Daha sonra düşük lifli ve tohumsuz bir diyete başlamanız gerekecektir.
+ImageTable CopyQuestionFood DontShowAsExample	Ne diyeti?	.
+ImageTable CopyQuestionFood	Diyet nedir?	.
+ImageTable CopyQuestionFood	Ne yemem gerekiyor?	.
+ImageTable CopyQuestionFood	Ne yiyebilirim?	.
+ImageTable CopyQuestionFood	Ne yememe izin var?	.
+ImageTable CopyQuestionFood DontShowAsExample	Bir şeyler yiyebilir miyim?	.
+ImageTable CopyQuestionFood DontShowAsExample	Bir şeyler yemek istiyorum.	.
+ImageTable CopyQuestionFood	İşlemden önce lif açısından zengin yiyecekler yiyebilir miyim?	.
+ImageTable CopyQuestionFood	Sınavdan üç gün önce ne yemekten kaçınmalıyım?	.
+ImageTable CopyQuestionFood	Atlamam gereken sebzeler var mı?	.
+
+ImageTable CopyQuestionDrink DontShowAsExample	İçebilir miyim?	Şu anda istediğiniz her şeyi içebilirsiniz, ancak sınavdan bir gün önce lütfen renkli sıvılar içmekten kaçının (örn. kahve, siyah çay, süt, kola, koyu meyve çayı, kırmızı şarap)
+ImageTable CopyQuestionDrink	Ne içebilirim?	Muayeneden 1 gün öncesine kadar herhangi bir şey içebilirsiniz. Bu günden itibaren lütfen renkli sıvılar (örn. kahve, siyah çay, süt, kola, koyu meyve çayı, kırmızı şarap) içmekten kaçınınız.
+ImageColouredDrink CopyQuestionDrink	Kaçınmam gereken sıvılar var mı?	.
+ImageColouredDrink CopyQuestionDrink	Sınavdan bir gün önce kahve veya çay içebilir miyim?	.
+
+ImageClearDrink CopyQuestionDrink	Ne içmeme izin var?	Tüm berrak sıvılara (örn. su, elma suyu, açık renkli çaylar) her miktarda izin verilmektedir. İşte içebileceğiniz şeylere bir örnek.
+ImageClearDrink CopyQuestionDrink DontShowAsExample	Bir içki alabilir miyim?	.
+
+CopyQuestionAlcohol	Alkol içebilir miyim?	Randevu günü ve bir gün öncesinde alkol alamazsınız. İşlemden sonraki gün de içilmemesi tavsiye edilir.
+	Su içebilir miyim?	Kolonoskopi sırasında görüşü bozmayan berrak bir sıvı olduğu için istediğiniz zaman su içebilirsiniz.
+	
+CopyQuestionLaxatives	Bunun tadı iğrenç.	Eğer laksatiflerden bahsediyorsanız, şu anda onları içmemelisiniz. Ancak ilk solüsyonu kolonoskopiden önceki gün öğleden sonra içmeye başlamalısınız.
+CopyQuestionLaxatives	Bunun tadı kötü.	.
+CopyQuestionLaxatives	Bunun tadı berbat.	.
+CopyQuestionLaxatives	Bunun tadı berbat.	.
+CopyQuestionLaxatives	Bunun tadı berbat, ne yapabilirim?	.
+CopyQuestionLaxatives	Bu solüsyonun tadını daha iyi hale getirmenin bir yolu var mı?	.
+CopyQuestionLaxatives	Müshil ilacı içmeyi kolaylaştıracak ipuçlarınız var mı?	.
+
+3
+
+CopyQuestionWhatToDo ImageTable	.	Şu anda diyetinize odaklanmalısınız. Tohum veya yüksek lifli gıdalar içeren herhangi bir yiyecek yemeyin.
+CopyQuestionFood ImageBadFood	.	Artık tohum içeren veya yüksek lifli gıdalar yememelisiniz. İşte kaçınmanız gereken şeylere bir örnek.
+CopyQuestionDrink	.	Şu anda istediğiniz her şeyi içebilirsiniz, ancak kolonoskopiden bir gün önce lütfen renkli sıvılar içmekten kaçının (örn. kahve, siyah çay, süt, kola, koyu meyve çayı, kırmızı şarap)
+
+//// Second day has the same considerations as third day
+2	.
+	
+1
+
+CopyQuestionWhatToDo ImageTable	.	Şu andan itibaren, tohum içeren veya yüksek lifli yiyecekleri yememenin yanı sıra, yüksek yağlı yiyeceklerden ve renkli içeceklerden de kaçınmalısınız. Alkolden de uzak durulması tavsiye edilir.
+CopyQuestionFood ImageBadFood	.	Şu andan itibaren, tohum içeren veya yüksek lifli yiyecekleri yememenin yanı sıra, yüksek yağlı yiyeceklerden de kaçınmalısınız. İşte kaçınmanız gereken şeylere bir örnek.
+CopyQuestionDrink ImageColouredDrink	.	Muayene sırasında görüşü engelleyebileceğinden lütfen renkli sıvılar (örn. kahve, siyah çay, süt, kola, koyu meyve çayı, kırmızı şarap) içmekten kaçının. İşte kaçınmanız gereken şeylere bir örnek.
+CopyQuestionAlcohol	.	Prosedür nedeniyle bu günlerde alkol alınması önerilmemektedir.
+CopyQuestionLaxatives	.	Ne yazık ki, lezzet olağanüstü değil. Bu konuda haklısınız. İşte birkaç ipucu: İçmeden önce şişelenmiş solüsyonu buzdolabına koyun. Pipet de kullanabilirsiniz. Likörü açık renkli şurup veya elma suyu ile de seyreltebilirsiniz.
+
+	Yarın iki yarısını da içmek zorunda mıyım?	Kolonoskopi randevunuzdan en az 3 saat önce 2. yarısını içmiş olmalısınız.
+
+0
+
+CopyQuestionWhatToDo ImageTable	.	Bu sabah oruç tutmanız gerekir, bu nedenle işlem bitene kadar yemek yememeye çalışmalısınız. Ancak kolonoskopinin başlamasından 2 saat öncesine kadar berrak elma suyu, papatya çayı ve su içebilirsiniz.
+CopyQuestionFood	.	.
+CopyQuestionDrink ImageClearDrink	.	Muayene sırasında görüşü engelleyebileceğinden lütfen renkli sıvılar (örn. kahve, siyah çay, süt, kola, koyu meyve çayı, kırmızı şarap) içmekten kaçının. Muayeneden önceki son 2 saat hiçbir şey içmemeye çalışın. İşte içebileceğiniz şeylere bir örnek.
+CopyQuestionAlcohol	.	Bugün alkol almamalısınız.
+CopyQuestionLaxatives	.	Ne yazık ki, lezzet olağanüstü değil. Bu konuda haklısınız. İşte birkaç ipucu: İçmeden önce şişelenmiş solüsyonu buzdolabına koyun. Pipet de kullanabilirsiniz. Likörü açık renkli şurup veya elma suyu ile de seyreltebilirsiniz.
+	
+-1
+
+CopyQuestionWhatToDo	.	Dinlendikten sonra doktorunuz sizinle test sonuçları hakkında konuşacaktır. Örnekler alınmışsa, analiz genellikle 2-3 iş günü sürer. Siz ve aile doktorunuz yazılı olarak bilgilendirileceksiniz. Endoskopi merkezinde toplam 2 saat geçirmeyi bekleyebilirsiniz. Elbette daha kısa veya daha uzun da olabilir.
+CopyQuestionFood	.	Prensip olarak, her şeyi tekrar yiyip içebilirsiniz. Ancak, bağırsağı yiyeceklerle dikkatli bir şekilde yeniden tanıştırmanızı öneririz. Kolonu tamamen boşalttınız. Makarna, çorba, ekmek vb. gibi kolay sindirilebilir gıdalarla başlayın.
+CopyQuestionDrink	.	Endoskopiden taburcu olduktan sonra ne içebileceğiniz konusunda herhangi bir kısıtlama yoktur. O zaman bile, bugün içki içmemeniz önerilir.
+CopyQuestionAlcohol	.	İşlemden sonraki gün içilmemesi tavsiye edilir.
+	Her şeyi tekrar içebilir miyim?	Endoskopiden taburcu olduktan sonra ne içebileceğiniz konusunda herhangi bir kısıtlama yoktur.
+	
+// bowels after the examination
+	Çok şişmiş hissediyorum. Bu normal mi?	Muayene için, muayene görevlisi bağırsağı hafifçe genişletmek için karbondioksit kullanmıştır. Bu gaz şişkinlik hissinden sorumludur. Biraz rahatsız edici ama normaldir. Ancak bu his geçmezse veya kötüleşirse endoskopi merkeziyle iletişime geçin. Size daha fazla yardımcı olacağız.
+	Karın ağrım var.	Semptomlar gün boyunca düzelmezse lütfen bir doktora başvurun.
+	Dışkımda kan var. Ne yapmam gerekiyor?	Muayene sırasında polipler çıkarılırsa, nadir durumlarda ameliyat sonrası kanama meydana gelebilir. Lütfen 0731-500-44632 numaralı telefondan Ulm Üniversite Hastanesi endoskopi bölümüne başvurun!
+	Kanıyorum.	İlk 10 gün içinde kanama meydana gelebilir. Bu durumda lütfen bizimle iletişime geçin. Süre çok değişkendir ve kişiden kişiye farklılık gösterir
+
+	Ateşim var.	Kendinizi kötü hissederseniz, lütfen hemen Ulm Üniversite Hastanesi 0731-500-44632 endoskopi bölümüne başvurun.
+	Kan kusuyorum.	.

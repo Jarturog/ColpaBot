@@ -1,0 +1,349 @@
+{}
+.
+// Comments start with //
+// The first line, {} currently, is a special symbol for adding text dynamically from the program, it is the dynamic substitution symbol
+// The second line, . currently, is another special symbol, this one representing the static subsitution symbol
+// Answers that are a point (.) are an abbreviation of the previous answer, when executing the file the previous answer is copied into the point
+// The point after a number copies the whole number that came before into the new one
+// The point where a question should be copies the questions that have the same CopyQuestion... key where the point is applying the answer there
+// It is only possible to combine keys with CopyQuestion... and DontShowAsExample. 
+// These keys should not be the first one in the column (except with the sections with numbers, there it does not matter the position of CopyQuestion...) 
+// Before each section the days before the examination are indicated. The first section is the exception since it does not have a designated time. 
+// The file is in format: Actions	Question	Answer
+
+// user-specific answers
+AppointmentDate	When is my appointment?	Your appointment is on day {} at {}.
+AppointmentDate	When is my appointment scheduled?	.
+AppointmentDate	Can you tell me the date and time of my appointment?	.
+AppointmentDate	When am I supposed to come in for my appointment?	.
+// ChangeAppointment' default answer is an error code because it is supposed to be answered with a Dialog in code instead of a simple answer
+ChangeAppointment	I would like to change my appointment date.	I am sorry but there seems to be a problem preventing me from rescheduling, please contact the endoscopy centre to let them know what has happened.
+ChangeAppointment	I need to reschedule my appointment.	.
+ChangeAppointment	How can I change the date of my appointment?	.
+ChangeAppointment	Can you help me rearrange my appointment?	.
+ChangeAppointment DontShowAsExample	I have changed my appointment.	.
+ChangeAppointment DontShowAsExample	Change appointment.	.
+
+DontAnswer DontShowAsExample	Ok	:)
+DontAnswer DontShowAsExample	Okay	.
+	
+// general answers
+DontShowAsExample	Hello.	Hello. Is there something you need?
+DontShowAsExample	Hey.	.
+DontShowAsExample	Hi.	Hi! What can I do for you?
+DontShowAsExample	Hello, how are you?	Hello! Can I do something for you?
+DontShowAsExample	Hi there! Can I ask you something?	Hi! Ask me whatever you might be wondering.
+DontShowAsExample	Thank you.	I am here to help you! Do not hesitate to ask anything you might be wondering.
+DontShowAsExample	Thanks.	.
+DontShowAsExample	Thank you for helping me out.	.
+DontShowAsExample	Thanks, I appreciate it!	.
+	
+// contact situations
+	Who can I contact?	You can contact our team by telephone at any time: Endoscopy at Ulm University Hospital 0731-500-44632
+	Where can I get in touch if I have any questions?	.
+	I want to talk to a doctor.	.
+	I want to see a doctor.	.
+	Can I speak with someone over the phone?	.
+	Where can I find the contact number for your team?	.
+
+	
+	I need another appointment.	If you are unable to keep your appointment, please contact our endoscopy registration desk on 0731-500-44632 to make a new appointment. After that remember to ask me to change your appointment so I can update the date I have stored.
+	I can't come.	.
+	I need to book a new appointment, who do I call?	.
+	How can I cancel my appointment?	.
+	Is there a way to reschedule without calling?	.
+	
+	What medications do I have to take?	If you have any questions about taking medication, please contact our endoscopy department or your attending physician.
+	When can I cancel at the latest?	If you cannot come to the agreed appointment please inform us at least 24 hours in advance.
+	
+DontShowAsExample	That didn't work out well. What should I do?	If you are having problems please contact the endoscopy department. We will help you further.
+DontShowAsExample	This is going bad.	.
+DontShowAsExample	Help.	.
+	
+noneOfTheQuestionsOption DontShowAsExample	My question is not here.	Sorry for not comprehending your question. I recommend you contacting our team by telephone at any time so you can have an answer to the questions I do not understand: Endoscopy at Ulm University Hospital 0731-500-44632.
+	
+// after colonoscopy
+	What symptoms may occur after the examination?	Some symptoms that may occur after the examination are flatulence, cramps and bloating in the abdomen as a result of air introduced during it. Exercise and warmth can help to alleviate the discomfort, but with time it should resolve naturally. If the discomfort persists, please contact your doctor immediately. It is also important to note that after the removal of polyps or the performance of other therapeutic procedures, bleeding may occur in rare cases within the first 10 days. If you notice blood in your stool or develop a fever, please contact your doctor immediately.
+	What can happen after the examination?	.
+	What symptoms can occur after the examination?	.
+	What symptoms may occur after the procedure?	.
+	What can happen after the procedure?	.
+	What symptoms may occur after the colonoscopy?	.
+	What can happen after the colonoscopy?	.
+	What can happen after the examination?	.
+	What discomforts are normal after the procedure?	.
+	Should I expect cramps or gas after the examination?	.
+	What post-exam issues should I watch for?	.
+	
+	What happens after the examination?	After the examination you will be monitored in our endoscopy centre until you can be discharged. Expect a minimum stay of 2 hours. Also do not plan on driving or doing any exercise that day, it is best to take it calmly.
+	What do I do after the examination?	.
+	What do I need to know after the examination?	.
+	Will I need to stay after the examination?	.
+	Can I do whatever I want after the examination?	.
+	What should I do right after the procedure?	.
+	Do I need to stay at the clinic after my exam?	.
+	Can I resume regular activities after the procedure?	.
+	
+	Can I drive home myself on the day of the examination?	If you have received sedation ("sleeping injection" or "sleeping pill"), you may not drive a vehicle yourself for 12 hours. Public transport, a taxi or an accompanying person to drive you are permitted. Rest up and reduce your activities to a minimum on this day.
+	Can I drive on the day of the examination?	.
+	Can I drive after a colonoscopy?	.
+	Can I drive after the examination?	.
+	What needs to be considered after the examination?	.
+	Can I drive myself back home after the procedure?	.
+	Is it safe to drive after the colonoscopy?	.
+	Do I need someone to drive me home?	.
+	
+	Can I do sports after the examination?	Before the examination you can do sports like usual, but for the day of the examination it is better not to plan any major activities. From the following day, however, you can do sports again as usual, taking it slowly if needed.
+	Can I do sports?	.
+	Can I exercise?	.
+	Can I work out?	.
+	Can I work out after the colonoscopy?	.
+	When can I get back to exercising?	.
+	Is it okay to play sports after the exam?	.
+	
+	How long does it take for bowel mobility and bowel movements to normalise?	It may take a couple of days for bowel motility and bowel movements to return to normal.
+	How long does it take for the discomfort to go?	.
+	When will my discomfort go?	.
+	How long does it take until I have a normal bowel movement again?	You have completely emptied the bowel. The stool must first form again. It can take up to 10 days for your bowel movements to return to the way you know them.
+	
+	What should I do if I notice blood in my stool, vomit blood or get a fever?	If you notice blood in your stool, vomit blood or have a fever you should contact a medical professional immediately.
+	What can I eat after the examination?	In principle, you can eat and drink everything again. However, we recommend carefully reintroducing the bowel to food. You have completely emptied the colon. Start with easily digestible food like pasta, soups, bread, etc.
+	What can I eat and drink after the examination?	As a rule, you can eat all foods again. However, ask the examiner. We recommend starting with easily digestible food and drinks (e.g. sandwiches, tea). Alcohol should generally be avoided on the day of the examination.
+	Can I still attend appointments after the examination?	It is better not to plan any major activities for the day of the examination. However, you will be able to attend appointments as usual from the following day
+	Can I take all my medication on the day of the examination?	If you have any questions about taking medication, please contact our endoscopy department or your attending physician.
+	
+	How soon will I feel normal after the procedure?	You should start feeling normal within a few hours after the procedure, though it can take a day or two for any residual effects from the sedative to fully wear off.
+	How long does it take for the sedative to wear off?	.
+	
+	What happens after the colonoscopy finishes?	Once you have rested, the doctor will talk to you about the results of the test. If samples have been taken, the analysis usually takes 2-3 working days. You and your family doctor will be informed in writing.
+	When can I go home?	You can expect to spend a total of 2 hours in the endoscopy centre. It can of course also be shorter or longer.
+	When will I be allowed to drive again?	If you have had a "sleep injection", you may only actively participate in road traffic again after 12 hours
+
+// just before the colonoscopy
+	I’m nervous about the procedure, what should I do?	If you’re feeling nervous about the procedure, it’s important to focus on what you can control to manage your anxiety. First, try to gather as much information as you can about the procedure. Understanding what will happen step-by-step can help demystify the process and reduce your fears. Talking with your healthcare provider can also provide reassurance and clarity; they can answer any specific questions you have and help address your concerns.
+	How can I mentally prepare for the exam?	.
+DontShowAsExample	I am nervous.	.
+DontShowAsExample	I am anxious.	.
+	
+	Where do I have to go?	On the day of the examination, you must go to Ulm University Hospital, Oberer Eselsberg, Albert-Einstein-Allee 23, Level 1, Endoscopy Registration Centre
+	How do I go to the clinic?	.
+	Do I have to go to the patient admission centre first?	If it is your first visit of the quarter, you should first go to the Central Admission Department, Level 2, with your referral slip
+	Where exactly is the clinic located?	.
+	Do I need to check in somewhere first?	.
+	How do I get to the endoscopy department?	.
+	
+	Should I go on an empty stomach?	The day of the procedure you should fast to avoid any traces of food that could impair vision.
+
+// during colonoscopy
+	Will I be sedated during the colonoscopy?	You will be sedated during the procedure to avoid any pain.
+	
+	Will I be seated during the colonoscopy?	During colonoscopy you will usually lie on your side, often with your knees drawn up. Also, you will be given sedation so you do not feel any pain.
+
+DontShowAsExample	What if I poop myself during the colonoscopy?	The preparation process is designed to fully empty your bowels before the procedure, so the probability of them not being clean is very low. Even if something were to happen, the medical team is experienced in managing situations like this, so there is no need to worry. Just remember to prepare correctly for the procedure.
+
+DontShowAsExample	Will it hurt me?	On the day of the examination you will receive sedation so that the process is painless. However, after the procedure it is possible that you do not feel good. If the symptoms do not improve during the day, please contact Endoscopy at Ulm University Hospital 0731-500-44632.
+	Will the procedure hurt me?	.
+	Does the colonoscopy hurt?	.
+	
+	What do I do the day of the examination?	On the day of the examination, prepare the 2nd sachet of the laxative solution. Start drinking so that you are ready at least 3 hours before your appointment. Drink the laxative solution in large sips within an hour. To do this, drink at least 1-2 litres of clear liquids. Even though it may be very early when drinking it, it is very important to achieve optimal intestinal cleanliness.
+	
+// laxatives
+	What will the laxatives do?	The laxatives will lead to an increase in bowel movements/diarrhoea. This is a desirable effect for the examination and need not worry you
+	What about work and sickness certificates?	As a rule, you will receive a sick note for the day of the examination. You can return to work as normal from the day after the day of the examination. However, if your symptoms persist on the day after the examination, you should see your doctor again.
+	Will I be able to return to work?	You can return to work as normal from the day after the day of the examination. However, if your symptoms persist on the day after the examination, you should see your doctor again.
+	
+	Do I really have to drink everything?	The intestines can only be sufficiently cleansed if you take the solution completely.
+	Is it necessary to drink the entire solution?	.
+	
+	Can I drink it all at once?	Please adhere to the instructions in the laxatives package.
+	How should I prepare the product?	.
+	
+	I now have diarrhoea. Is that normal?	It is completely normal to have diarrhoea. The laxative cleanses the bowel and flushes the faeces completely out of the bowel. We perceive this as diarrhoea.
+DontShowAsExample	I have diarrhoea.	.
+	I have diarrhea, is this expected?	.
+DontShowAsExample	I cannot get up from the toilet.	.
+DontShowAsExample	I cannot get up from the toilet. Is that normal?	.
+DontShowAsExample	I cannot stand up from the toilet.	.
+DontShowAsExample	I cannot stand up from the toilet. Is that normal?	.
+DontShowAsExample	I do not get up from the toilet.	.
+	I have had increased bowel movements/diarrhoea since I started taking the dietary supplement. Is that normal?	.
+	
+	How often do I have to go to the bathroom?	The amount of times someone goes to the bathroom varies greatly because every bowel reacts differently. But you will notice when the bowel has emptied.
+	How long will I need to stay near a bathroom?	.
+	
+	Why do I have to drink it like this?	The bowel is now completely emptied. Only then can the examiner make a good judgement of all the areas in your bowel.
+	I have been to the bathroom several times now. Nothing comes out	If your stools resemble camomile tea after completing the laxative measures and no more solids are visible, you are well prepared for the colonoscopy.
+	
+	When should I start with the laxative?	You should drink the first laxative the day before the examination at 17:00. Drink the laxative solution in large sips within an hour and drink at least 1-2 litres of clear liquids. On the day of the examination you should drink the laxative 3 hours before your appointment. Drink it the same way as the first one and do not forget to drink clear liquids. Even though it may be very early when drinking it, it is very important to achieve optimal intestinal cleanliness.
+	Do i have to take a laxative?	.
+	When do I have to start the initiation measures?	.
+	When should I start drinking the laxative solution?	.
+	What time should I take the first sachet?	.
+	
+	When should I drink the first solution?	You should drink the first laxative the day before the appointment. Stir the 1st bag of the laxative solution. Start drinking at 17:00. Drink the laxative solution in large sips within an hour. Drink at least 1-2 litres of clear liquids.
+	When do I have to drink the first solution?	.
+	When should I drink the first laxative?	.
+	When do I have to drink the first laxative?	.
+	When should I start taking the laxative?	.
+	
+	Why do I have to drink twice?	Splitting your bowel movements between the evening before the examination and the day of the examination improves the cleanliness of your bowel. You also don't have to drink so much at once.
+	Why do I need to drink two doses?	.
+	
+	When do I take in the second bag of the laxative?	On the day of the test, drink the 2nd half of the laxative 3 hours before the scheduled appointment.
+	When do I take in the 2nd bag of the laxative?	.
+	When do I take the other bag of the laxative?	.
+	
+	What should my stools look like after the laxative measures?	Your stools should resemble camomile tea and no longer contain any solids.
+	What should I do if my stools don't look the way they should after the laxative?	Please inform us of this on arrival at the endoscopy centre.
+	
+// bring to examination
+	What should I bring to the examination?	Unless otherwise agreed, the signed information sheet, current blood values (coagulation and blood count not older than 10 days) and an allergy passport if available (please inform the examiner of any medication intolerances before the start of the examination). Also have in mind that bringing warm socks is recommended.
+	What do I have to bring to the examination?	.
+	What should I bring to the procedure?	.
+	What do I have to bring to the procedure?	.
+	What should I bring to the colonoscopy?	.
+	What do I have to bring to the colonoscopy?	.
+	What do I need to bring with me?	.
+	What do I need to bring to the examination?	.
+	Do I need to bring anything to the examination?	.
+	
+	What blood values do I need for the colonoscopy?	A small blood count (thrombocytes) and coagulation (Quick, PTT) values are required for the colonoscopy.
+
+	Why do I need to bring warm socks?	Socks are helpful if you tend to have cold feet.
+	Why warm socks?	.
+
+// diet information
+ImageHighFibreFood	What is high fibre food?	Examples of high fibre foods are melons, kiwis, tomatoes, grapes, strawberries, muesli, wholemeal products, courgettes, lettuce, leeks, beans, etc.
+ImageHighFibreFood	Can you give me examples of high fibre food?	.
+ImageHighFibreFood	Give me examples of high fibre food.	.
+ImageHighFibreFood	What food is high in fibre?	.
+	
+ImageSeedFood	What are seed containing foods and fibre rich vegetables?	Some examples of seed containing foods and fibre rich vegetables are melon, kiwi, tomatoes, grapes, strawberries, muesli, VK products, poppy seeds, courgettes, lettuce, leeks and beans.
+ImageSeedFood	Which foods have seeds I need to avoid?	.
+ImageSeedFood	Which food contains seeds?	.
+ImageSeedFood	Can you give me examples of food containing seeds?	.
+ImageSeedFood	Give me examples of food containing seeds.	.
+ImageSeedFood	What food contains seeds?	.
+	
+ImageLowFibreFood	What is a low fibre meal?	An example of a low fibre meal is a clear soup with noodles or potatoes.
+ImageLowFibreFood	What are low fibre foods?	Examples of low fibre food are clear soup, soups with noodles, mashed potatoes and white bread.
+ImageHighFibreFood	Where is fibre found?	Fibre is found in tomatoes, courgettes, lettuce, leeks, beans, etc.
+ImageSeedFood	Why do I have to avoid seeds?	The seeds can clog the endoscope and significantly impair the examination.
+ImageHighFibreFood	Why do I have to avoid fibre?	Foods containing fibre remain in the intestine for longer. They greatly restrict vision during the examination.
+
+ImageColouredDrink	What are dyed liquids?	Dyed liquids are all liquids that you cannot see through. These include coffee, black tea, milk, cola, dark fruit tea and red wine.
+ImageColouredDrink	What falls under coloured drinks?	.
+ImageColouredDrink	What is a dyed drink?	.
+ImageColouredDrink	What is a dyed liquid?	.
+ImageColouredDrink DontShowAsExample	What is a dark drink?	.
+ImageColouredDrink DontShowAsExample	What is a dark liquid?	.
+ImageColouredDrink DontShowAsExample	What is a coloured drink?	.
+ImageColouredDrink DontShowAsExample	What is a coloured liquid?	.
+
+ImageClearDrink	What are clear liquids?	Clear liquids are e.g. water, apple juice, light-coloured teas.
+ImageClearDrink	What does clear liquids mean?	.
+ImageClearDrink	What is a clear drink?	.
+ImageClearDrink	What is a clear liquid?	.
+ImageClearDrink	What is a transparent drink?	.
+ImageClearDrink	What is a transparent liquid?	.
+
+ImageMealExamples	Give me examples of meals.	Examples of low-fibre meals without seeds appear in this image.
+ImageMealExamples DontShowAsExample	Example of meals.	.
+
+// preparation
+ImageTable	When do I have to start paying attention to what I eat/drink?	From three days before the test, foods containing seeds and vegetables rich in fibre should be avoided. There are additional things to avoid 1 day before the test
+ImageTable	What should I do or not do 3 days before the examination?	.
+ImageTable	Do I need to pay attention to anything nutritionally?	.
+ImageTable	What foods should I avoid in the days leading up to the exam?	.
+ImageTable	What diet should I follow three days before the exam?	.
+
+	Why can't I eat food high in fibre and fat?	It is important that you do not eat food high in fibre and fat 3 days before the appointment to not impair vision during the colonoscopy.
+	Why can't I drink dyed liquids?	Coloured liquids may impair vision during the examination.
+	
+ImageTable	What am I not allowed to do?	The day before the examination, you should not eat any fibre-rich or high-fat meals nor drink coloured liquids.
+ImageTable	What should I do or not do one day before the examination?	Avoid coloured drinks (clear liquids are permitted), high-fibre and high-fat meals and alcohol. Please have a low-fibre meal for lunch.
+	
+ImageClearDrink	What types of drinks are okay before the colonoscopy?	You can drink any type of clear liquids before the colonoscopy.
+
+// copy questions (these are pasted into the next sections)
+ImageTable CopyQuestionWhatToDo	What now?	Right now you don't have to do anything, the preparation begins 3 days before the appointment. Then you will have to start a low-fibre and no seeds diet.
+ImageTable CopyQuestionWhatToDo	What do I have to do?	.
+ImageTable CopyQuestionWhatToDo	What should I do?	.
+ImageTable CopyQuestionWhatToDo DontShowAsExample	I do not know what to do.	.
+ImageTable CopyQuestionWhatToDo DontShowAsExample	I do not know what I should do.	.
+ImageTable CopyQuestionWhatToDo DontShowAsExample	I do not know what I have to do.	.
+
+ImageTable CopyQuestionFood	Which foods should I avoid?	Right now you can eat like usual, the preparation begins 3 days before the appointment. Then you will have to start a low-fibre and no seeds diet.
+ImageTable CopyQuestionFood DontShowAsExample	What diet?	.
+ImageTable CopyQuestionFood	What is the diet?	.
+ImageTable CopyQuestionFood	What do I have to eat?	.
+ImageTable CopyQuestionFood	What can I eat?	.
+ImageTable CopyQuestionFood	What am I allowed to eat?	.
+ImageTable CopyQuestionFood DontShowAsExample	Can I eat something?	.
+ImageTable CopyQuestionFood DontShowAsExample	I want to eat something.	.
+ImageTable CopyQuestionFood	Can I have fibre rich foods before the procedure?	.
+ImageTable CopyQuestionFood	What should I avoid eating three days before the exam?	.
+ImageTable CopyQuestionFood	Are there any vegetables I should skip?	.
+
+ImageTable CopyQuestionDrink DontShowAsExample	Can I drink?	Right now you can drink everything you want, but one day before the examination please refrain from drinking coloured liquids (e.g. coffee, black tea, milk, cola, dark fruit tea, red wine)
+ImageTable CopyQuestionDrink	What can I drink?	You may drink anything up to 1 day before the examination. From this day on, please refrain from drinking coloured liquids (e.g. coffee, black tea, milk, cola, dark fruit tea, red wine)
+ImageColouredDrink CopyQuestionDrink	Are there any liquids I need to avoid?	.
+ImageColouredDrink CopyQuestionDrink	Can I have coffee or tea the day before the exam?	.
+
+ImageClearDrink CopyQuestionDrink	What am I allowed to drink?	Right now you can drink everything you want, but the day before the colonoscopy please refrain from drinking coloured liquids (e.g. coffee, black tea, milk, cola, dark fruit tea, red wine)
+ImageClearDrink CopyQuestionDrink DontShowAsExample	Can I have a drink at all?	.
+
+CopyQuestionAlcohol	Can I drink alcohol?	You may not drink alcohol the same day of the appointment and the day before. It is also recommended to not drink it the day after the procedure.
+	Can I drink water?	You can drink water whenever you want, because it is a clear liquid that does not impair visibility during colonoscopy.
+	
+CopyQuestionLaxatives DontShowAsExample	This tastes disgusting.	If you are referring to the laxatives, right now you should not drink them. You should, however, start drinking the first solution in the afternoon of the day before the colonoscopy.
+CopyQuestionLaxatives DontShowAsExample	This tastes bad.	.
+CopyQuestionLaxatives DontShowAsExample	This tastes awful.	.
+CopyQuestionLaxatives DontShowAsExample	This tastes horrible.	.
+CopyQuestionLaxatives DontShowAsExample	This tastes horrible, what can I do?	.
+CopyQuestionLaxatives	Is there a way to make this solution taste better?	.
+CopyQuestionLaxatives	Do you have tips to make drinking the laxative easier?	.
+
+3
+
+CopyQuestionWhatToDo ImageTable	.	Right now you should focus in your diet. Do not eat any foods containing seeds or high-fibre foods.
+CopyQuestionFood ImageHighFibreFood	.	You should no longer eat any foods containing seeds or high-fibre foods. Here is an example of something you should avoid.
+CopyQuestionDrink	.	.
+
+//// Second day has the same considerations as third day
+2	.
+	
+1
+
+CopyQuestionWhatToDo ImageTable	.	From now on, apart from not eating foods containing seeds or high-fibre foods, you should also avoid high-fat foods and coloured drinks. It is also recommended to avoid alcohol.
+CopyQuestionFood ImageHighFibreFood	.	From now on, apart from not eating foods containing seeds or high-fibre foods, you should also avoid high-fat foods. Here is an example of something you should avoid.
+CopyQuestionDrink ImageColouredDrink	.	All clear liquids (e.g. water, apple juice, light-coloured teas) are permitted in any quantity. Please refrain from drinking coloured liquids (e.g. coffee, black tea, milk, cola, dark fruit tea, red wine) as they could impede the vision during the examination. Here is an example of something you should avoid.
+CopyQuestionAlcohol	.	It is not recommended to drink alcohol these days because of the procedure.
+CopyQuestionLaxatives	.	Unfortunately, the flavour is not outstanding. You're right about that. Here are a few tips: Put the bottled solution in the fridge before you drink it. You can also use a straw. You can also dilute the liqueur with light-coloured syrup or apple juice.
+
+	Do I have to drink both halves tomorrow?	You must have drunk the 2nd half at least 3 hours before your colonoscopy appointment.
+
+0
+
+CopyQuestionWhatToDo ImageTable	.	This morning you should fast, therefore you should try to not eat until the procedure is finished. You can, however, drink clear apple juice, chamomile tea and water up to 2 hours before the start of the colonoscopy.
+CopyQuestionFood	.	.
+CopyQuestionDrink ImageClearDrink	.	Please refrain from drinking coloured liquids (e.g. coffee, black tea, milk, cola, dark fruit tea, red wine) as they could impede the vision during the examination. The last 2 hours before the examination try to not drink anything. Here is an example of something you can drink.
+CopyQuestionAlcohol	.	You should not drink alcohol today.
+CopyQuestionLaxatives	.	Unfortunately, the flavour is not outstanding. You're right about that. Here are a few tips: Put the bottled solution in the fridge before you drink it. You can also use a straw. You can also dilute the liqueur with light-coloured syrup or apple juice.
+	
+-1
+
+CopyQuestionWhatToDo	.	Once you have rested, the doctor will talk to you about the results of the test. If samples have been taken, the analysis usually takes 2-3 working days. You and your family doctor will be informed in writing. You can expect to spend a total of 2 hours in the endoscopy centre. It can of course also be shorter or longer.
+CopyQuestionFood	.	principle, you can eat and drink everything again. However, we recommend carefully reintroducing the bowel to food. You have completely emptied the colon. Start with easily digestible food like pasta, soups, bread, etc.
+CopyQuestionDrink	.	After discharge from the endoscopy, there are no restrictions regarding what you can drink. Even then, it is recommended to not drink today.
+CopyQuestionAlcohol	.	It is recommended to not drink it the day after the procedure.
+	Can I drink everything again?	After discharge from the endoscopy, there are no restrictions regarding what you can drink.
+	
+// bowels after the examination
+	I feel so bloated. Is that normal?	For the examination, the examiner used carbon dioxide to slightly expand the bowel. This gas is responsible for the feeling of bloating. A little unpleasant but normal. However, if the feeling does not go away or gets worse, contact the endoscopy centre. We will help you further.
+	I have abdominal pain.	If the symptoms do not improve during the course of the day, please contact a doctor.
+	I have blood in my stool. What should I do?	If polyps are removed during the examination, post-operative bleeding may occur in rare cases. Please contact the endoscopy department at Ulm University Hospital 0731-500-44632!
+	I bleed.	Bleeding may occur within the first 10 days. Should this occur, please get in touch with us. The period is very variable and differs from person to person
+
+	I have a fever.	If you feel bad, please contact the endoscopy department at Ulm University Hospital 0731-500-44632 immediately.
+	I vomit blood.	.

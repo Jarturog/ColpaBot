@@ -1,0 +1,6 @@
+// file format: first line are used languages, if the order of the languages is changed, all files should be translated again.
+// second line are all possible language codes, the third one are their names in their respective language and the last one are their names in English
+EN-GB	DE	TR	PL	UK	IT	FR	ES	RU	AR
+AR	BG	CS	DA	DE	EL	EN-GB	EN-US	ES	ET	FI	FR	HU	ID	IT	JA	KO	LT	LV	NB	NL	PL	PT-BR	PT-PT	RO	RU	SK	SL	SV	TR	UK	ZH
+العربية	български	Čeština	Dansk	Deutsch	Ελληνικά	English (British)	English (American)	Español	Eesti	Suomi	Français	Magyar	Indonesia	Italian	日本語	한국어	Lietuvių	Latviešu	Norsk Bokmål	Nederlands	Polski	Português (Brasileiro)	Português (todas as variantes do português, exceto o português brasileiro)	Română	Русский	Slovenčina	Slovenščina	Svenska	Türkçe	Українська	简体中文
+Arabic	Bulgarian	Czech	Danish	German	Greek	English (British)	English (American)	Spanish	Estonian	Finnish	French	Hungarian	Indonesian	Italian	Japanese	Korean	Lithuanian	Latvian	Norwegian Bokmål	Dutch	Polish	Portuguese (Brazilian)	Portuguese (all Portuguese varieties excluding Brazilian Portuguese)	Romanian	Russian	Slovak	Slovenian	Swedish	Turkish	Ukrainian	Chinese (simplified)

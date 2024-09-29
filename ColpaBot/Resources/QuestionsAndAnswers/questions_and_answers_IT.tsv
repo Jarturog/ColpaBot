@@ -1,0 +1,327 @@
+{}
+.
+// Before each section the days before the examination are indicated. The first section does not have a prefered time. Comments start with //
+// Answers that are a point (.) are an abbreviation of the previous answer, when executing the file the previous answer is copied into the point
+// The point after a number copies the whole number that came before into the new one
+// The point where a question should be copies the questions that have the same CopyQuestion... key where the point is applying the answer there
+// It is only possible to combine keys with CopyQuestion... and DontShowAsExample. 
+// These keys should not be the first one in the column (except with the sections with numbers, there it does not matter the position of CopyQuestion...) 
+// The file is in format: Actions	Question	Answer
+
+// user-specific answers
+AppointmentDate	Quando ho l'appuntamento?	L'appuntamento è il giorno {} alle ore {}.
+AppointmentDate	Quando è previsto il mio appuntamento?	.
+AppointmentDate	Può dirmi la data e l'ora del mio appuntamento?	.
+AppointmentDate	Quando devo presentarmi all'appuntamento?	.
+// ChangeAppointment' default answer is an error code because it is supposed to be answered with a Dialog in code instead of a simple answer
+ChangeAppointment	Desidero modificare la data del mio appuntamento.	Sono spiacente ma sembra che ci sia un problema che mi impedisce di riprogrammare, la prego di contattare il centro endoscopico per informarlo dell'accaduto.
+ChangeAppointment	Devo riprogrammare il mio appuntamento.	.
+ChangeAppointment	Come posso cambiare la data del mio appuntamento?	.
+ChangeAppointment	Potete aiutarmi a spostare il mio appuntamento?	.
+ChangeAppointment DontShowAsExample	Ho cambiato il mio appuntamento.	.
+ChangeAppointment DontShowAsExample	Cambiamento di appuntamento.	.
+
+
+DontAnswer DontShowAsExample	Ok	:)
+DontAnswer DontShowAsExample	Ok	.
+	
+// general answers
+DontShowAsExample	Salve.	Salve. Ha bisogno di qualcosa?
+DontShowAsExample	Ehi.	.
+DontShowAsExample	Ciao.	Ciao! Cosa posso fare per te?
+DontShowAsExample	Ciao, come stai?	Ciao! Posso fare qualcosa per te?
+DontShowAsExample	Ciao a tutti! Posso chiederti una cosa?	Ciao, chiedimi tutto quello che ti stai chiedendo.
+DontShowAsExample	Grazie.	Sono qui per aiutarvi! Non esitate a chiedere qualsiasi cosa vi stiate chiedendo.
+DontShowAsExample	Grazie.	.
+DontShowAsExample	Grazie per avermi aiutato.	.
+DontShowAsExample	Grazie, lo apprezzo molto!	.
+	
+// contact situations
+	Chi posso contattare?	Potete contattare il nostro team per telefono in qualsiasi momento: Endoscopia dell'Ospedale Universitario di Ulm 0731-500-44632
+	Dove posso rivolgermi in caso di domande?	.
+	Voglio parlare con un medico.	.
+	Voglio vedere un medico.	.
+	Posso parlare con qualcuno al telefono?	.
+	Dove posso trovare il numero di contatto del vostro team?	.
+
+	
+	Ho bisogno di un altro appuntamento.	Se non riuscite a rispettare l'appuntamento, contattate il nostro sportello di registrazione per endoscopia al numero 0731-500-44632 per fissare un nuovo appuntamento. In seguito, si ricordi di chiedermi di cambiare l'appuntamento, in modo da poter aggiornare la data memorizzata.
+	Non posso venire.	.
+	Devo prenotare un nuovo appuntamento, chi devo chiamare?	.
+	Come posso cancellare il mio appuntamento?	.
+	C'è un modo per riprogrammare senza chiamare?	.
+	
+	Quali farmaci devo assumere?	In caso di domande sull'assunzione di farmaci, contattare il nostro reparto di endoscopia o il proprio medico curante.
+	Quando posso disdire al più tardi?	Se non potete presentarvi all'appuntamento concordato, siete pregati di informarci con almeno 24 ore di anticipo.
+	
+DontShowAsExample	Non ha funzionato bene. Cosa dovrei fare?	Se avete problemi, contattate il reparto di endoscopia. Vi aiuteremo ulteriormente.
+DontShowAsExample	La situazione si sta mettendo male.	.
+DontShowAsExample	Aiuto.	.
+	
+noneOfTheQuestionsOption DontShowAsExample	La mia domanda non è qui.	Mi dispiace di non aver capito la sua domanda. Le consiglio di contattare il nostro team telefonicamente in qualsiasi momento per avere una risposta alle domande che non capisco: Endoscopia dell'Ospedale Universitario di Ulm 0731-500-44632.
+	
+// after colonoscopy
+	Quali sintomi possono manifestarsi dopo l'esame?	Alcuni sintomi che possono comparire dopo l'esame sono flatulenza, crampi e gonfiore addominale dovuto all'aria introdotta durante l'esame. L'esercizio fisico e il calore possono contribuire ad alleviare il disagio, ma con il tempo dovrebbe risolversi naturalmente. Se il disagio persiste, si consiglia di contattare immediatamente il medico. È inoltre importante notare che dopo l'asportazione dei polipi o l'esecuzione di altre procedure terapeutiche, in rari casi può verificarsi un'emorragia entro i primi 10 giorni. Se si nota la presenza di sangue nelle feci o se si sviluppa febbre, contattare immediatamente il medico.
+	Cosa può succedere dopo l'esame?	.
+	Quali sintomi possono manifestarsi dopo l'esame?	.
+	Quali sintomi possono manifestarsi dopo l'intervento?	.
+	Cosa può accadere dopo l'intervento?	.
+	Quali sintomi possono manifestarsi dopo la colonscopia?	.
+	Cosa può accadere dopo la colonscopia?	.
+	Cosa può succedere dopo l'esame?	.
+	Quali disagi sono normali dopo l'intervento?	.
+	Devo aspettarmi crampi o gas dopo l'esame?	.
+	A quali problemi post-esame devo prestare attenzione?	.
+	
+	Cosa succede dopo l'esame?	Dopo l'esame sarete monitorati nel nostro centro di endoscopia fino alla dimissione. La degenza minima prevista è di 2 ore. Inoltre, non prevedete di guidare o fare attività fisica quel giorno, è meglio prenderla con calma.
+	Cosa devo fare dopo l'esame?	.
+	Cosa devo sapere dopo l'esame?	.
+	Dovrò rimanere dopo l'esame?	.
+	Posso fare quello che voglio dopo l'esame?	.
+	Cosa devo fare subito dopo l'intervento?	.
+	Devo rimanere in clinica dopo l'esame?	.
+	Posso riprendere le mie attività regolari dopo l'intervento?	.
+	
+	Posso tornare a casa da solo il giorno dell'esame?	Se avete ricevuto una sedazione ("iniezione di sonno" o "sonnifero"), non potete guidare un veicolo da soli per 12 ore. Sono consentiti i mezzi di trasporto pubblici, un taxi o un accompagnatore che vi guidi. Riposatevi e riducete al minimo le vostre attività in questo giorno.
+	Posso guidare il giorno dell'esame?	.
+	Posso guidare dopo una colonscopia?	.
+	Posso guidare dopo l'esame?	.
+	Cosa bisogna considerare dopo l'esame?	.
+	Posso tornare a casa da solo dopo l'intervento?	.
+	È sicuro guidare dopo la colonscopia?	.
+	Ho bisogno di qualcuno che mi accompagni a casa?	.
+	
+	Posso fare sport dopo l'esame?	Prima dell'esame si può fare sport come al solito, ma per il giorno dell'esame è meglio non programmare attività importanti. Dal giorno successivo, invece, si può riprendere a fare sport come di consueto, se necessario con calma.
+	Posso fare sport?	.
+	Posso fare esercizio?	.
+	Posso allenarmi?	.
+	Posso allenarmi dopo la colonscopia?	.
+	Quando posso tornare ad allenarmi?	.
+	È possibile praticare sport dopo l'esame?	.
+	
+	Quanto tempo ci vuole perché la mobilità intestinale e i movimenti intestinali si normalizzino?	Possono essere necessari un paio di giorni perché la motilità intestinale e i movimenti intestinali tornino alla normalità.
+	Quanto tempo ci vuole perché il disagio scompaia?	.
+	Quando passerà il mio disagio?	.
+	Quanto tempo ci vuole prima di avere di nuovo un movimento intestinale normale?	L'intestino è stato completamente svuotato. Le feci devono prima formarsi di nuovo. Possono essere necessari fino a 10 giorni perché i movimenti intestinali tornino come li conoscete.
+	
+	Cosa devo fare se noto sangue nelle feci, se vomito sangue o se ho la febbre?	Se si nota la presenza di sangue nelle feci, si vomita sangue o si ha la febbre, è necessario contattare immediatamente un medico.
+	Cosa posso mangiare dopo l'esame?	In linea di principio, è possibile mangiare e bere di nuovo tutto. Tuttavia, si consiglia di reintrodurre con cautela l'intestino agli alimenti. Il colon è stato completamente svuotato. Iniziate con alimenti facilmente digeribili come pasta, zuppe, pane, ecc.
+	Cosa posso mangiare e bere dopo l'esame?	Di norma, è possibile mangiare di nuovo tutti gli alimenti. Tuttavia, chiedere all'esaminatore. Si consiglia di iniziare con cibi e bevande facilmente digeribili (ad esempio, panini, tè). In generale, il giorno dell'esame si dovrebbe evitare l'alcol.
+	Posso continuare a partecipare agli appuntamenti dopo l'esame?	È meglio non programmare attività importanti per il giorno dell'esame. Tuttavia, sarà possibile partecipare agli appuntamenti come di consueto a partire dal giorno successivo.
+	Posso prendere tutti i miei farmaci il giorno dell'esame?	In caso di domande sull'assunzione di farmaci, contattare il nostro reparto di endoscopia o il proprio medico curante.
+	
+	Dopo quanto tempo mi sentirò normale dopo l'intervento?	La sensazione di normalità dovrebbe iniziare entro poche ore dall'intervento, anche se possono essere necessari uno o due giorni perché gli effetti residui del sedativo svaniscano completamente.
+	Quanto tempo ci vuole perché il sedativo svanisca?	.
+	
+	Cosa succede dopo la fine della colonscopia?	Una volta riposati, il medico vi parlerà dei risultati dell'esame. Se sono stati prelevati dei campioni, l'analisi richiede solitamente 2-3 giorni lavorativi. Lei e il suo medico di famiglia sarete informati per iscritto.
+	Quando posso tornare a casa?	La durata complessiva della permanenza nel centro endoscopico è di 2 ore. Naturalmente la durata può essere più breve o più lunga.
+	Quando potrò tornare a guidare?	Se avete subito una "iniezione di sonno", potete partecipare di nuovo attivamente alla circolazione stradale solo dopo 12 ore.
+
+// just before the colonoscopy
+	Sono nervoso per la procedura, cosa devo fare?	Se vi sentite nervosi per l'intervento, è importante concentrarsi su ciò che potete controllare per gestire l'ansia. Innanzitutto, cercate di raccogliere quante più informazioni possibili sulla procedura. Capire cosa accadrà passo dopo passo può aiutare a demistificare il processo e a ridurre i timori. Anche parlare con il proprio medico curante può fornire rassicurazioni e chiarezza, rispondendo a qualsiasi domanda specifica e aiutando a risolvere le proprie preoccupazioni.
+	Come posso prepararmi mentalmente all'esame?	.
+DontShowAsExample	Sono nervoso.	.
+DontShowAsExample	Sono ansioso.	.
+	
+	Mi farà male?	Il giorno dell'esame verrà somministrato un sedativo in modo che il processo sia indolore. Tuttavia, dopo la procedura è possibile che non ci si senta bene. Se i sintomi non migliorano nel corso della giornata, contattare l'Endoscopia dell'Ospedale Universitario di Ulm 0731-500-44632.
+	Cosa devo fare il giorno dell'esame?	Il giorno dell'esame, preparare la seconda bustina di soluzione lassativa. Iniziare a bere in modo da essere pronti almeno 3 ore prima dell'appuntamento. Bere la soluzione lassativa a grandi sorsi entro un'ora. A tal fine, bere almeno 1-2 litri di liquidi chiari. Anche se può essere molto presto, è molto importante per ottenere una pulizia intestinale ottimale.
+	
+	Dove devo andare?	Il giorno dell'esame è necessario recarsi all'Ospedale Universitario di Ulm, Oberer Eselsberg, Albert-Einstein-Allee 23, Livello 1, Centro di registrazione per l'endoscopia.
+	Come si fa ad andare in clinica?	.
+	Devo prima recarmi al centro di accoglienza dei pazienti?	Se si tratta della prima visita del trimestre, è necessario recarsi prima al reparto centrale di ammissione, al livello 2, con la ricevuta di richiesta.
+	Dove si trova esattamente la clinica?	.
+	Devo prima registrarmi da qualche parte?	.
+	Come si arriva al reparto di endoscopia?	.
+
+// laxatives
+	Cosa faranno i lassativi?	I lassativi provocano un aumento dei movimenti intestinali/diarrea. Questo è un effetto auspicabile per l'esame e non deve preoccupare.
+	E i certificati di lavoro e di malattia?	Di norma, si riceve un certificato di malattia per il giorno dell'esame. È possibile tornare al lavoro normalmente dal giorno successivo a quello dell'esame. Tuttavia, se i sintomi persistono il giorno successivo alla visita, è necessario consultare nuovamente il medico.
+	Potrò tornare al lavoro?	È possibile tornare al lavoro normalmente dal giorno successivo a quello dell'esame. Tuttavia, se i sintomi persistono il giorno successivo all'esame, è necessario consultare nuovamente il medico.
+	
+	Devo proprio bere tutto?	L'intestino può essere sufficientemente pulito solo se si assume completamente la soluzione.
+	È necessario bere l'intera soluzione?	.
+	
+	Posso berlo tutto in una volta?	Attenersi alle istruzioni contenute nella confezione dei lassativi.
+	Come devo preparare il prodotto?	.
+	
+	Ora ho la diarrea. È normale?	È del tutto normale avere la diarrea. Il lassativo pulisce l'intestino e fa uscire completamente le feci dall'intestino. Noi percepiamo questo fenomeno come diarrea.
+DontShowAsExample	Ho la diarrea.	.
+	Ho la diarrea, è normale?	.
+	Da quando ho iniziato a prendere l'integratore alimentare ho avuto un aumento dei movimenti intestinali/diarrea. È normale?	.
+	
+	Quanto spesso devo andare in bagno?	La quantità di volte che si va in bagno varia notevolmente perché ogni intestino reagisce in modo diverso. Tuttavia, ci si accorge quando l'intestino si è svuotato.
+	Per quanto tempo dovrò stare vicino a un bagno?	.
+	
+	Perché devo berlo così?	L'intestino è ora completamente svuotato. Solo a questo punto l'esaminatore può valutare bene tutte le aree dell'intestino.
+	Sono andata in bagno diverse volte. Non esce nulla	Se le feci assomigliano alla camomilla dopo aver completato le misure lassative e non sono più visibili solidi, si è ben preparati per la colonscopia.
+	
+	Quando devo iniziare a prendere il lassativo?	Il primo lassativo deve essere assunto il giorno prima dell'esame alle ore 17:00. Bere la soluzione lassativa a grandi sorsi entro un'ora e bere almeno 1-2 litri di liquidi chiari. Il giorno dell'esame è necessario bere il lassativo 3 ore prima dell'appuntamento. Bevetelo allo stesso modo del primo e non dimenticate di bere liquidi chiari. Anche se può essere molto presto quando lo si beve, è molto importante per ottenere una pulizia intestinale ottimale.
+	Devo prendere un lassativo?	.
+	Quando devo iniziare le misure di avvio?	.
+	Quando devo iniziare a bere la soluzione lassativa?	.
+	A che ora devo assumere la prima bustina?	.
+	
+	Quando devo bere la prima soluzione?	Il primo lassativo va bevuto il giorno prima dell'appuntamento. Mescolare la prima bustina di soluzione lassativa. Iniziare a bere alle 17:00. Bere la soluzione lassativa a grandi sorsi entro un'ora. Bere almeno 1-2 litri di liquidi chiari.
+	Quando devo bere la prima soluzione?	.
+	Quando devo bere il primo lassativo?	.
+	Quando devo bere il primo lassativo?	.
+	Quando devo iniziare a prendere il lassativo?	.
+	
+	Perché devo bere due volte?	Dividere i movimenti intestinali tra la sera prima dell'esame e il giorno dell'esame migliora la pulizia dell'intestino. Inoltre, non è necessario bere tanto in una volta sola.
+	Perché devo bere due dosi?	.
+	
+	Quando devo assumere la seconda bustina di lassativo?	Il giorno del test, bere la seconda metà del lassativo 3 ore prima dell'appuntamento.
+	Quando devo assumere la seconda bustina di lassativo?	.
+	Quando devo prendere l'altra bustina di lassativo?	.
+	
+	Che aspetto dovrebbero avere le mie feci dopo le misure lassative?	Le feci dovrebbero assomigliare a quelle della camomilla e non contenere più solidi.
+	Cosa devo fare se le mie feci non hanno l'aspetto che dovrebbero avere dopo il lassativo?	Si prega di comunicarlo all'arrivo al centro endoscopico.
+	
+// bring to examination
+	Cosa devo portare all'esame?	Se non diversamente concordato, il foglio informativo firmato, i valori ematici attuali (coagulazione ed emocromo non più vecchi di 10 giorni) e il passaporto delle allergie, se disponibile (si prega di informare l'esaminatore di eventuali intolleranze ai farmaci prima dell'inizio dell'esame). Si raccomanda inoltre di portare calze calde.
+	Cosa devo portare all'esame?	.
+	Cosa devo portare con me durante l'intervento?	.
+	Cosa devo portare con me durante l'intervento?	.
+	Cosa devo portare alla colonscopia?	.
+	Cosa devo portare alla colonscopia?	.
+	Cosa devo portare con me?	.
+	Cosa devo portare all'esame?	.
+	Devo portare qualcosa all'esame?	.
+	
+	Di quali valori ematici ho bisogno per la colonscopia?	Per la colonscopia sono necessari i valori dell'emocromo (trombociti) e della coagulazione (Quick, PTT).
+
+	Perché devo portare dei calzini caldi?	I calzini sono utili se si tende ad avere i piedi freddi.
+	Perché i calzini caldi?	.
+
+// diet information
+ImageHighFibreFood	Cosa sono gli alimenti ad alto contenuto di fibre?	Esempi di alimenti ricchi di fibre sono meloni, kiwi, pomodori, uva, fragole, muesli, prodotti integrali, zucchine, lattuga, porri, fagioli, ecc.
+ImageHighFibreFood	Mi può fare degli esempi di alimenti ad alto contenuto di fibre?	.
+ImageHighFibreFood	Mi faccia degli esempi di alimenti ad alto contenuto di fibre.	.
+ImageHighFibreFood	Quali alimenti sono ricchi di fibre?	.
+	
+ImageSeedFood	Quali sono gli alimenti contenenti semi e le verdure ricche di fibre?	Alcuni esempi di alimenti contenenti semi e verdure ricche di fibre sono il melone, il kiwi, i pomodori, l'uva, le fragole, il muesli, i prodotti VK, i semi di papavero, le zucchine, la lattuga, i porri e i fagioli.
+ImageSeedFood	Quali alimenti contengono semi che devo evitare?	.
+ImageSeedFood	Quali alimenti contengono semi?	.
+ImageSeedFood	Mi può fare degli esempi di alimenti che contengono semi?	.
+ImageSeedFood	Mi faccia degli esempi di alimenti che contengono semi.	.
+ImageSeedFood	Quali alimenti contengono semi?	.
+	
+ImageLowFibreFood	Che cos'è un pasto a basso contenuto di fibre?	Un esempio di pasto a basso contenuto di fibre è una zuppa chiara con pasta o patate.
+ImageLowFibreFood	Quali sono gli alimenti a basso contenuto di fibre?	Esempi di alimenti a basso contenuto di fibre sono la zuppa chiara, le zuppe con pasta, il purè di patate e il pane bianco.
+ImageHighFibreFood	Dove si trova la fibra?	Le fibre si trovano in pomodori, zucchine, lattuga, porri, fagioli, ecc.
+ImageSeedFood	Perché devo evitare i semi?	I semi possono ostruire l'endoscopio e compromettere significativamente l'esame.
+ImageHighFibreFood	Perché devo evitare le fibre?	Gli alimenti contenenti fibre rimangono più a lungo nell'intestino. Limitano notevolmente la visione durante l'esame.
+
+ImageColouredDrink	Cosa sono i liquidi tinti?	I liquidi tinti sono tutti quelli che non si possono vedere attraverso. Tra questi vi sono il caffè, il tè nero, il latte, la cola, il tè alla frutta scura e il vino rosso.
+ImageColouredDrink	Cosa rientra nelle bevande colorate?	.
+ImageColouredDrink	Che cos'è una bevanda tinta?	.
+ImageColouredDrink	Che cos'è un liquido tinto?	.
+ImageColouredDrink DontShowAsExample	Che cos'è una bevanda scura?	.
+ImageColouredDrink DontShowAsExample	Che cos'è un liquido scuro?	.
+ImageColouredDrink DontShowAsExample	Che cos'è una bevanda colorata?	.
+ImageColouredDrink DontShowAsExample	Che cos'è un liquido colorato?	.
+
+ImageClearDrink	Cosa sono i liquidi trasparenti?	I liquidi chiari sono, ad esempio, acqua, succo di mela, tè di colore chiaro.
+ImageClearDrink	Che cosa significa liquidi trasparenti?	.
+ImageClearDrink	Che cos'è una bevanda chiara?	.
+ImageClearDrink	Che cos'è un liquido trasparente?	.
+ImageClearDrink	Che cos'è una bevanda trasparente?	.
+ImageClearDrink	Che cos'è un liquido trasparente?	.
+
+ImageMealExamples	Mi faccia degli esempi di pasti.	Esempi di pasti a basso contenuto di fibre senza semi appaiono in questa immagine.
+ImageMealExamples DontShowAsExample	Esempio di pasti.	.
+
+// preparation
+ImageTable	Quando devo iniziare a prestare attenzione a ciò che mangio/bevo?	A partire da tre giorni prima del test, è necessario evitare gli alimenti contenenti semi e le verdure ricche di fibre. Ci sono ulteriori cose da evitare 1 giorno prima del test
+ImageTable	Cosa devo o non devo fare 3 giorni prima dell'esame?	.
+ImageTable	Devo prestare attenzione a qualcosa dal punto di vista nutrizionale?	.
+ImageTable	Quali alimenti devo evitare nei giorni precedenti l'esame?	.
+ImageTable	Quale dieta devo seguire tre giorni prima dell'esame?	.
+
+	Perché non posso mangiare cibi ricchi di fibre e grassi?	È importante non mangiare cibi ricchi di fibre e grassi 3 giorni prima dell'appuntamento per non compromettere la visione durante la colonscopia.
+	Perché non posso bere liquidi colorati?	I liquidi colorati possono compromettere la visione durante l'esame.
+	
+ImageTable	Cos'altro non mi è permesso fare?	Il giorno prima dell'esame, non si devono consumare pasti ricchi di fibre o di grassi, né bere liquidi colorati.
+ImageTable	Cosa devo o non devo fare un giorno prima dell'esame?	Evitare le bevande colorate (sono consentiti i liquidi chiari), i pasti ricchi di fibre e di grassi e l'alcol. A pranzo si consiglia di consumare un pasto a basso contenuto di fibre.
+	
+ImageClearDrink	Quali tipi di bevande vanno bene prima della colonscopia?	Prima della colonscopia è possibile bere qualsiasi tipo di liquido chiaro.
+
+// copy questions (these are pasted into the next sections)
+ImageTable CopyQuestionWhatToDo	E adesso?	In questo momento non dovete fare nulla, la preparazione inizia 3 giorni prima dell'appuntamento. Dovrete quindi iniziare una dieta a basso contenuto di fibre e senza semi.
+ImageTable CopyQuestionWhatToDo	Cosa devo fare?	.
+ImageTable CopyQuestionWhatToDo	Cosa devo fare?	.
+
+ImageTable CopyQuestionFood	Quali alimenti devo evitare?	In questo momento potete mangiare come al solito, la preparazione inizia 3 giorni prima dell'appuntamento. Poi dovrete iniziare una dieta a basso contenuto di fibre e senza semi.
+ImageTable CopyQuestionFood DontShowAsExample	Quale dieta?	.
+ImageTable CopyQuestionFood	Qual è la dieta?	.
+ImageTable CopyQuestionFood	Cosa devo mangiare?	.
+ImageTable CopyQuestionFood	Cosa posso mangiare?	.
+ImageTable CopyQuestionFood	Cosa posso mangiare?	.
+ImageTable CopyQuestionFood DontShowAsExample	Posso mangiare qualcosa?	.
+ImageTable CopyQuestionFood DontShowAsExample	Voglio mangiare qualcosa.	.
+ImageTable CopyQuestionFood	Posso assumere alimenti ricchi di fibre prima dell'intervento?	.
+ImageTable CopyQuestionFood	Cosa devo evitare di mangiare tre giorni prima dell'esame?	.
+ImageTable CopyQuestionFood	Ci sono verdure che dovrei evitare?	.
+
+ImageTable CopyQuestionDrink DontShowAsExample	Posso bere?	In questo momento potete bere tutto quello che volete, ma un giorno prima dell'esame astenetevi dal bere liquidi colorati (ad es. caffè, tè nero, latte, cola, tè scuro alla frutta, vino rosso).
+ImageTable CopyQuestionDrink	Cosa posso bere?	È possibile bere qualsiasi cosa fino a 1 giorno prima dell'esame. A partire da questo giorno, si prega di astenersi dal bere liquidi colorati (ad es. caffè, tè nero, latte, cola, tè alla frutta scura, vino rosso).
+ImageColouredDrink CopyQuestionDrink	Ci sono liquidi che devo evitare?	.
+ImageColouredDrink CopyQuestionDrink	Posso bere caffè o tè il giorno prima dell'esame?	.
+
+ImageClearDrink CopyQuestionDrink	Cosa posso bere?	Tutti i liquidi chiari (ad esempio acqua, succo di mela, tè di colore chiaro) sono consentiti in qualsiasi quantità. Ecco un esempio di ciò che si può bere.
+ImageClearDrink CopyQuestionDrink DontShowAsExample	Posso bere qualcosa?	.
+
+CopyQuestionAlcohol	Posso bere alcolici?	Non è consentito bere alcolici il giorno stesso dell'appuntamento e il giorno precedente. Si raccomanda inoltre di non bere il giorno successivo all'intervento.
+	Posso bere acqua?	Si può bere acqua quando si vuole, perché è un liquido chiaro che non compromette la visibilità durante la colonscopia.
+	
+CopyQuestionLaxatives	Il sapore è disgustoso.	Se si riferisce ai lassativi, in questo momento non deve berli. Tuttavia, dovrebbe iniziare a bere la prima soluzione nel pomeriggio del giorno precedente la colonscopia.
+CopyQuestionLaxatives	Il sapore è cattivo.	.
+CopyQuestionLaxatives	Il sapore è terribile.	.
+CopyQuestionLaxatives	Il sapore è orribile.	.
+CopyQuestionLaxatives	Ha un sapore orribile, cosa posso fare?	.
+CopyQuestionLaxatives	C'è un modo per rendere questa soluzione più gustosa?	.
+CopyQuestionLaxatives	Avete dei consigli per rendere più facile l'assunzione del lassativo?	.
+
+3
+
+CopyQuestionWhatToDo ImageTable	.	In questo momento è necessario concentrarsi sulla dieta. Non mangiate alimenti contenenti semi o alimenti ricchi di fibre.
+CopyQuestionFood ImageBadFood	.	Non si devono più mangiare alimenti contenenti semi o alimenti ricchi di fibre. Ecco un esempio di alimenti da evitare.
+CopyQuestionDrink	.	In questo momento potete bere tutto quello che volete, ma il giorno prima della colonscopia astenetevi dal bere liquidi colorati (ad es. caffè, tè nero, latte, cola, tè scuro alla frutta, vino rosso).
+
+//// Second day has the same considerations as third day
+2	.
+	
+1
+
+CopyQuestionWhatToDo ImageTable	.	D'ora in poi, oltre a non mangiare cibi contenenti semi o alimenti ricchi di fibre, si dovranno evitare anche cibi ricchi di grassi e bevande colorate. Si raccomanda inoltre di evitare l'alcol.
+CopyQuestionFood ImageBadFood	.	D'ora in poi, oltre a non mangiare alimenti contenenti semi o alimenti ricchi di fibre, dovrete evitare anche gli alimenti ricchi di grassi. Ecco un esempio di alimenti da evitare.
+CopyQuestionDrink ImageColouredDrink	.	Si prega di astenersi dal bere liquidi colorati (ad es. caffè, tè nero, latte, cola, tè alla frutta scura, vino rosso) perché potrebbero ostacolare la visione durante l'esame. Ecco un esempio di bevande da evitare.
+CopyQuestionAlcohol	.	In questi giorni è sconsigliato bere alcolici a causa della procedura.
+CopyQuestionLaxatives	.	Purtroppo il sapore non è eccezionale. Hai ragione. Ecco alcuni consigli: Mettere la soluzione in bottiglia in frigorifero prima di berla. Si può anche usare una cannuccia. Si può anche diluire il liquore con uno sciroppo chiaro o con del succo di mela.
+
+	Devo bere entrambe le metà domani?	La seconda metà deve essere bevuta almeno 3 ore prima dell'appuntamento per la colonscopia.
+
+0
+
+CopyQuestionWhatToDo ImageTable	.	Questa mattina dovrete essere a digiuno, quindi dovrete cercare di non mangiare fino al termine della procedura. È tuttavia possibile bere succo di mela, camomilla e acqua fino a 2 ore prima dell'inizio della colonscopia.
+CopyQuestionFood	.	.
+CopyQuestionDrink ImageClearDrink	.	Si prega di astenersi dal bere liquidi colorati (ad es. caffè, tè nero, latte, cola, tè alla frutta scura, vino rosso) perché potrebbero ostacolare la visione durante l'esame. Nelle ultime 2 ore prima dell'esame cercare di non bere nulla. Ecco un esempio di cosa si può bere.
+CopyQuestionAlcohol	.	Oggi non si dovrebbe bere alcolici.
+CopyQuestionLaxatives	.	Purtroppo il sapore non è eccezionale. Hai ragione. Ecco alcuni consigli: Mettere la soluzione in bottiglia in frigorifero prima di berla. Si può anche usare una cannuccia. Si può anche diluire il liquore con uno sciroppo chiaro o con del succo di mela.
+	
+-1
+
+CopyQuestionWhatToDo	.	Una volta riposati, il medico vi parlerà dei risultati dell'esame. Se sono stati prelevati dei campioni, l'analisi richiede solitamente 2-3 giorni lavorativi. Voi e il vostro medico di famiglia sarete informati per iscritto. La durata complessiva della permanenza nel centro di endoscopia è di 2 ore. Naturalmente la durata può essere più breve o più lunga.
+CopyQuestionFood	.	In linea di principio, è possibile mangiare e bere di nuovo tutto. Tuttavia, si consiglia di reintrodurre con cautela l'intestino agli alimenti. Il colon è stato completamente svuotato. Iniziate con alimenti facilmente digeribili come pasta, minestre, pane, ecc.
+CopyQuestionDrink	.	Dopo la dimissione dall'endoscopia, non ci sono restrizioni su ciò che si può bere. Anche in questo caso, si raccomanda di non bere oggi.
+CopyQuestionAlcohol	.	Si raccomanda di non bere il giorno successivo alla procedura.
+	Posso bere di nuovo tutto?	Dopo la dimissione dall'endoscopia, non ci sono restrizioni su ciò che si può bere.
+	
+// bowels after the examination
+	Mi sento così gonfia. È normale?	Per l'esame, l'esaminatore ha utilizzato anidride carbonica per espandere leggermente l'intestino. Questo gas è responsabile della sensazione di gonfiore. Un po' sgradevole, ma normale. Tuttavia, se la sensazione non passa o peggiora, contattate il centro di endoscopia. Vi aiuteremo ulteriormente.
+	Ho dolori addominali.	Se i sintomi non migliorano nel corso della giornata, contattare un medico.
+	Ho del sangue nelle feci. Cosa devo fare?	Se i polipi vengono rimossi durante l'esame, in rari casi può verificarsi un'emorragia post-operatoria. Contattare il reparto di endoscopia dell'Ospedale Universitario di Ulm 0731-500-44632!
+	Sanguino.	Nei primi 10 giorni può verificarsi un'emorragia. Se ciò dovesse accadere, contattateci. Il periodo è molto variabile e varia da persona a persona.
+
+	Ho la febbre.	In caso di malessere, contattare immediatamente il reparto di endoscopia dell'ospedale universitario di Ulm 0731-500-44632.
+	Vomito sangue.	.

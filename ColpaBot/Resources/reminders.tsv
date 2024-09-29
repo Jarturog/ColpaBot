@@ -1,0 +1,15 @@
+//Lines starting with // are comments that do not affect the file's format
+//Message	Days	Relative/Absolute	Hours	Minutes	Optional function (Min/Max)
+//Example: -1 A 16 30 Sets the reminder as 1 day before the colonoscopy, at 16:30
+reminder10DaysBeforeProcedure	-10	A	8	0
+reminder3DaysBeforeProcedure	-3	A	8	0
+reminder2DaysBeforeProcedure	-2	A	8	0
+reminderMorningDayBeforeProcedure	-1	A	8	0
+reminderAfternoonDayBeforeProcedure	-1	A	16	30
+//Explanation: 0 R -4 0 Sets the reminder as the same day of the colonoscopy, 4 hours before the appointment
+reminderMorningBeforeProcedure	0	R	-4	0
+//But then reminderMorningBeforeProcedure selects the one that is more in the future between the previous one and this one
+//Example: Appointment is at 9:00. Previous line would remind at 5:00, this line at 6:00. Since Max is the function the final reminder is at 6:00.
+//The Min keyword would select the one more in the past
+	0	A	6	0	Max
+reminder30MinutesAfterProcedure	0	R	0	30

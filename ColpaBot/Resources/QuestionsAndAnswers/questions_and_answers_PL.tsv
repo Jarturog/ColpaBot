@@ -1,0 +1,327 @@
+{}
+.
+// Before each section the days before the examination are indicated. The first section does not have a prefered time. Comments start with //
+// Answers that are a point (.) are an abbreviation of the previous answer, when executing the file the previous answer is copied into the point
+// The point after a number copies the whole number that came before into the new one
+// The point where a question should be copies the questions that have the same CopyQuestion... key where the point is applying the answer there
+// It is only possible to combine keys with CopyQuestion... and DontShowAsExample. 
+// These keys should not be the first one in the column (except with the sections with numbers, there it does not matter the position of CopyQuestion...) 
+// The file is in format: Actions	Question	Answer
+
+// user-specific answers
+AppointmentDate	Kiedy mogę umówić się na spotkanie?	Twoje spotkanie odbędzie się w dniu {} o godzinie {}.
+AppointmentDate	Kiedy zaplanowane jest moje spotkanie?	.
+AppointmentDate	Czy możesz podać mi datę i godzinę spotkania?	.
+AppointmentDate	Kiedy powinienem przyjść na wizytę?	.
+// ChangeAppointment' default answer is an error code because it is supposed to be answered with a Dialog in code instead of a simple answer
+ChangeAppointment	Chciałbym zmienić datę spotkania.	Przykro mi, ale wygląda na to, że wystąpił problem uniemożliwiający mi zmianę terminu, proszę o kontakt z centrum endoskopii w celu poinformowania o zaistniałej sytuacji.
+ChangeAppointment	Muszę zmienić termin spotkania.	.
+ChangeAppointment	Jak mogę zmienić datę spotkania?	.
+ChangeAppointment	Czy możesz mi pomóc zmienić termin spotkania?	.
+ChangeAppointment DontShowAsExample	Zmieniłem termin spotkania.	.
+ChangeAppointment DontShowAsExample	Zmiana terminu.	.
+
+
+DontAnswer DontShowAsExample	Ok	:)
+DontAnswer DontShowAsExample	Dobrze	.
+	
+// general answers
+DontShowAsExample	Witam.	Witam. Czy jest coś, czego potrzebujesz?
+DontShowAsExample	Hej.	.
+DontShowAsExample	Cześć.	Cześć! Co mogę dla ciebie zrobić?
+DontShowAsExample	Cześć, jak się masz?	Cześć! Czy mogę coś dla ciebie zrobić?
+DontShowAsExample	Cześć! Mogę o coś zapytać?	Cześć! Zapytaj mnie o co tylko chcesz.
+DontShowAsExample	Dziękuję.	Jestem tutaj, aby ci pomóc! Nie wahaj się pytać o wszystko, co może Cię zastanawiać.
+DontShowAsExample	Dzięki.	.
+DontShowAsExample	Dziękuję za pomoc.	.
+DontShowAsExample	Dzięki, doceniam to!	.
+	
+// contact situations
+	Z kim mogę się skontaktować?	W każdej chwili można skontaktować się z naszym zespołem telefonicznie: Endoskopia w Szpitalu Uniwersyteckim w Ulm 0731-500-44632
+	Gdzie mogę się skontaktować, jeśli mam jakieś pytania?	.
+	Chcę porozmawiać z lekarzem.	.
+	Chcę zobaczyć się z lekarzem.	.
+	Czy mogę porozmawiać z kimś przez telefon?	.
+	Gdzie mogę znaleźć numer kontaktowy do waszego zespołu?	.
+
+	
+	Potrzebuję kolejnego spotkania.	Jeśli nie możesz dotrzymać terminu wizyty, skontaktuj się z naszą rejestracją endoskopii pod numerem 0731-500-44632, aby umówić się na nową wizytę. Następnie poproś mnie o zmianę terminu, abym mógł zaktualizować zapisaną datę.
+	Nie mogę przyjść.	.
+	Muszę zarezerwować nowy termin, do kogo mam zadzwonić?	.
+	Jak mogę anulować spotkanie?	.
+	Czy istnieje sposób na zmianę terminu bez dzwonienia?	.
+	
+	Jakie leki muszę przyjmować?	W razie jakichkolwiek pytań dotyczących przyjmowania leków należy skontaktować się z naszym oddziałem endoskopii lub lekarzem prowadzącym.
+	Kiedy najpóźniej mogę anulować?	Jeśli nie możesz przyjść na umówione spotkanie, poinformuj nas o tym z co najmniej 24-godzinnym wyprzedzeniem.
+	
+DontShowAsExample	To nie zadziałało dobrze. Co powinienem zrobić?	W razie problemów prosimy o kontakt z działem endoskopii. Udzielimy dalszej pomocy.
+DontShowAsExample	To idzie źle.	.
+DontShowAsExample	Pomoc.	.
+	
+noneOfTheQuestionsOption DontShowAsExample	Moje pytanie nie jest tutaj.	Przepraszamy za niezrozumienie pytania. Zalecam skontaktowanie się z naszym zespołem telefonicznie w dowolnym momencie, aby uzyskać odpowiedź na pytania, których nie rozumiem: Endoskopia w Szpitalu Uniwersyteckim w Ulm 0731-500-44632.
+	
+// after colonoscopy
+	Jakie objawy mogą wystąpić po badaniu?	Niektóre objawy, które mogą wystąpić po badaniu, to wzdęcia, skurcze i wzdęcia w jamie brzusznej w wyniku wprowadzenia powietrza podczas badania. Ćwiczenia i ciepło mogą pomóc złagodzić dyskomfort, ale z czasem powinien on ustąpić naturalnie. Jeśli dyskomfort nie ustępuje, należy natychmiast skontaktować się z lekarzem. Należy również pamiętać, że po usunięciu polipów lub wykonaniu innych zabiegów terapeutycznych w rzadkich przypadkach może wystąpić krwawienie w ciągu pierwszych 10 dni. Jeśli zauważysz krew w stolcu lub wystąpi gorączka, natychmiast skontaktuj się z lekarzem.
+	Co może się wydarzyć po badaniu?	.
+	Jakie objawy mogą wystąpić po badaniu?	.
+	Jakie objawy mogą wystąpić po zabiegu?	.
+	Co może się wydarzyć po zabiegu?	.
+	Jakie objawy mogą wystąpić po kolonoskopii?	.
+	Co może się wydarzyć po kolonoskopii?	.
+	Co może się wydarzyć po badaniu?	.
+	Jakie dolegliwości są normalne po zabiegu?	.
+	Czy po badaniu należy spodziewać się skurczów lub gazów?	.
+	Na co powinienem zwrócić uwagę po egzaminie?	.
+	
+	Co dzieje się po badaniu?	Po badaniu pacjent będzie monitorowany w naszym centrum endoskopii do czasu wypisania. Minimalny czas pobytu wynosi 2 godziny. Tego dnia nie należy również planować prowadzenia samochodu ani wykonywania żadnych ćwiczeń fizycznych.
+	Co mam zrobić po badaniu?	.
+	Co muszę wiedzieć po badaniu?	.
+	Czy będę musiał zostać po badaniu?	.
+	Czy po egzaminie mogę robić, co chcę?	.
+	Co powinienem zrobić zaraz po zabiegu?	.
+	Czy muszę zostać w klinice po badaniu?	.
+	Czy po zabiegu mogę powrócić do normalnej aktywności?	.
+	
+	Czy mogę samodzielnie wrócić do domu w dniu egzaminu?	Jeśli pacjent otrzymał środek uspokajający ("zastrzyk nasenny" lub "pigułkę nasenną"), nie może samodzielnie prowadzić pojazdu przez 12 godzin. Dozwolone jest korzystanie z transportu publicznego, taksówki lub osoby towarzyszącej. W tym dniu należy odpocząć i ograniczyć aktywność do minimum.
+	Czy mogę prowadzić samochód w dniu egzaminu?	.
+	Czy po kolonoskopii mogę prowadzić samochód?	.
+	Czy po egzaminie mogę prowadzić samochód?	.
+	Co należy wziąć pod uwagę po badaniu?	.
+	Czy po zabiegu mogę samodzielnie wrócić do domu?	.
+	Czy po kolonoskopii można bezpiecznie prowadzić samochód?	.
+	Czy potrzebuję kogoś, kto odwiezie mnie do domu?	.
+	
+	Czy mogę uprawiać sport po badaniu?	Przed badaniem można uprawiać sport jak zwykle, ale w dniu badania lepiej nie planować żadnych większych aktywności. Od następnego dnia można jednak ponownie uprawiać sport jak zwykle, w razie potrzeby powoli.
+	Czy mogę uprawiać sport?	.
+	Czy mogę ćwiczyć?	.
+	Czy mogę ćwiczyć?	.
+	Czy mogę ćwiczyć po kolonoskopii?	.
+	Kiedy mogę wrócić do ćwiczeń?	.
+	Czy po egzaminie można uprawiać sport?	.
+	
+	Jak długo trwa normalizacja ruchliwości jelit i wypróżnień?	Powrót ruchliwości jelit i wypróżnień do normy może potrwać kilka dni.
+	Jak długo trwa dyskomfort?	.
+	Kiedy zniknie mój dyskomfort?	.
+	Jak długo trwa powrót do normalnego rytmu wypróżnień?	Jelito zostało całkowicie opróżnione. Stolec musi najpierw ponownie się uformować. Powrót do normalnego rytmu wypróżnień może potrwać do 10 dni.
+	
+	Co powinienem zrobić, jeśli zauważę krew w stolcu, zwymiotuję krwią lub dostanę gorączki?	Jeśli zauważysz krew w stolcu, wymiotujesz krwią lub masz gorączkę, powinieneś natychmiast skontaktować się z lekarzem.
+	Co mogę zjeść po badaniu?	Zasadniczo można ponownie jeść i pić wszystko. Zalecamy jednak ostrożne ponowne wprowadzanie pokarmów do jelita grubego. Okrężnica została całkowicie opróżniona. Zacznij od lekkostrawnych potraw, takich jak makarony, zupy, chleb itp.
+	Co mogę jeść i pić po badaniu?	Zasadniczo można ponownie spożywać wszystkie pokarmy. Należy jednak zapytać o to egzaminatora. Zalecamy rozpoczęcie od lekkostrawnych potraw i napojów (np. kanapek, herbaty). W dniu badania należy zasadniczo unikać spożywania alkoholu.
+	Czy mogę nadal uczestniczyć w spotkaniach po badaniu?	Lepiej nie planować żadnych większych aktywności na dzień badania. Jednak od następnego dnia będziesz mógł normalnie uczestniczyć w spotkaniach
+	Czy mogę przyjąć wszystkie leki w dniu badania?	W razie jakichkolwiek pytań dotyczących przyjmowania leków należy skontaktować się z naszym oddziałem endoskopii lub lekarzem prowadzącym.
+	
+	Jak szybko poczuję się normalnie po zabiegu?	W ciągu kilku godzin po zabiegu pacjent powinien zacząć czuć się normalnie, choć może minąć dzień lub dwa, zanim efekty uboczne działania środka uspokajającego całkowicie ustąpią.
+	Jak długo trwa działanie środka uspokajającego?	.
+	
+	Co dzieje się po zakończeniu kolonoskopii?	Po odpoczynku lekarz porozmawia z pacjentem o wynikach badania. Jeśli pobrano próbki, analiza trwa zwykle 2-3 dni robocze. Ty i Twój lekarz rodzinny zostaniecie o tym poinformowani na piśmie.
+	Kiedy mogę wrócić do domu?	W ośrodku endoskopii można spędzić łącznie 2 godziny. Oczywiście czas ten może być krótszy lub dłuższy.
+	Kiedy będę mógł ponownie prowadzić samochód?	Jeśli otrzymałeś "zastrzyk nasenny", możesz ponownie aktywnie uczestniczyć w ruchu drogowym dopiero po 12 godzinach.
+
+// just before the colonoscopy
+	Denerwuję się zabiegiem, co powinienem zrobić?	Jeśli denerwujesz się zabiegiem, ważne jest, aby skupić się na tym, co możesz kontrolować, aby opanować swój niepokój. Po pierwsze, postaraj się zebrać jak najwięcej informacji na temat zabiegu. Zrozumienie, co będzie się działo krok po kroku, może pomóc w demistyfikacji procesu i zmniejszyć obawy. Rozmowa z lekarzem może również dodać otuchy i rozjaśnić sytuację; może on odpowiedzieć na wszelkie konkretne pytania i pomóc rozwiać obawy.
+	Jak mogę przygotować się mentalnie do egzaminu?	.
+DontShowAsExample	Jestem zdenerwowany.	.
+DontShowAsExample	Jestem niespokojny.	.
+	
+	Czy to mi zaszkodzi?	W dniu badania pacjent otrzyma środek uspokajający, dzięki czemu proces będzie bezbolesny. Jednak po zabiegu może wystąpić pogorszenie samopoczucia. Jeśli objawy nie poprawią się w ciągu dnia, prosimy o kontakt z Endoskopią w Szpitalu Uniwersyteckim w Ulm 0731-500-44632.
+	Co mam zrobić w dniu badania?	W dniu badania przygotować 2. saszetkę roztworu przeczyszczającego. Zacznij pić, aby być gotowym co najmniej 3 godziny przed wizytą. Wypij roztwór przeczyszczający dużymi łykami w ciągu godziny. W tym celu należy wypić co najmniej 1-2 litry klarownych płynów. Nawet jeśli wypicie roztworu może nastąpić bardzo wcześnie, jest to bardzo ważne, aby osiągnąć optymalną czystość jelit.
+	
+	Gdzie mam się udać?	W dniu badania należy udać się do Szpitala Uniwersyteckiego w Ulm, Oberer Eselsberg, Albert-Einstein-Allee 23, poziom 1, Centrum Rejestracji Endoskopii.
+	Jak mogę udać się do kliniki?	.
+	Czy muszę najpierw udać się do centrum przyjmowania pacjentów?	Jeśli jest to pierwsza wizyta w danym kwartale, należy najpierw udać się do Centralnego Działu Przyjęć, Poziom 2, z odcinkiem skierowania
+	Gdzie dokładnie znajduje się klinika?	.
+	Czy muszę się najpierw gdzieś zameldować?	.
+	Jak dostać się na oddział endoskopii?	.
+
+// laxatives
+	Co zrobią środki przeczyszczające?	Środki przeczyszczające doprowadzą do zwiększenia liczby wypróżnień/biegunki. Jest to pożądany efekt badania i nie musi Cię niepokoić
+	Co z zaświadczeniami o pracy i zaświadczeniami chorobowymi?	Z reguły pacjent otrzymuje zwolnienie lekarskie na dzień badania. Od następnego dnia po badaniu można normalnie wrócić do pracy. Jeśli jednak objawy nie ustąpią następnego dnia po badaniu, należy ponownie zgłosić się do lekarza.
+	Czy będę mógł wrócić do pracy?	Od następnego dnia po badaniu można normalnie wrócić do pracy. Jeśli jednak objawy nie ustąpią następnego dnia po badaniu, należy ponownie zgłosić się do lekarza.
+	
+	Czy naprawdę muszę pić wszystko?	Jelita mogą być wystarczająco oczyszczone tylko wtedy, gdy roztwór zostanie całkowicie przyjęty.
+	Czy konieczne jest wypicie całego roztworu?	.
+	
+	Czy mogę wypić wszystko na raz?	Należy przestrzegać instrukcji zawartych w opakowaniu środka przeczyszczającego.
+	Jak należy przygotować produkt?	.
+	
+	Mam teraz biegunkę. Czy to normalne?	Biegunka jest całkowicie normalnym zjawiskiem. Środek przeczyszczający oczyszcza jelita i całkowicie wypłukuje z nich kał. Odbieramy to jako biegunkę.
+DontShowAsExample	Mam biegunkę.	.
+	Mam biegunkę, czy to spodziewane?	.
+	Odkąd zacząłem przyjmować suplement diety, mam wzmożone wypróżnienia/biegunkę. Czy to normalne?	.
+	
+	Jak często muszę chodzić do toalety?	Liczba wizyt w toalecie jest bardzo różna, ponieważ każde jelito reaguje inaczej. Zauważysz jednak, kiedy jelito się opróżni.
+	Jak długo będę musiał przebywać w pobliżu łazienki?	.
+	
+	Dlaczego muszę pić to w ten sposób?	Jelito jest teraz całkowicie opróżnione. Dopiero wtedy badający może dobrze ocenić wszystkie obszary jelita.
+	Byłem w łazience już kilka razy. Nic nie wychodzi	Jeśli po zakończeniu przyjmowania środków przeczyszczających stolce przypominają herbatę rumiankową i nie widać już żadnych ciał stałych, jesteś dobrze przygotowany do kolonoskopii.
+	
+	Kiedy powinienem zacząć przyjmować środek przeczyszczający?	Pierwszy środek przeczyszczający należy wypić dzień przed badaniem o godzinie 17:00. Roztwór środka przeczyszczającego należy wypić dużymi łykami w ciągu godziny i popić co najmniej 1-2 litrami klarownych płynów. W dniu badania należy wypić środek przeczyszczający na 3 godziny przed wizytą. Należy go wypić w taki sam sposób jak pierwszy i nie zapomnieć o wypiciu klarownych płynów. Nawet jeśli wypicie środka przeczyszczającego może nastąpić bardzo wcześnie, bardzo ważne jest osiągnięcie optymalnej czystości jelit.
+	Czy muszę brać środek przeczyszczający?	.
+	Kiedy muszę rozpocząć działania inicjujące?	.
+	Kiedy powinienem zacząć pić roztwór przeczyszczający?	.
+	O której godzinie należy przyjąć pierwszą saszetkę?	.
+	
+	Kiedy należy wypić pierwszy roztwór?	Pierwszy środek przeczyszczający należy wypić dzień przed wizytą. Wymieszać pierwszą torebkę roztworu środka przeczyszczającego. Rozpocząć picie o godzinie 17:00. Środek przeczyszczający należy wypić dużymi łykami w ciągu godziny. Należy wypić co najmniej 1-2 litry klarownych płynów.
+	Kiedy muszę wypić pierwszy roztwór?	.
+	Kiedy należy wypić pierwszy środek przeczyszczający?	.
+	Kiedy muszę wypić pierwszy środek przeczyszczający?	.
+	Kiedy należy rozpocząć przyjmowanie środka przeczyszczającego?	.
+	
+	Dlaczego muszę pić dwa razy?	Rozdzielenie wypróżnień między wieczór poprzedzający badanie i dzień badania poprawia czystość jelit. Nie musisz też pić tak dużo na raz.
+	Dlaczego muszę wypić dwie dawki?	.
+	
+	Kiedy należy przyjąć drugą saszetkę środka przeczyszczającego?	W dniu testu należy wypić drugą połowę środka przeczyszczającego na 3 godziny przed planowaną wizytą.
+	Kiedy należy przyjąć drugą saszetkę środka przeczyszczającego?	.
+	Kiedy wziąć drugą saszetkę środka przeczyszczającego?	.
+	
+	Jak powinny wyglądać moje stolce po zastosowaniu środków przeczyszczających?	Twoje stolce powinny przypominać herbatę rumiankową i nie zawierać już żadnych ciał stałych.
+	Co powinienem zrobić, jeśli moje stolce nie wyglądają tak, jak powinny po przyjęciu środka przeczyszczającego?	Prosimy o poinformowanie nas o tym po przybyciu do centrum endoskopii.
+	
+// bring to examination
+	Co należy przynieść na badanie?	O ile nie uzgodniono inaczej, podpisany arkusz informacyjny, aktualne wartości krwi (krzepliwość i morfologia krwi nie starsze niż 10 dni) oraz paszport alergika, jeśli jest dostępny (prosimy o poinformowanie egzaminatora o wszelkich nietolerancjach leków przed rozpoczęciem badania). Należy również pamiętać o zabraniu ciepłych skarpet.
+	Co muszę przynieść na badanie?	.
+	Co należy zabrać ze sobą na zabieg?	.
+	Co muszę przynieść na zabieg?	.
+	Co należy zabrać ze sobą na kolonoskopię?	.
+	Co należy zabrać ze sobą na kolonoskopię?	.
+	Co muszę ze sobą zabrać?	.
+	Co należy przynieść na badanie?	.
+	Czy muszę przynieść coś na badanie?	.
+	
+	Jakie wartości krwi są potrzebne do kolonoskopii?	Podczas kolonoskopii wymagana jest mała morfologia krwi (trombocyty) i wartości krzepnięcia (Quick, PTT).
+
+	Dlaczego muszę mieć ze sobą ciepłe skarpety?	Skarpety są pomocne, jeśli masz tendencję do zimnych stóp.
+	Dlaczego ciepłe skarpety?	.
+
+// diet information
+ImageHighFibreFood	Co to jest żywność o wysokiej zawartości błonnika?	Przykłady żywności o wysokiej zawartości błonnika to melony, kiwi, pomidory, winogrona, truskawki, musli, produkty pełnoziarniste, cukinia, sałata, pory, fasola itp.
+ImageHighFibreFood	Czy możesz podać mi przykłady żywności o wysokiej zawartości błonnika?	.
+ImageHighFibreFood	Podaj mi przykłady żywności o wysokiej zawartości błonnika.	.
+ImageHighFibreFood	Jakie pokarmy są bogate w błonnik?	.
+	
+ImageSeedFood	Czym są pokarmy zawierające nasiona i warzywa bogate w błonnik?	Niektóre przykłady żywności zawierającej nasiona i warzywa bogate w błonnik to melon, kiwi, pomidory, winogrona, truskawki, musli, produkty VK, mak, cukinia, sałata, pory i fasola.
+ImageSeedFood	Które pokarmy zawierają nasiona, których należy unikać?	.
+ImageSeedFood	Która żywność zawiera nasiona?	.
+ImageSeedFood	Czy możesz podać przykłady żywności zawierającej nasiona?	.
+ImageSeedFood	Podaj przykłady żywności zawierającej nasiona.	.
+ImageSeedFood	Jaka żywność zawiera nasiona?	.
+	
+ImageLowFibreFood	Co to jest posiłek o niskiej zawartości błonnika?	Przykładem posiłku o niskiej zawartości błonnika jest klarowna zupa z makaronem lub ziemniakami.
+ImageLowFibreFood	Co to jest żywność o niskiej zawartości błonnika?	Przykładami żywności o niskiej zawartości błonnika są klarowne zupy, zupy z makaronem, tłuczone ziemniaki i biały chleb.
+ImageHighFibreFood	Gdzie można znaleźć błonnik?	Błonnik znajduje się w pomidorach, cukinii, sałacie, porach, fasoli itp.
+ImageSeedFood	Dlaczego muszę unikać nasion?	Nasiona mogą zatkać endoskop i znacznie utrudnić badanie.
+ImageHighFibreFood	Dlaczego muszę unikać błonnika?	Pokarmy zawierające błonnik dłużej pozostają w jelitach. Znacznie ograniczają widzenie podczas badania.
+
+ImageColouredDrink	Czym są barwione płyny?	Barwione płyny to wszystkie płyny, których nie widać. Należą do nich kawa, czarna herbata, mleko, cola, ciemna herbata owocowa i czerwone wino.
+ImageColouredDrink	Co zalicza się do napojów kolorowych?	.
+ImageColouredDrink	Co to jest napój barwiony?	.
+ImageColouredDrink	Co to jest barwiona ciecz?	.
+ImageColouredDrink DontShowAsExample	Co to jest ciemny napój?	.
+ImageColouredDrink DontShowAsExample	Co to jest ciemny płyn?	.
+ImageColouredDrink DontShowAsExample	Co to jest napój kolorowy?	.
+ImageColouredDrink DontShowAsExample	Co to jest kolorowa ciecz?	.
+
+ImageClearDrink	Czym są przezroczyste płyny?	Przezroczyste płyny to np. woda, sok jabłkowy, jasne herbaty.
+ImageClearDrink	Co oznaczają przezroczyste płyny?	.
+ImageClearDrink	Co to jest przezroczysty napój?	.
+ImageClearDrink	Co to jest przezroczysty płyn?	.
+ImageClearDrink	Co to jest przezroczysty napój?	.
+ImageClearDrink	Co to jest przezroczysta ciecz?	.
+
+ImageMealExamples	Podaj mi przykłady posiłków.	Przykłady posiłków o niskiej zawartości błonnika bez nasion pojawiają się na tym obrazku.
+ImageMealExamples DontShowAsExample	Przykład posiłków.	.
+
+// preparation
+ImageTable	Kiedy muszę zacząć zwracać uwagę na to, co jem/piję?	Od trzech dni przed testem należy unikać żywności zawierającej nasiona i warzywa bogate w błonnik. Istnieją dodatkowe rzeczy, których należy unikać na 1 dzień przed testem
+ImageTable	Co powinienem zrobić, a czego nie powinienem robić na 3 dni przed badaniem?	.
+ImageTable	Czy muszę zwracać uwagę na coś pod względem żywieniowym?	.
+ImageTable	Jakich pokarmów powinienem unikać w dniach poprzedzających egzamin?	.
+ImageTable	Jaką dietę należy stosować na trzy dni przed badaniem?	.
+
+	Dlaczego nie mogę jeść pokarmów bogatych w błonnik i tłuszcz?	Ważne jest, aby nie spożywać pokarmów bogatych w błonnik i tłuszcze na 3 dni przed wizytą, aby nie pogorszyć widzenia podczas kolonoskopii.
+	Dlaczego nie mogę pić barwionych płynów?	Kolorowe płyny mogą pogorszyć widzenie podczas badania.
+	
+ImageTable	Czego jeszcze nie wolno mi robić?	Dzień przed badaniem nie należy spożywać żadnych posiłków bogatych w błonnik lub wysokotłuszczowych ani pić kolorowych płynów.
+ImageTable	Co powinienem zrobić lub czego nie powinienem robić dzień przed badaniem?	Unikaj kolorowych napojów (przezroczyste płyny są dozwolone), posiłków o wysokiej zawartości błonnika i tłuszczu oraz alkoholu. Na lunch należy zjeść posiłek o niskiej zawartości błonnika.
+	
+ImageClearDrink	Jakie napoje można pić przed kolonoskopią?	Przed kolonoskopią można pić dowolny rodzaj klarownych płynów.
+
+// copy questions (these are pasted into the next sections)
+ImageTable CopyQuestionWhatToDo	Co teraz?	W tej chwili nie musisz nic robić, przygotowanie rozpoczyna się 3 dni przed wizytą. Następnie należy rozpocząć dietę o niskiej zawartości błonnika i bez nasion.
+ImageTable CopyQuestionWhatToDo	Co muszę zrobić?	.
+ImageTable CopyQuestionWhatToDo	Co powinienem zrobić?	.
+
+ImageTable CopyQuestionFood	Jakich pokarmów powinienem unikać?	Teraz możesz jeść jak zwykle, przygotowania rozpoczną się 3 dni przed wizytą. Następnie należy rozpocząć dietę o niskiej zawartości błonnika i bez nasion.
+ImageTable CopyQuestionFood DontShowAsExample	Jaka dieta?	.
+ImageTable CopyQuestionFood	Na czym polega dieta?	.
+ImageTable CopyQuestionFood	Co mam jeść?	.
+ImageTable CopyQuestionFood	Co mogę jeść?	.
+ImageTable CopyQuestionFood	Co wolno mi jeść?	.
+ImageTable CopyQuestionFood DontShowAsExample	Czy mogę coś zjeść?	.
+ImageTable CopyQuestionFood DontShowAsExample	Chcę coś zjeść.	.
+ImageTable CopyQuestionFood	Czy przed zabiegiem mogę spożywać pokarmy bogate w błonnik?	.
+ImageTable CopyQuestionFood	Czego powinienem unikać na trzy dni przed badaniem?	.
+ImageTable CopyQuestionFood	Czy są jakieś warzywa, które powinienem pominąć?	.
+
+ImageTable CopyQuestionDrink DontShowAsExample	Czy mogę pić?	Teraz możesz pić wszystko, na co masz ochotę, ale dzień przed badaniem powstrzymaj się od picia kolorowych płynów (np. kawy, czarnej herbaty, mleka, coli, ciemnej herbaty owocowej, czerwonego wina).
+ImageTable CopyQuestionDrink	Co mogę pić?	Możesz pić cokolwiek do 1 dnia przed badaniem. Od tego dnia należy powstrzymać się od picia kolorowych płynów (np. kawy, czarnej herbaty, mleka, coli, ciemnej herbaty owocowej, czerwonego wina).
+ImageColouredDrink CopyQuestionDrink	Czy są jakieś płyny, których powinienem unikać?	.
+ImageColouredDrink CopyQuestionDrink	Czy mogę pić kawę lub herbatę dzień przed egzaminem?	.
+
+ImageClearDrink CopyQuestionDrink	Co wolno mi pić?	Wszystkie klarowne płyny (np. woda, sok jabłkowy, jasne herbaty) są dozwolone w dowolnych ilościach. Oto przykład napoju, który można pić.
+ImageClearDrink CopyQuestionDrink DontShowAsExample	Czy w ogóle mogę się napić?	.
+
+CopyQuestionAlcohol	Czy mogę pić alkohol?	Nie wolno pić alkoholu w dniu wizyty i dzień przed nią. Zaleca się również, aby nie pić go dzień po zabiegu.
+	Czy mogę pić wodę?	Możesz pić wodę, kiedy tylko chcesz, ponieważ jest to klarowny płyn, który nie pogarsza widoczności podczas kolonoskopii.
+	
+CopyQuestionLaxatives	To smakuje obrzydliwie.	Jeśli chodzi o środki przeczyszczające, teraz nie należy ich pić. Powinieneś jednak zacząć pić pierwszy roztwór po południu w dniu poprzedzającym kolonoskopię.
+CopyQuestionLaxatives	To źle smakuje.	.
+CopyQuestionLaxatives	To smakuje okropnie.	.
+CopyQuestionLaxatives	To smakuje okropnie.	.
+CopyQuestionLaxatives	Smakuje okropnie, co mogę zrobić?	.
+CopyQuestionLaxatives	Czy istnieje sposób, aby to rozwiązanie smakowało lepiej?	.
+CopyQuestionLaxatives	Czy masz wskazówki, jak ułatwić picie środka przeczyszczającego?	.
+
+3
+
+CopyQuestionWhatToDo ImageTable	.	W tej chwili powinieneś skupić się na swojej diecie. Nie spożywaj żadnych pokarmów zawierających nasiona lub pokarmy o wysokiej zawartości błonnika.
+CopyQuestionFood ImageBadFood	.	Nie powinieneś już jeść żadnych pokarmów zawierających nasiona lub pokarmy o wysokiej zawartości błonnika. Oto przykład produktów, których należy unikać.
+CopyQuestionDrink	.	Teraz możesz pić wszystko, na co masz ochotę, ale dzień przed kolonoskopią powstrzymaj się od picia kolorowych płynów (np. kawy, czarnej herbaty, mleka, coli, ciemnej herbaty owocowej, czerwonego wina).
+
+//// Second day has the same considerations as third day
+2	.
+	
+1
+
+CopyQuestionWhatToDo ImageTable	.	Od teraz, oprócz niejedzenia żywności zawierającej nasiona lub żywność o wysokiej zawartości błonnika, należy również unikać żywności o wysokiej zawartości tłuszczu i napojów kolorowych. Zaleca się również unikanie alkoholu.
+CopyQuestionFood ImageBadFood	.	Od teraz, oprócz niejedzenia pokarmów zawierających nasiona lub pokarmy o wysokiej zawartości błonnika, powinieneś także unikać pokarmów o wysokiej zawartości tłuszczu. Oto przykład czegoś, czego powinieneś unikać.
+CopyQuestionDrink ImageColouredDrink	.	Należy powstrzymać się od picia kolorowych płynów (np. kawy, czarnej herbaty, mleka, coli, ciemnej herbaty owocowej, czerwonego wina), ponieważ mogą one utrudniać widzenie podczas badania. Oto przykład napojów, których należy unikać.
+CopyQuestionAlcohol	.	W związku z zabiegiem nie zaleca się spożywania alkoholu.
+CopyQuestionLaxatives	.	Niestety, smak nie jest wybitny. Masz rację. Oto kilka wskazówek: Przed wypiciem należy włożyć butelkowany roztwór do lodówki. Można też użyć słomki. Można również rozcieńczyć likier jasnym syropem lub sokiem jabłkowym.
+
+	Czy muszę jutro wypić obie połówki?	Drugą połowę należy wypić co najmniej 3 godziny przed planowaną kolonoskopią.
+
+0
+
+CopyQuestionWhatToDo ImageTable	.	Tego ranka należy pościć, dlatego należy starać się nie jeść aż do zakończenia procedury. Można jednak pić klarowny sok jabłkowy, herbatę rumiankową i wodę do 2 godzin przed rozpoczęciem kolonoskopii.
+CopyQuestionFood	.	.
+CopyQuestionDrink ImageClearDrink	.	Należy powstrzymać się od picia kolorowych płynów (np. kawy, czarnej herbaty, mleka, coli, ciemnej herbaty owocowej, czerwonego wina), ponieważ mogą one utrudniać widzenie podczas badania. Przez ostatnie 2 godziny przed badaniem staraj się nic nie pić. Oto przykład czegoś, co można wypić.
+CopyQuestionAlcohol	.	Nie powinieneś dziś pić alkoholu.
+CopyQuestionLaxatives	.	Niestety, smak nie jest wybitny. Masz rację. Oto kilka wskazówek: Przed wypiciem należy włożyć butelkowany roztwór do lodówki. Można też użyć słomki. Można również rozcieńczyć likier jasnym syropem lub sokiem jabłkowym.
+	
+-1
+
+CopyQuestionWhatToDo	.	Po odpoczynku lekarz porozmawia z pacjentem o wynikach badania. Jeśli pobrano próbki, analiza trwa zwykle 2-3 dni robocze. Pacjent i jego lekarz rodzinny zostaną o tym poinformowani na piśmie. W ośrodku endoskopii można spędzić łącznie 2 godziny. Oczywiście czas ten może być krótszy lub dłuższy.
+CopyQuestionFood	.	Zasadniczo można ponownie jeść i pić wszystko. Zalecamy jednak ostrożne przywracanie jelita do jedzenia. Okrężnica została całkowicie opróżniona. Zacznij od lekkostrawnych potraw, takich jak makarony, zupy, chleb itp.
+CopyQuestionDrink	.	Po wypisie z endoskopii nie ma żadnych ograniczeń dotyczących tego, co można pić. Nawet wtedy zaleca się, aby nie pić dzisiaj.
+CopyQuestionAlcohol	.	Zaleca się, aby nie pić go dzień po zabiegu.
+	Czy mogę znowu wypić wszystko?	Po zakończeniu endoskopii nie obowiązują żadne ograniczenia dotyczące ilości spożywanych napojów.
+	
+// bowels after the examination
+	Czuję się taka wzdęta. Czy to normalne?	Do badania użyto dwutlenku węgla, aby nieznacznie rozszerzyć jelita. Gaz ten jest odpowiedzialny za uczucie wzdęcia. Trochę nieprzyjemne, ale normalne. Jeśli jednak uczucie to nie ustępuje lub nasila się, należy skontaktować się z centrum endoskopii. Udzielimy dalszej pomocy.
+	Mam bóle brzucha.	Jeśli objawy nie ustąpią w ciągu dnia, należy skontaktować się z lekarzem.
+	Mam krew w stolcu. Co powinienem zrobić?	Jeśli polipy zostaną usunięte podczas badania, w rzadkich przypadkach może wystąpić krwawienie pooperacyjne. Prosimy o kontakt z oddziałem endoskopii Szpitala Uniwersyteckiego w Ulm 0731-500-44632!
+	Krwawię.	Krwawienie może wystąpić w ciągu pierwszych 10 dni. Jeśli tak się stanie, skontaktuj się z nami. Okres ten jest bardzo zmienny i różni się w zależności od osoby
+
+	Mam gorączkę.	W przypadku złego samopoczucia należy natychmiast skontaktować się z oddziałem endoskopii Szpitala Uniwersyteckiego w Ulm 0731-500-44632.
+	Wymiotuję krwią.	.

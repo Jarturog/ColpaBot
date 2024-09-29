@@ -1,0 +1,349 @@
+{}
+.
+// Comments start with //
+// The first line, {} currently, is a special symbol for adding text dynamically from the program, it is the dynamic substitution symbol
+// The second line, . currently, is another special symbol, this one representing the static subsitution symbol
+// Answers that are a point (.) are an abbreviation of the previous answer, when executing the file the previous answer is copied into the point
+// The point after a number copies the whole number that came before into the new one
+// The point where a question should be copies the questions that have the same CopyQuestion... key where the point is applying the answer there
+// It is only possible to combine keys with CopyQuestion... and DontShowAsExample. 
+// These keys should not be the first one in the column (except with the sections with numbers, there it does not matter the position of CopyQuestion...) 
+// Before each section the days before the examination are indicated. The first section is the exception since it does not have a designated time. 
+// The file is in format: Actions	Question	Answer
+
+// user-specific answers
+AppointmentDate	Wann ist mein Termin?	Ihr Termin ist am Tag {} um {}.
+AppointmentDate	Wann ist mein Termin angesetzt?	.
+AppointmentDate	Können Sie mir das Datum und die Uhrzeit meines Termins nennen?	.
+AppointmentDate	Wann soll ich zu meinem Termin kommen?	.
+// ChangeAppointment' default answer is an error code because it is supposed to be answered with a Dialog in code instead of a simple answer
+ChangeAppointment	Ich möchte meinen Termin ändern.	Es tut mir leid, aber es scheint ein Problem zu geben, das mich daran hindert, den Termin zu verschieben. Bitte setzen Sie sich mit dem Endoskopiezentrum in Verbindung und teilen Sie ihm mit, was passiert ist.
+ChangeAppointment	Ich muss meinen Termin verschieben.	.
+ChangeAppointment	Wie kann ich das Datum meines Termins ändern?	.
+ChangeAppointment	Können Sie mir helfen, meinen Termin zu verschieben?	.
+ChangeAppointment DontShowAsExample	Ich habe meinen Termin geändert.	.
+ChangeAppointment DontShowAsExample	Termin ändern.	.
+
+DontAnswer DontShowAsExample	Ok	:)
+DontAnswer DontShowAsExample	Okay	.
+	
+// general answers
+DontShowAsExample	Hallo.	Hallo. Brauchen Sie etwas?
+DontShowAsExample	Hallo.	.
+DontShowAsExample	Hallo.	Hallo! Was kann ich für Sie tun?
+DontShowAsExample	Hallo, wie geht es Ihnen?	Hallo! Kann ich etwas für Sie tun?
+DontShowAsExample	Hallo zusammen! Darf ich dich etwas fragen?	Hallo! Fragen Sie mich, was immer Sie sich auch fragen mögen.
+DontShowAsExample	Ich danke Ihnen.	Ich bin hier, um Ihnen zu helfen! Zögern Sie nicht, alles zu fragen, was Sie sich fragen könnten.
+DontShowAsExample	Danke.	.
+DontShowAsExample	Danke, dass Sie mir geholfen haben.	.
+DontShowAsExample	Danke, ich weiß das zu schätzen!	.
+	
+// contact situations
+	An wen kann ich mich wenden?	Sie können unser Team jederzeit telefonisch erreichen: Endoskopie am Universitätsklinikum Ulm 0731-500-44632
+	An wen kann ich mich wenden, wenn ich Fragen habe?	.
+	Ich möchte mit einem Arzt sprechen.	.
+	Ich möchte einen Arzt aufsuchen.	.
+	Kann ich mit jemandem am Telefon sprechen?	.
+	Wo finde ich die Kontaktnummer für Ihr Team?	.
+
+	
+	Ich brauche einen weiteren Termin.	Wenn Sie Ihren Termin nicht einhalten können, wenden Sie sich bitte an unsere Endoskopieanmeldung unter 0731-500-44632, um einen neuen Termin zu vereinbaren. Denken Sie dann daran, mich zu bitten, Ihren Termin zu ändern, damit ich das gespeicherte Datum aktualisieren kann.
+	Ich kann nicht kommen.	.
+	Ich muss einen neuen Termin vereinbaren, wen muss ich anrufen?	.
+	Wie kann ich meinen Termin absagen?	.
+	Gibt es eine Möglichkeit, den Termin zu verschieben, ohne anzurufen?	.
+	
+	Welche Medikamente muss ich einnehmen?	Wenn Sie Fragen zur Medikamenteneinnahme haben, wenden Sie sich bitte an unsere Endoskopieabteilung oder an Ihren behandelnden Arzt.
+	Bis wann kann ich spätestens kündigen?	Wenn Sie den vereinbarten Termin nicht wahrnehmen können, informieren Sie uns bitte mindestens 24 Stunden im Voraus.
+	
+DontShowAsExample	Das hat nicht gut geklappt. Was sollte ich tun?	Wenn Sie Probleme haben, wenden Sie sich bitte an die Endoskopieabteilung. Wir werden Ihnen weiterhelfen.
+DontShowAsExample	Das geht schief.	.
+DontShowAsExample	Hilfe.	.
+	
+noneOfTheQuestionsOption DontShowAsExample	Meine Frage ist nicht hier.	Es tut mir leid, dass ich Ihre Frage nicht verstanden habe. Ich empfehle Ihnen, sich jederzeit telefonisch mit unserem Team in Verbindung zu setzen, damit Sie eine Antwort auf die Fragen, die ich nicht verstehe, erhalten können: Endoskopie am Universitätsklinikum Ulm 0731-500-44632.
+	
+// after colonoscopy
+	Welche Symptome können nach der Untersuchung auftreten?	Einige der Symptome, die nach der Untersuchung auftreten können, sind Blähungen, Krämpfe und Blähungen im Bauchraum, die durch die eingeführte Luft verursacht werden. Bewegung und Wärme können helfen, die Beschwerden zu lindern, aber mit der Zeit sollten sie von selbst abklingen. Wenn die Beschwerden anhalten, wenden Sie sich bitte unverzüglich an Ihren Arzt. Es ist auch wichtig zu wissen, dass nach der Entfernung von Polypen oder anderen therapeutischen Eingriffen in seltenen Fällen innerhalb der ersten 10 Tage Blutungen auftreten können. Wenn Sie Blut im Stuhl bemerken oder Fieber bekommen, wenden Sie sich bitte sofort an Ihren Arzt.
+	Was kann nach der Untersuchung passieren?	.
+	Welche Symptome können nach der Untersuchung auftreten?	.
+	Welche Symptome können nach dem Eingriff auftreten?	.
+	Was kann nach dem Eingriff passieren?	.
+	Welche Symptome können nach der Darmspiegelung auftreten?	.
+	Was kann nach der Darmspiegelung passieren?	.
+	Was kann nach der Untersuchung passieren?	.
+	Welche Unannehmlichkeiten sind nach dem Eingriff normal?	.
+	Muss ich nach der Untersuchung mit Krämpfen oder Blähungen rechnen?	.
+	Auf welche Probleme sollte ich nach der Untersuchung achten?	.
+	
+	Was geschieht nach der Untersuchung?	Nach der Untersuchung werden Sie in unserem Endoskopiezentrum überwacht, bis Sie entlassen werden können. Rechnen Sie mit einem Mindestaufenthalt von 2 Stunden. Planen Sie auch nicht, an diesem Tag Auto zu fahren oder Sport zu treiben, sondern lassen Sie es ruhig angehen.
+	Was mache ich nach der Untersuchung?	.
+	Was muss ich nach der Untersuchung wissen?	.
+	Muss ich nach der Untersuchung noch bleiben?	.
+	Kann ich nach der Prüfung machen, was ich will?	.
+	Was sollte ich direkt nach dem Eingriff tun?	.
+	Muss ich nach der Untersuchung in der Klinik bleiben?	.
+	Kann ich nach dem Eingriff meine normalen Aktivitäten wieder aufnehmen?	.
+	
+	Kann ich am Tag der Prüfung selbst nach Hause fahren?	Wenn Sie ein Beruhigungsmittel ("Schlafspritze" oder "Schlaftablette") erhalten haben, dürfen Sie 12 Stunden lang nicht selbst ein Fahrzeug führen. Öffentliche Verkehrsmittel, ein Taxi oder eine Begleitperson, die Sie fährt, sind erlaubt. Ruhen Sie sich aus und reduzieren Sie Ihre Aktivitäten an diesem Tag auf ein Minimum.
+	Kann ich am Tag der Prüfung Auto fahren?	.
+	Kann ich nach einer Darmspiegelung Auto fahren?	.
+	Kann ich nach der Untersuchung Auto fahren?	.
+	Was ist nach der Prüfung zu beachten?	.
+	Kann ich nach dem Eingriff selbst nach Hause fahren?	.
+	Ist es sicher, nach der Darmspiegelung Auto zu fahren?	.
+	Brauche ich jemanden, der mich nach Hause fährt?	.
+	
+	Kann ich nach der Untersuchung Sport treiben?	Vor der Untersuchung können Sie wie gewohnt Sport treiben, aber für den Tag der Untersuchung sollten Sie besser keine größeren Aktivitäten planen. Ab dem Folgetag können Sie jedoch wieder wie gewohnt Sport treiben und es bei Bedarf langsam angehen lassen.
+	Kann ich Sport treiben?	.
+	Kann ich Sport treiben?	.
+	Kann ich trainieren?	.
+	Kann ich nach der Darmspiegelung trainieren?	.
+	Wann kann ich wieder mit dem Sport beginnen?	.
+	Ist es in Ordnung, nach der Prüfung Sport zu treiben?	.
+	
+	Wie lange dauert es, bis sich die Darmbeweglichkeit und der Stuhlgang normalisieren?	Es kann ein paar Tage dauern, bis sich die Darmmotilität und der Stuhlgang wieder normalisieren.
+	Wie lange dauert es, bis die Beschwerden nachlassen?	.
+	Wann wird mein Unbehagen verschwinden?	.
+	Wie lange dauert es, bis ich wieder einen normalen Stuhlgang habe?	Sie haben den Darm vollständig entleert. Der Stuhl muss sich erst wieder bilden. Es kann bis zu 10 Tage dauern, bis Ihr Stuhlgang wieder so ist, wie Sie ihn kennen.
+	
+	Was sollte ich tun, wenn ich Blut im Stuhl bemerke, Blut erbreche oder Fieber bekomme?	Wenn Sie Blut im Stuhl bemerken, Blut erbrechen oder Fieber haben, sollten Sie sofort einen Arzt aufsuchen.
+	Was kann ich nach der Untersuchung essen?	Im Prinzip können Sie wieder alles essen und trinken. Wir empfehlen jedoch, den Darm vorsichtig wieder an die Nahrung heranzuführen. Sie haben den Dickdarm vollständig entleert. Beginnen Sie mit leicht verdaulichen Lebensmitteln wie Nudeln, Suppen, Brot usw.
+	Was kann ich nach der Untersuchung essen und trinken?	In der Regel können Sie alle Lebensmittel wieder essen. Fragen Sie jedoch den Prüfer. Wir empfehlen, mit leicht verdaulichen Speisen und Getränken zu beginnen (z. B. belegte Brötchen, Tee). Auf Alkohol sollte am Tag der Untersuchung generell verzichtet werden.
+	Kann ich nach der Untersuchung noch Termine wahrnehmen?	Es ist besser, für den Tag der Untersuchung keine größeren Aktivitäten zu planen. Ab dem folgenden Tag können Sie jedoch wie gewohnt Termine wahrnehmen
+	Kann ich alle meine Medikamente am Tag der Untersuchung einnehmen?	Wenn Sie Fragen zur Medikamenteneinnahme haben, wenden Sie sich bitte an unsere Endoskopieabteilung oder an Ihren behandelnden Arzt.
+	
+	Wie schnell werde ich mich nach dem Eingriff normal fühlen?	Innerhalb weniger Stunden nach dem Eingriff sollten Sie sich wieder normal fühlen, obwohl es ein oder zwei Tage dauern kann, bis die Restwirkung des Beruhigungsmittels vollständig abgeklungen ist.
+	Wie lange dauert es, bis die Wirkung des Beruhigungsmittels nachlässt?	.
+	
+	Was passiert nach der Koloskopie?	Sobald Sie sich ausgeruht haben, wird der Arzt mit Ihnen über die Ergebnisse der Untersuchung sprechen. Wenn Proben entnommen wurden, dauert die Analyse in der Regel 2-3 Arbeitstage. Sie und Ihr Hausarzt werden schriftlich informiert.
+	Wann kann ich nach Hause gehen?	Insgesamt können Sie mit einem Aufenthalt von 2 Stunden im Endoskopiezentrum rechnen. Sie kann natürlich auch kürzer oder länger sein.
+	Wann werde ich wieder Auto fahren dürfen?	Wenn Sie eine "Schlafspritze" erhalten haben, dürfen Sie erst nach 12 Stunden wieder aktiv am Straßenverkehr teilnehmen
+
+// just before the colonoscopy
+	Ich habe Angst vor dem Verfahren, was soll ich tun?	Wenn Sie vor dem Eingriff nervös sind, sollten Sie sich darauf konzentrieren, was Sie tun können, um Ihre Angst in den Griff zu bekommen. Versuchen Sie zunächst, so viele Informationen wie möglich über das Verfahren zu sammeln. Wenn Sie verstehen, was Schritt für Schritt geschieht, kann das helfen, den Prozess zu entmystifizieren und Ihre Ängste zu verringern. Auch ein Gespräch mit Ihrem medizinischen Betreuer kann Sie beruhigen und Ihnen Klarheit verschaffen; er kann Ihre speziellen Fragen beantworten und Ihnen helfen, Ihre Bedenken auszuräumen.
+	Wie kann ich mich mental auf die Prüfung vorbereiten?	.
+DontShowAsExample	Ich bin nervös.	.
+DontShowAsExample	Ich bin ängstlich.	.
+	
+	Wo muss ich hin?	Am Tag der Untersuchung müssen Sie sich im Universitätsklinikum Ulm, Oberer Eselsberg, Albert-Einstein-Allee 23, Ebene 1, Endoskopie-Anmeldezentrum
+	Wie komme ich in die Klinik?	.
+	Muss ich mich zuerst an die Patientenaufnahmeeinrichtung wenden?	Wenn es sich um Ihren ersten Besuch im Quartal handelt, sollten Sie sich mit Ihrem Überweisungsschein zunächst an die Zentrale Zulassungsstelle, Ebene 2, wenden.
+	Wo genau befindet sich die Klinik?	.
+	Muss ich erst irgendwo einchecken?	.
+	Wie komme ich in die Endoskopieabteilung?	.
+	
+	Sollte ich auf nüchternen Magen gehen?	Am Tag des Eingriffs sollten Sie fasten, um alle Spuren von Nahrungsmitteln zu vermeiden, die die Sehkraft beeinträchtigen könnten.
+
+// during colonoscopy
+	Werde ich während der Darmspiegelung sediert?	Während des Eingriffs werden Sie sediert, um Schmerzen zu vermeiden.
+	
+	Werde ich während der Darmspiegelung sitzen?	Bei der Darmspiegelung liegen Sie normalerweise auf der Seite, oft mit angezogenen Knien. Außerdem erhalten Sie ein Beruhigungsmittel, damit Sie keine Schmerzen verspüren.
+
+DontShowAsExample	Was ist, wenn ich während der Darmspiegelung selbst kacke?	Der Vorbereitungsprozess ist so angelegt, dass Ihr Darm vor dem Eingriff vollständig entleert wird, so dass die Wahrscheinlichkeit, dass er nicht sauber ist, sehr gering ist. Selbst wenn etwas passieren sollte, ist das medizinische Team erfahren im Umgang mit solchen Situationen, so dass Sie sich keine Sorgen machen müssen. Denken Sie einfach daran, sich richtig auf den Eingriff vorzubereiten.
+
+DontShowAsExample	Wird es mir schaden?	Am Tag der Untersuchung erhalten Sie ein Beruhigungsmittel, so dass die Untersuchung schmerzfrei ist. Nach dem Eingriff ist es jedoch möglich, dass Sie sich nicht gut fühlen. Sollten sich die Beschwerden im Laufe des Tages nicht bessern, wenden Sie sich bitte an die Endoskopie des Universitätsklinikums Ulm 0731-500-44632.
+	Wird mir das Verfahren schaden?	.
+	Tut die Darmspiegelung weh?	.
+	
+	Was muss ich am Tag der Prüfung tun?	Am Tag der Untersuchung bereiten Sie den 2. Beutel der Abführlösung vor. Beginnen Sie mit dem Trinken, damit Sie mindestens 3 Stunden vor Ihrem Termin bereit sind. Trinken Sie die Abführmittellösung innerhalb einer Stunde in großen Schlucken. Trinken Sie dazu mindestens 1-2 Liter klare Flüssigkeit. Auch wenn es zum Zeitpunkt des Trinkens noch sehr früh ist, ist es sehr wichtig, eine optimale Darmreinigung zu erreichen.
+	
+// laxatives
+	Was werden die Abführmittel bewirken?	Die Abführmittel führen zu einer Zunahme des Stuhlgangs/Durchfalls. Dies ist ein erwünschter Effekt für die Untersuchung und muss Sie nicht beunruhigen
+	Wie sieht es mit Arbeits- und Krankheitszeugnissen aus?	In der Regel erhalten Sie eine Krankmeldung für den Tag der Untersuchung. Ab dem Tag nach der Untersuchung können Sie ganz normal zur Arbeit zurückkehren. Sollten Ihre Beschwerden jedoch am Tag nach der Untersuchung weiter bestehen, sollten Sie Ihren Arzt erneut aufsuchen.
+	Werde ich in der Lage sein, wieder zu arbeiten?	Ab dem Tag nach der Untersuchung können Sie Ihre Arbeit wie gewohnt wieder aufnehmen. Wenn Ihre Beschwerden jedoch am Tag nach der Untersuchung weiter bestehen, sollten Sie Ihren Arzt erneut aufsuchen.
+	
+	Muss ich wirklich alles trinken?	Der Darm kann nur dann ausreichend gereinigt werden, wenn Sie die Lösung vollständig einnehmen.
+	Ist es notwendig, die gesamte Lösung zu trinken?	.
+	
+	Kann ich das alles auf einmal trinken?	Bitte halten Sie sich an die Anweisungen auf der Verpackung des Abführmittels.
+	Wie sollte ich das Produkt vorbereiten?	.
+	
+	Jetzt habe ich Durchfall. Ist das normal?	Es ist völlig normal, Durchfall zu haben. Das Abführmittel reinigt den Darm und spült die Fäkalien vollständig aus dem Darm. Wir nehmen dies als Durchfall wahr.
+DontShowAsExample	Ich habe Durchfall.	.
+	Ich habe Durchfall, ist das zu erwarten?	.
+DontShowAsExample	Ich kann nicht von der Toilette aufstehen.	.
+DontShowAsExample	Ich kann nicht von der Toilette aufstehen. Ist das normal?	.
+DontShowAsExample	Ich kann nicht von der Toilette aufstehen.	.
+DontShowAsExample	Ich kann nicht von der Toilette aufstehen. Ist das normal?	.
+DontShowAsExample	Ich stehe nicht von der Toilette auf.	.
+	Seit ich das Nahrungsergänzungsmittel nehme, habe ich vermehrt Stuhlgang/Durchfall. Ist das normal?	.
+	
+	Wie oft muss ich auf die Toilette gehen?	Wie oft jemand auf die Toilette geht, ist sehr unterschiedlich, weil jeder Darm anders reagiert. Aber Sie merken, wenn sich der Darm entleert hat.
+	Wie lange muss ich mich in der Nähe einer Toilette aufhalten?	.
+	
+	Warum muss ich es so trinken?	Der Darm ist nun vollständig entleert. Erst dann kann der Untersucher alle Bereiche Ihres Darms gut beurteilen.
+	Ich war jetzt schon mehrere Male auf der Toilette. Nichts kommt heraus	Wenn Ihr Stuhl nach Abschluss der Abführmaßnahmen einem Kamillentee ähnelt und keine festen Bestandteile mehr zu sehen sind, sind Sie gut auf die Darmspiegelung vorbereitet.
+	
+	Wann sollte ich mit der Einnahme des Abführmittels beginnen?	Sie sollten das erste Abführmittel am Tag vor der Untersuchung um 17:00 Uhr trinken. Trinken Sie die Abführmittellösung innerhalb einer Stunde in großen Schlucken und trinken Sie mindestens 1-2 Liter klare Flüssigkeit. Am Tag der Untersuchung sollten Sie das Abführmittel 3 Stunden vor Ihrem Termin trinken. Trinken Sie es auf die gleiche Weise wie das erste und vergessen Sie nicht, klare Flüssigkeit zu trinken. Auch wenn es zum Zeitpunkt der Einnahme noch sehr früh ist, ist es sehr wichtig, eine optimale Darmreinigung zu erreichen.
+	Muss ich ein Abführmittel nehmen?	.
+	Wann muss ich mit den Einleitungsmaßnahmen beginnen?	.
+	Wann sollte ich mit dem Trinken der Abführlösung beginnen?	.
+	Wann sollte ich den ersten Beutel einnehmen?	.
+	
+	Wann sollte ich die erste Lösung trinken?	Sie sollten das erste Abführmittel am Tag vor dem Termin trinken. Rühren Sie den 1. Beutel der Abführmittellösung um. Beginnen Sie um 17:00 Uhr mit dem Trinken. Trinken Sie die Abführmittellösung innerhalb einer Stunde in großen Schlucken. Trinken Sie mindestens 1-2 Liter klare Flüssigkeit.
+	Wann muss ich die erste Lösung trinken?	.
+	Wann sollte ich das erste Abführmittel trinken?	.
+	Wann muss ich das erste Abführmittel trinken?	.
+	Wann sollte ich mit der Einnahme des Abführmittels beginnen?	.
+	
+	Warum muss ich zweimal trinken?	Wenn Sie Ihren Stuhlgang auf den Abend vor der Untersuchung und den Tag der Untersuchung verteilen, wird Ihr Darm sauberer. Außerdem müssen Sie nicht so viel auf einmal trinken.
+	Warum muss ich zwei Dosen trinken?	.
+	
+	Wann muss ich den zweiten Beutel des Abführmittels einnehmen?	Am Tag des Tests trinken Sie die zweite Hälfte des Abführmittels 3 Stunden vor dem geplanten Termin.
+	Wann muss ich den 2. Beutel des Abführmittels einnehmen?	.
+	Wann nehme ich den anderen Beutel des Abführmittels?	.
+	
+	Wie sollte mein Stuhlgang nach den Abführmaßnahmen aussehen?	Ihr Stuhl sollte wie Kamillentee aussehen und keine festen Bestandteile mehr enthalten.
+	Was soll ich tun, wenn mein Stuhlgang nach der Einnahme des Abführmittels nicht so aussieht, wie er sollte?	Bitte teilen Sie uns dies bei Ihrer Ankunft im Endoskopiezentrum mit.
+	
+// bring to examination
+	Was sollte ich zur Untersuchung mitbringen?	Wenn nicht anders vereinbart, den unterschriebenen Aufklärungsbogen, aktuelle Blutwerte (Gerinnung und Blutbild nicht älter als 10 Tage) und einen Allergiepass, falls vorhanden (bitte informieren Sie den Untersucher vor Beginn der Untersuchung über Medikamentenunverträglichkeiten). Denken Sie auch daran, dass das Mitbringen von warmen Socken empfohlen wird.
+	Was muss ich zur Untersuchung mitbringen?	.
+	Was sollte ich zu dem Verfahren mitbringen?	.
+	Was muss ich zu dem Verfahren mitbringen?	.
+	Was sollte ich zur Darmspiegelung mitbringen?	.
+	Was muss ich zur Darmspiegelung mitbringen?	.
+	Was muss ich mitbringen?	.
+	Was muss ich zur Untersuchung mitbringen?	.
+	Muss ich zur Untersuchung etwas mitbringen?	.
+	
+	Welche Blutwerte benötige ich für die Darmspiegelung?	Ein kleines Blutbild (Thrombozyten) und Gerinnungswerte (Quick, PTT) sind für die Koloskopie erforderlich.
+
+	Warum muss ich warme Socken mitbringen?	Socken sind hilfreich, wenn Sie zu kalten Füßen neigen.
+	Warum warme Socken?	.
+
+// diet information
+ImageHighFibreFood	Was sind ballaststoffreiche Lebensmittel?	Beispiele für ballaststoffreiche Lebensmittel sind Melonen, Kiwis, Tomaten, Weintrauben, Erdbeeren, Müsli, Vollkornprodukte, Zucchini, Salat, Lauch, Bohnen usw.
+ImageHighFibreFood	Können Sie mir Beispiele für ballaststoffreiche Lebensmittel nennen?	.
+ImageHighFibreFood	Nennen Sie mir Beispiele für ballaststoffreiche Lebensmittel.	.
+ImageHighFibreFood	Welche Lebensmittel sind reich an Ballaststoffen?	.
+	
+ImageSeedFood	Was sind samenhaltige Lebensmittel und ballaststoffreiches Gemüse?	Einige Beispiele für samenhaltige Lebensmittel und ballaststoffreiches Gemüse sind Melone, Kiwi, Tomaten, Weintrauben, Erdbeeren, Müsli, VK-Produkte, Mohn, Zucchini, Salat, Lauch und Bohnen.
+ImageSeedFood	Welche Lebensmittel enthalten Samen, die ich vermeiden sollte?	.
+ImageSeedFood	Welche Lebensmittel enthalten Samen?	.
+ImageSeedFood	Können Sie mir Beispiele für Lebensmittel nennen, die Samen enthalten?	.
+ImageSeedFood	Nennen Sie mir Beispiele für Lebensmittel, die Samen enthalten.	.
+ImageSeedFood	Welche Lebensmittel enthalten Samen?	.
+	
+ImageLowFibreFood	Was ist eine ballaststoffarme Mahlzeit?	Ein Beispiel für eine ballaststoffarme Mahlzeit ist eine klare Suppe mit Nudeln oder Kartoffeln.
+ImageLowFibreFood	Was sind ballaststoffarme Lebensmittel?	Beispiele für ballaststoffarme Lebensmittel sind klare Suppe, Nudelsuppen, Kartoffelpüree und Weißbrot.
+ImageHighFibreFood	Wo befinden sich die Fasern?	Ballaststoffe sind in Tomaten, Zucchini, Kopfsalat, Lauch, Bohnen usw. enthalten.
+ImageSeedFood	Warum muss ich Samen vermeiden?	Die Samen können das Endoskop verstopfen und die Untersuchung erheblich beeinträchtigen.
+ImageHighFibreFood	Warum muss ich Ballaststoffe vermeiden?	Ballaststoffhaltige Lebensmittel verbleiben länger im Verdauungstrakt. Sie schränken die Sicht bei der Untersuchung stark ein.
+
+ImageColouredDrink	Was sind gefärbte Flüssigkeiten?	Gefärbte Flüssigkeiten sind alle Flüssigkeiten, die man nicht durchschauen kann. Dazu gehören Kaffee, schwarzer Tee, Milch, Cola, dunkler Früchtetee und Rotwein.
+ImageColouredDrink	Was fällt unter farbige Getränke?	.
+ImageColouredDrink	Was ist ein gefärbtes Getränk?	.
+ImageColouredDrink	Was ist eine gefärbte Flüssigkeit?	.
+ImageColouredDrink DontShowAsExample	Was ist ein dunkles Getränk?	.
+ImageColouredDrink DontShowAsExample	Was ist eine dunkle Flüssigkeit?	.
+ImageColouredDrink DontShowAsExample	Was ist ein farbiges Getränk?	.
+ImageColouredDrink DontShowAsExample	Was ist eine gefärbte Flüssigkeit?	.
+
+ImageClearDrink	Was sind klare Flüssigkeiten?	Klare Flüssigkeiten sind z. B. Wasser, Apfelsaft, helle Tees.
+ImageClearDrink	Was bedeutet "klare Flüssigkeiten"?	.
+ImageClearDrink	Was ist ein klares Getränk?	.
+ImageClearDrink	Was ist eine klare Flüssigkeit?	.
+ImageClearDrink	Was ist ein transparentes Getränk?	.
+ImageClearDrink	Was ist eine transparente Flüssigkeit?	.
+
+ImageMealExamples	Geben Sie mir Beispiele für Mahlzeiten.	Beispiele für ballaststoffarme Mahlzeiten ohne Samen sind in dieser Abbildung zu sehen.
+ImageMealExamples DontShowAsExample	Beispiel für Mahlzeiten.	.
+
+// preparation
+ImageTable	Wann muss ich anfangen, darauf zu achten, was ich esse/trinke?	Ab drei Tagen vor dem Test sollten Lebensmittel, die Samen und ballaststoffreiches Gemüse enthalten, vermieden werden. 1 Tag vor dem Test sind zusätzlich folgende Dinge zu vermeiden
+ImageTable	Was sollte ich 3 Tage vor der Untersuchung tun oder nicht tun?	.
+ImageTable	Muss ich bei der Ernährung auf etwas achten?	.
+ImageTable	Welche Lebensmittel sollte ich in den Tagen vor der Prüfung vermeiden?	.
+ImageTable	Welche Ernährung sollte ich drei Tage vor der Prüfung einhalten?	.
+
+	Warum kann ich keine ballaststoffreichen und fettreichen Lebensmittel essen?	Es ist wichtig, dass Sie 3 Tage vor dem Termin keine ballaststoff- und fetthaltigen Nahrungsmittel zu sich nehmen, um die Sicht während der Darmspiegelung nicht zu beeinträchtigen.
+	Warum kann ich keine gefärbten Flüssigkeiten trinken?	Farbige Flüssigkeiten können die Sicht während der Untersuchung beeinträchtigen.
+	
+ImageTable	Was darf ich nicht tun?	Am Tag vor der Untersuchung sollten Sie keine ballaststoffreichen oder fettreichen Mahlzeiten zu sich nehmen und keine gefärbten Flüssigkeiten trinken.
+ImageTable	Was sollte ich einen Tag vor der Prüfung tun oder nicht tun?	Vermeiden Sie gefärbte Getränke (klare Flüssigkeiten sind erlaubt), ballaststoffreiche und fettreiche Mahlzeiten sowie Alkohol. Bitte nehmen Sie zum Mittagessen eine ballaststoffarme Mahlzeit zu sich.
+	
+ImageClearDrink	Welche Arten von Getränken sind vor der Darmspiegelung erlaubt?	Sie können vor der Darmspiegelung alle Arten von klaren Flüssigkeiten trinken.
+
+// copy questions (these are pasted into the next sections)
+ImageTable CopyQuestionWhatToDo	Was nun?	Im Moment müssen Sie noch nichts tun, die Vorbereitung beginnt 3 Tage vor dem Termin. Dann müssen Sie eine ballaststoffarme und kernlose Diät beginnen.
+ImageTable CopyQuestionWhatToDo	Was muss ich tun?	.
+ImageTable CopyQuestionWhatToDo	Was sollte ich tun?	.
+ImageTable CopyQuestionWhatToDo DontShowAsExample	Ich weiß nicht, was ich tun soll.	.
+ImageTable CopyQuestionWhatToDo DontShowAsExample	Ich weiß nicht, was ich tun soll.	.
+ImageTable CopyQuestionWhatToDo DontShowAsExample	Ich weiß nicht, was ich zu tun habe.	.
+
+ImageTable CopyQuestionFood	Welche Lebensmittel sollte ich vermeiden?	Im Moment können Sie wie gewohnt essen, die Vorbereitung beginnt 3 Tage vor dem Termin. Dann müssen Sie mit einer ballaststoffarmen und kernlosen Ernährung beginnen.
+ImageTable CopyQuestionFood DontShowAsExample	Welche Diät?	.
+ImageTable CopyQuestionFood	Wie sieht die Ernährung aus?	.
+ImageTable CopyQuestionFood	Was muss ich essen?	.
+ImageTable CopyQuestionFood	Was kann ich essen?	.
+ImageTable CopyQuestionFood	Was darf ich essen?	.
+ImageTable CopyQuestionFood DontShowAsExample	Kann ich etwas essen?	.
+ImageTable CopyQuestionFood DontShowAsExample	Ich möchte etwas essen.	.
+ImageTable CopyQuestionFood	Kann ich vor dem Eingriff ballaststoffreiche Lebensmittel zu mir nehmen?	.
+ImageTable CopyQuestionFood	Was sollte ich drei Tage vor der Prüfung nicht essen?	.
+ImageTable CopyQuestionFood	Gibt es Gemüse, das ich weglassen sollte?	.
+
+ImageTable CopyQuestionDrink DontShowAsExample	Darf ich trinken?	Sie können jetzt alles trinken, was Sie wollen, aber einen Tag vor der Untersuchung verzichten Sie bitte auf farbige Flüssigkeiten (z.B. Kaffee, schwarzer Tee, Milch, Cola, dunkler Früchtetee, Rotwein)
+ImageTable CopyQuestionDrink	Was kann ich trinken?	Bis zu 1 Tag vor der Untersuchung dürfen Sie alles trinken. Ab diesem Tag verzichten Sie bitte auf farbige Flüssigkeiten (z. B. Kaffee, schwarzer Tee, Milch, Cola, dunkler Früchtetee, Rotwein)
+ImageColouredDrink CopyQuestionDrink	Gibt es irgendwelche Flüssigkeiten, die ich vermeiden sollte?	.
+ImageColouredDrink CopyQuestionDrink	Kann ich am Tag vor der Prüfung Kaffee oder Tee trinken?	.
+
+ImageClearDrink CopyQuestionDrink	Was darf ich trinken?	Sie können jetzt alles trinken, was Sie wollen, aber am Tag vor der Darmspiegelung verzichten Sie bitte auf farbige Flüssigkeiten (z. B. Kaffee, schwarzen Tee, Milch, Cola, dunklen Früchtetee, Rotwein)
+ImageClearDrink CopyQuestionDrink DontShowAsExample	Kann ich überhaupt einen Drink bekommen?	.
+
+CopyQuestionAlcohol	Darf ich Alkohol trinken?	Am Tag des Termins und am Tag davor dürfen Sie keinen Alkohol trinken. Es wird auch empfohlen, am Tag nach dem Eingriff keinen Alkohol zu trinken.
+	Kann ich Wasser trinken?	Sie können Wasser trinken, wann immer Sie wollen, denn es ist eine klare Flüssigkeit, die die Sicht bei der Darmspiegelung nicht beeinträchtigt.
+	
+CopyQuestionLaxatives DontShowAsExample	Das schmeckt eklig.	Wenn Sie sich auf die Abführmittel beziehen, sollten Sie diese jetzt noch nicht trinken. Sie sollten jedoch am Nachmittag des Tages vor der Darmspiegelung mit dem Trinken der ersten Lösung beginnen.
+CopyQuestionLaxatives DontShowAsExample	Das schmeckt schlecht.	.
+CopyQuestionLaxatives DontShowAsExample	Das schmeckt furchtbar.	.
+CopyQuestionLaxatives DontShowAsExample	Das schmeckt furchtbar.	.
+CopyQuestionLaxatives DontShowAsExample	Das schmeckt furchtbar, was kann ich tun?	.
+CopyQuestionLaxatives	Gibt es eine Möglichkeit, den Geschmack dieser Lösung zu verbessern?	.
+CopyQuestionLaxatives	Haben Sie Tipps, die das Trinken des Abführmittels erleichtern?	.
+
+3
+
+CopyQuestionWhatToDo ImageTable	.	Im Moment sollten Sie sich auf Ihre Ernährung konzentrieren. Essen Sie keine Lebensmittel, die Samen oder ballaststoffreiche Lebensmittel enthalten.
+CopyQuestionFood ImageHighFibreFood	.	Sie sollten keine Lebensmittel mehr essen, die Samen oder ballaststoffreiche Lebensmittel enthalten. Hier ist ein Beispiel für etwas, das Sie vermeiden sollten.
+CopyQuestionDrink	.	.
+
+//// Second day has the same considerations as third day
+2	.
+	
+1
+
+CopyQuestionWhatToDo ImageTable	.	Von nun an sollten Sie nicht nur auf samenhaltige oder ballaststoffreiche Lebensmittel verzichten, sondern auch auf fettreiche Speisen und farbige Getränke. Es wird auch empfohlen, auf Alkohol zu verzichten.
+CopyQuestionFood ImageHighFibreFood	.	Von nun an sollten Sie nicht nur keine samenhaltigen oder ballaststoffreichen Lebensmittel mehr essen, sondern auch fettreiche Lebensmittel meiden. Hier ist ein Beispiel für etwas, das Sie vermeiden sollten.
+CopyQuestionDrink ImageColouredDrink	.	Alle klaren Flüssigkeiten (z. B. Wasser, Apfelsaft, helle Tees) sind in beliebiger Menge erlaubt. Bitte verzichten Sie auf farbige Flüssigkeiten (z. B. Kaffee, schwarzer Tee, Milch, Cola, dunkler Früchtetee, Rotwein), da sie die Sicht während der Untersuchung beeinträchtigen könnten. Hier ist ein Beispiel für etwas, das Sie vermeiden sollten.
+CopyQuestionAlcohol	.	Wegen des Eingriffs sollte man in diesen Tagen keinen Alkohol trinken.
+CopyQuestionLaxatives	.	Leider ist der Geschmack nicht überragend. Da haben Sie recht. Hier sind ein paar Tipps: Stellen Sie die Lösung in der Flasche in den Kühlschrank, bevor Sie sie trinken. Sie können auch einen Strohhalm verwenden. Sie können den Likör auch mit hellem Sirup oder Apfelsaft verdünnen.
+
+	Muss ich morgen beide Hälften trinken?	Sie müssen die 2. Hälfte mindestens 3 Stunden vor Ihrem Koloskopietermin getrunken haben.
+
+0
+
+CopyQuestionWhatToDo ImageTable	.	An diesem Morgen sollten Sie fasten, d. h. Sie sollten versuchen, bis zum Ende der Untersuchung nichts zu essen. Sie können jedoch bis zu 2 Stunden vor Beginn der Darmspiegelung klaren Apfelsaft, Kamillentee und Wasser trinken.
+CopyQuestionFood	.	.
+CopyQuestionDrink ImageClearDrink	.	Bitte verzichten Sie auf farbige Flüssigkeiten (z. B. Kaffee, schwarzer Tee, Milch, Cola, dunkler Früchtetee, Rotwein), da diese die Sicht während der Untersuchung beeinträchtigen können. Versuchen Sie, die letzten 2 Stunden vor der Untersuchung nichts mehr zu trinken. Hier ist ein Beispiel für etwas, das Sie trinken können.
+CopyQuestionAlcohol	.	Sie sollten heute keinen Alkohol trinken.
+CopyQuestionLaxatives	.	Leider ist der Geschmack nicht überragend. Da haben Sie recht. Hier sind ein paar Tipps: Stellen Sie die Lösung in der Flasche in den Kühlschrank, bevor Sie sie trinken. Sie können auch einen Strohhalm verwenden. Sie können den Likör auch mit hellem Sirup oder Apfelsaft verdünnen.
+	
+-1
+
+CopyQuestionWhatToDo	.	Sobald Sie sich ausgeruht haben, wird der Arzt mit Ihnen über die Ergebnisse der Untersuchung sprechen. Wenn Proben entnommen wurden, dauert die Analyse in der Regel 2-3 Arbeitstage. Sie und Ihr Hausarzt werden schriftlich informiert. Insgesamt können Sie mit einem Aufenthalt von 2 Stunden im Endoskopiezentrum rechnen. Sie kann natürlich auch kürzer oder länger sein.
+CopyQuestionFood	.	Grundsätzlich können Sie wieder alles essen und trinken. Wir empfehlen jedoch, den Darm vorsichtig wieder an die Nahrung heranzuführen. Sie haben den Dickdarm vollständig entleert. Beginnen Sie mit leicht verdaulichen Lebensmitteln wie Nudeln, Suppen, Brot usw.
+CopyQuestionDrink	.	Nach der Entlassung aus der Endoskopie gibt es keine Einschränkungen in Bezug auf das, was Sie trinken dürfen. Auch dann wird empfohlen, heute nicht zu trinken.
+CopyQuestionAlcohol	.	Es wird empfohlen, es am Tag nach dem Eingriff nicht zu trinken.
+	Kann ich wieder alles trinken?	Nach der Entlassung aus der Endoskopie gibt es keine Einschränkungen in Bezug auf das, was Sie trinken dürfen.
+	
+// bowels after the examination
+	Ich fühle mich so aufgebläht. Ist das normal?	Bei der Untersuchung verwendet der Untersucher Kohlendioxid, um den Darm leicht auszudehnen. Dieses Gas ist für das Gefühl der Blähungen verantwortlich. Das ist ein wenig unangenehm, aber normal. Wenn das Gefühl jedoch nicht verschwindet oder schlimmer wird, wenden Sie sich an das Endoskopiezentrum. Wir werden Ihnen weiterhelfen.
+	Ich habe Unterleibsschmerzen.	Sollten sich die Symptome im Laufe des Tages nicht bessern, suchen Sie bitte einen Arzt auf.
+	Ich habe Blut in meinem Stuhl. Was sollte ich tun?	Werden bei der Untersuchung Polypen entfernt, kann es in seltenen Fällen zu Nachblutungen kommen. Bitte wenden Sie sich an die Endoskopieabteilung des Universitätsklinikums Ulm 0731-500-44632!
+	Ich blute.	Innerhalb der ersten 10 Tage kann es zu Blutungen kommen. Sollte dies der Fall sein, setzen Sie sich bitte mit uns in Verbindung. Der Zeitraum ist sehr variabel und von Person zu Person unterschiedlich
+
+	Ich habe Fieber.	Wenn Sie sich schlecht fühlen, wenden Sie sich bitte sofort an die Endoskopieabteilung des Universitätsklinikums Ulm 0731-500-44632.
+	Ich erbreche Blut.	.
