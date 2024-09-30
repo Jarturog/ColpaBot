@@ -46,10 +46,14 @@ namespace ColpaBot.DataManagement
             public static bool operator !=(ActionsAndAnswer left, ActionsAndAnswer right) => !(left == right);
 
             public override bool Equals(object obj)
-            {
+{
                 if (obj is ActionsAndAnswer other)
                 {
-                    return other.Actions != null && Actions.SequenceEqual(other.Actions) && Answer == other.Answer;
+                    if ((Actions == null && other.Actions != null) || (Actions != null && other.Actions == null))
+                    {
+                        return false;
+                    }
+                    return Answer == other.Answer && ((Actions == null && other.Actions == null) || Actions.SequenceEqual(other.Actions));
                 }
                 return false;
             }
