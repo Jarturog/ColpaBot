@@ -49,7 +49,7 @@ namespace ColpaBot.DataManagement
             {
                 if (obj is ActionsAndAnswer other)
                 {
-                    return Actions.SequenceEqual(other.Actions) && Answer == other.Answer;
+                    return other.Actions != null && Actions.SequenceEqual(other.Actions) && Answer == other.Answer;
                 }
                 return false;
             }
