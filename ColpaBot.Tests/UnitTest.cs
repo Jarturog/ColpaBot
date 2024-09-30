@@ -85,7 +85,7 @@ namespace ColpaBot.Tests
         /// <summary>
         /// Prints the structure of QnA data for each language, including the number of words per question.
         /// </summary>
-        [TestMethod]
+        //[TestMethod] // comment this line to avoid running this test when deploying
         public void PrintQnaStructureData()
         {
             foreach ((string lang, Qna qna) in Qna.LangQnaPairs)
@@ -140,7 +140,7 @@ namespace ColpaBot.Tests
         /// <summary>
         /// Tests and compares algorithms using simulated random questions with introduced typos and synonyms.
         /// </summary>
-        [TestMethod]
+        //[TestMethod] // comment this line to avoid running this test when deploying
         public void TestAndCompareWithSimulatedRandomQuestions()
         {
             const double MIN_MATCHES_PCT = 0.5; // 50%
@@ -263,7 +263,7 @@ namespace ColpaBot.Tests
         /// <summary>
         /// Tests and compares algorithms using pre-selected questions.
         /// </summary>
-        [TestMethod]
+        //[TestMethod] // comment this line to avoid running this test when deploying
         public void TestAndCompareWithSelectedQuestions()
         {
             var enumerator = Qna.LangQnaPairs.GetEnumerator();
