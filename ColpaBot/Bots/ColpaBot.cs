@@ -158,7 +158,7 @@ namespace ColpaBot.Bots
                 await dc.BeginDialogAsync(_questionsDialog.Id, similarQuestions.ToList(), cancellationToken);
                 return;
             }
-            string action = match.Actions?[0];
+            string action = match.Actions?.Length > 0 ? match.Actions[0] : null;
             string response = match.Answer;
 
             // if there is no special behaviour to process send the message as is
