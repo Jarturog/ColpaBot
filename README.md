@@ -12,7 +12,7 @@ Colpabot is a chatbot developed as part of a bachelor thesis, built using the [M
 - **Multi-platform**: 
   - Local testing with Bot Framework Emulator
   - Scalable deployment on Azure
-  - Integration with Telegram (chat [here](t.me/Colprepbot) - Telegram account required)
+  - Integration with Telegram (chat [here](https://t.me/Colprepbot) - Telegram account required)
 
 ## Prerequisites
 
